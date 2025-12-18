@@ -398,6 +398,10 @@ PROFILE_TEMPLATE = """<!doctype html>
     @keyframes spin {{
       to {{ transform: rotate(360deg); }}
     }}
+    .post-content {{
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }}
     .post-content a {{
       color: var(--accent);
       text-decoration: none;
@@ -410,6 +414,42 @@ PROFILE_TEMPLATE = """<!doctype html>
       height: auto;
       border-radius: var(--radius);
       margin: 8px 0;
+    }}
+    /* Hide Mastodon invisible spans */
+    .post-content .invisible {{
+      display: none !important;
+    }}
+    .post-content span.invisible {{
+      display: none !important;
+    }}
+    /* Style hashtags and mentions */
+    .post-content .hashtag,
+    .post-content .mention {{
+      color: var(--accent);
+      text-decoration: none;
+    }}
+    .post-content .hashtag:hover,
+    .post-content .mention:hover {{
+      text-decoration: underline;
+    }}
+    /* Fix Mastodon link formatting */
+    .post-content a[translate="no"] {{
+      display: inline;
+    }}
+    .post-content a[translate="no"] .invisible {{
+      display: none !important;
+    }}
+    /* Ensure proper spacing */
+    .post-content p {{
+      margin: 0 0 12px 0;
+    }}
+    .post-content p:last-child {{
+      margin-bottom: 0;
+    }}
+    .post-content br {{
+      display: block;
+      content: "";
+      margin-top: 8px;
     }}
   </style>
 
