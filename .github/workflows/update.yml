@@ -58,13 +58,10 @@ jobs:
           git remote set-url origin https://x-access-token:${PAT}@github.com/${GITHUB_REPOSITORY}.git
           
           # Ensure we're on main branch
-          git checkout main || git checkout -b main
+          git checkout main
           
-          # Pull latest changes with rebase before adding files
-          git pull --rebase origin main || {
-            echo "Initial pull failed, continuing anyway"
-            git rebase --abort || true
-          }
+          # Fetch latest changes
+          git fetch origin main
           
           # Add changes
           git add data/ profiles/ feed.xml sitemap.xml
@@ -76,16 +73,22 @@ jobs:
           # Commit changes
           git commit -m "Auto-update: profiles and feeds [skip ci]"
           
-          # Pull latest changes again with rebase before push
-          git pull --rebase origin main || {
-            echo "Rebase before push failed, aborting and retrying"
+          # Rebase onto latest origin/main
+          git fetch origin main
+          if ! git rebase origin/main; then
+            echo "Rebase failed, aborting and using force push"
             git rebase --abort || true
-            git fetch origin main
-            git reset --hard origin/main
-            git add data/ profiles/ feed.xml sitemap.xml
-            git commit -m "Auto-update: profiles and feeds [skip ci]"
-          }
+          fi
           
-          # Push with force-with-lease (safer than force)
-          git push --force-with-lease origin main
+          # Push with force-with-lease (will fail if remote changed during rebase)
+          # If that fails, use regular force push as last resort
+          if ! git push --force-with-lease origin main; then
+            echo "Force-with-lease failed, using force push"
+            git fetch origin main
+            git rebase origin/main || {
+              echo "Final rebase failed, forcing push"
+              git push --force origin main
+            }
+            git push --force-with-lease origin main || git push --force origin main
+          fi
 
