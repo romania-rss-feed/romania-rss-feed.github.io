@@ -48,7 +48,7 @@ PROFILE_TEMPLATE = """<!doctype html>
         </div>
         <div class="profile-details">
           <h1 class="profile-name-large">{display_name}</h1>
-          <p class="profile-username-large">@{acct}</p>
+          <p class="profile-username-large"><a href="{url}" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">@{acct}</a></p>
           <div class="profile-description-large">{description}</div>
         </div>
       </div>
