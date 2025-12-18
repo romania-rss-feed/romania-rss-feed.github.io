@@ -57,9 +57,8 @@ jobs:
           echo "https://x-access-token:${PAT}@github.com" > ~/.git-credentials
           git remote set-url origin https://x-access-token:${PAT}@github.com/${GITHUB_REPOSITORY}.git
           
-          # Fetch and rebase latest changes BEFORE committing
+          # Fetch latest changes
           git fetch origin main
-          git rebase origin/main || git rebase --abort || true
           
           # Add and commit changes
           git add data/ profiles/ feed.xml sitemap.xml
@@ -71,14 +70,14 @@ jobs:
           # Commit changes
           git commit -m "Auto-update: profiles and feeds [skip ci]"
           
-          # Fetch latest again and rebase before push
+          # Rebase on latest main before pushing
           git fetch origin main
-          if git rebase origin/main; then
-            git push origin main
-          else
-            # If rebase fails, try merge strategy
+          if ! git rebase origin/main; then
+            echo "Rebase failed, trying merge strategy"
             git rebase --abort || true
-            git pull origin main --no-rebase || true
-            git push origin main || git push origin main --force-with-lease
+            git pull origin main --no-rebase --no-edit || true
           fi
+          
+          # Push changes
+          git push origin main
 
