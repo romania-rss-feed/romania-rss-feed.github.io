@@ -152,14 +152,15 @@ def discover_new_accounts(known_usernames: List[str]) -> List[Dict]:
                     instance_domain = f"@{instance_name}"
                     instance_url = f"https://{instance_name}/"
                     
-                    # Check if URL contains instance domain
+                    # STRICT check: URL must contain instance URL
+                    # This ensures we only get truly local accounts
                     if url_field and instance_url in url_field:
-                        # Additional checks for local accounts
+                        # Additional strict checks for local accounts
                         if not acct or acct == "":
-                            # No acct field - check URL only
+                            # No acct field - check URL only (must contain instance URL)
                             is_local = instance_url in url_field
                         elif "@" not in acct:
-                            # Local account without domain (just username)
+                            # Local account without domain (just username) - must be local
                             is_local = True
                         elif acct == username:
                             # acct equals username (local)
@@ -167,9 +168,15 @@ def discover_new_accounts(known_usernames: List[str]) -> List[Dict]:
                         elif acct.endswith(instance_domain):
                             # Explicit local domain
                             is_local = True
-                        else:
-                            # Has @ but not matching instance - federated, skip
+                        elif "@" in acct and not acct.endswith(instance_domain):
+                            # Has @ but NOT matching instance - federated, skip
                             is_local = False
+                        else:
+                            # Default: not local if we can't confirm
+                            is_local = False
+                    else:
+                        # URL doesn't contain instance URL - not local
+                        is_local = False
                     
                     if is_local and username and username not in known_usernames:
                         # Add instance info to account data
