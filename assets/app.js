@@ -3,8 +3,10 @@
 const API_BASE = 'https://social.5th.ro/api/v1';
 let profilesData = [];
 let filteredProfiles = [];
-let displayedCount = 50; // Number of profiles to show per page
-const PROFILES_PER_PAGE = 50;
+// Detect if we're on homepage (20 profiles) or profiles page (50 profiles)
+const isHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html';
+const PROFILES_PER_PAGE = isHomePage ? 20 : 50;
+let displayedCount = PROFILES_PER_PAGE; // Number of profiles to show per page
 
 // Initialize app
 document.addEventListener('DOMContentLoaded', async () => {
