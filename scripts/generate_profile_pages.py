@@ -403,8 +403,9 @@ def main():
             display_name=display_name,
             username=html.escape(username),
             acct=html.escape(acct),
+            instance=html.escape(instance),
             description_meta=description_meta,
-            description=description,  # Keep HTML in description
+            description=description,  # Keep HTML in description (already has nofollow)
             avatar_html=avatar_html,
             statuses_count=format_number(profile.get("statuses_count", 0)),
             followers_count=format_number(profile.get("followers_count", 0)),
