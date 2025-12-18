@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   setupSearch();
   setupLoadMore();
   updateStats();
-  renderProfiles();
+  // Apply default random sort on initial load
+  applyFiltersAndSort();
 });
 
 // Load profiles data
@@ -50,14 +51,30 @@ function setupLoadMore() {
   }
 }
 
-// Handle search
-function handleSearch(e) {
-  const query = e.target.value.toLowerCase().trim();
+// Shuffle array using Fisher-Yates algorithm with random seed
+function shuffleArray(array) {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
+// Apply filters and sorting
+function applyFiltersAndSort(searchQuery = null) {
+  const searchInput = document.getElementById('searchInput');
+  const sortSelect = document.getElementById('sortSelect');
   
-  if (!query) {
-    filteredProfiles = [...profilesData];
-  } else {
-    filteredProfiles = profilesData.filter(profile => {
+  const query = searchQuery !== null ? searchQuery : (searchInput ? searchInput.value.toLowerCase().trim() : '');
+  const sortBy = sortSelect ? sortSelect.value : 'random';
+  
+  // Start with all profiles
+  let filtered = [...profilesData];
+  
+  // Apply search filter
+  if (query) {
+    filtered = filtered.filter(profile => {
       const name = (profile.display_name || profile.username || '').toLowerCase();
       const username = (profile.username || '').toLowerCase();
       const description = (profile.note || '').toLowerCase();
@@ -69,32 +86,49 @@ function handleSearch(e) {
     });
   }
   
+  // Apply instance filter (if sortBy is an instance)
+  if (sortBy === 'social.5th.ro' || sortBy === 'mstdn.ro') {
+    filtered = filtered.filter(profile => {
+      const instance = profile.instance || 'social.5th.ro';
+      return instance === sortBy;
+    });
+  }
+  
+  // Apply sorting
+  if (sortBy === 'random') {
+    filtered = shuffleArray(filtered);
+  } else if (sortBy !== 'social.5th.ro' && sortBy !== 'mstdn.ro') {
+    filtered.sort((a, b) => {
+      switch (sortBy) {
+        case 'name':
+          return (a.display_name || a.username || '').localeCompare(b.display_name || b.username || '');
+        case 'posts':
+          return (b.statuses_count || 0) - (a.statuses_count || 0);
+        case 'followers':
+          return (b.followers_count || 0) - (a.followers_count || 0);
+        case 'recent':
+          return new Date(b.created_at || 0) - new Date(a.created_at || 0);
+        default:
+          return 0;
+      }
+    });
+  }
+  
+  filteredProfiles = filtered;
   displayedCount = PROFILES_PER_PAGE; // Reset to first page
   updateResultsCount();
   renderProfiles();
 }
 
+// Handle search
+function handleSearch(e) {
+  const query = e.target.value.toLowerCase().trim();
+  applyFiltersAndSort(query);
+}
+
 // Handle sort
 function handleSort(e) {
-  const sortBy = e.target.value;
-  
-  filteredProfiles.sort((a, b) => {
-    switch (sortBy) {
-      case 'name':
-        return (a.display_name || a.username || '').localeCompare(b.display_name || b.username || '');
-      case 'posts':
-        return (b.statuses_count || 0) - (a.statuses_count || 0);
-      case 'followers':
-        return (b.followers_count || 0) - (a.followers_count || 0);
-      case 'recent':
-        return new Date(b.created_at || 0) - new Date(a.created_at || 0);
-      default:
-        return 0;
-    }
-  });
-  
-  displayedCount = PROFILES_PER_PAGE; // Reset to first page
-  renderProfiles();
+  applyFiltersAndSort();
 }
 
 // Load more profiles
@@ -229,7 +263,7 @@ function createProfileCard(profile) {
     <div class="profile-card">
       <div class="profile-header">
         <div class="profile-avatar">
-          ${avatar ? `<img src="${avatar}" alt="${displayName}" width="64" height="64" loading="lazy" decoding="async" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius);">
+          ${avatar ? `<img src="${avatar}" alt="${displayName}" width="64" height="64" loading="lazy" decoding="async" fetchpriority="low" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius);">
           <span style="display:none;">${avatarInitial}</span>` : `<span>${avatarInitial}</span>`}
         </div>
         <div class="profile-info">
