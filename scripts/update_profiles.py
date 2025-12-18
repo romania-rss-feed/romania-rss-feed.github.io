@@ -248,7 +248,7 @@ def main():
     print("\n🔍 Căutare profiluri noi...")
     new_accounts_data = discover_new_accounts(KNOWN_USERNAMES)
     
-    # Process new accounts from directory (they already have data)
+    # Process new accounts from directory (they already have complete data)
     new_profiles = []
     for account_data in new_accounts_data:
         profile = normalize_profile(account_data)
@@ -258,27 +258,39 @@ def main():
     profiles = existing_profiles.copy()
     existing_usernames = {p.get("username", "") for p in existing_profiles}
     
+    print(f"\n📊 Statistici inițiale:")
+    print(f"  - Profiluri existente: {len(existing_profiles)}")
+    print(f"  - Profiluri noi descoperite: {len(new_profiles)}")
+    
     # First, add new profiles from directory BEFORE updating existing ones
-    # This ensures new profiles are included even if update fails
+    # Use the data directly from directory - don't try to fetch again
     if new_profiles:
-        print(f"\n➕ Se adaugă {len(new_profiles)} profiluri noi din directory...")
+        print(f"\n➕ Se adaugă profiluri noi din directory...")
         added_count = 0
         skipped_count = 0
         for new_profile in new_profiles:
             username = new_profile.get("username", "")
             instance = new_profile.get("instance", PRIMARY_INSTANCE)
-            if username and username not in existing_usernames:
+            if not username:
+                skipped_count += 1
+                continue
+            if username not in existing_usernames:
+                # Add profile directly from directory data (already complete)
                 profiles.append(new_profile)
                 existing_usernames.add(username)
                 added_count += 1
                 if added_count <= 10:  # Show first 10
                     print(f"  ✅ {username} ({instance})")
+            else:
+                skipped_count += 1
         print(f"  📊 Adăugate {added_count} profiluri noi din {len(new_profiles)} descoperite")
         if skipped_count > 0:
             print(f"  ⚠️  Omise {skipped_count} profiluri (deja existente)")
+    else:
+        print("\n➕ Nu s-au găsit profiluri noi de adăugat")
     
-    # Update ALL existing profiles (not just KNOWN_USERNAMES)
-    # This ensures we keep updating profiles even if they disappear from directory
+    # Update ONLY existing profiles (not the newly discovered ones)
+    # New profiles already have complete data from directory
     print(f"\n📥 Se actualizează profilurile existente ({len(existing_profiles)} profiluri)...")
     
     updated_count = 0

@@ -53,12 +53,14 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git remote set-url origin https://x-access-token:${PAT}@github.com/${GITHUB_REPOSITORY}.git
+          git config --local credential.helper store
+          echo "https://x-access-token:${PAT}@github.com" > ~/.git-credentials
+          git remote set-url origin https://github.com/${GITHUB_REPOSITORY}.git
           git add data/ profiles/ feed.xml sitemap.xml
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
             git commit -m "Auto-update: profiles and feeds [skip ci]"
-            git push origin HEAD:main
+            git push https://x-access-token:${PAT}@github.com/${GITHUB_REPOSITORY}.git HEAD:main
           fi
 
