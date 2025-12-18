@@ -5,6 +5,7 @@ Generator pagini HTML pentru fiecare profil
 
 import json
 import html
+import re
 from pathlib import Path
 from datetime import datetime
 
@@ -187,6 +188,8 @@ def main():
         
         display_name = html.escape(profile.get("display_name", username))
         description = profile.get("note", "")
+        # Add nofollow to all links in description
+        description = add_nofollow_to_links(description)
         description_meta = html.escape(strip_html(description)[:200])
         instance = profile.get("instance", "social.5th.ro")
         
