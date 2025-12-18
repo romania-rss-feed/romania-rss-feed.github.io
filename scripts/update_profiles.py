@@ -124,16 +124,26 @@ def discover_new_accounts(known_usernames: List[str]) -> List[Dict]:
                     # Check if account is local to this instance
                     is_local = False
                     instance_domain = f"@{instance_name}"
+                    instance_url = f"https://{instance_name}/"
                     
-                    if url_field and instance_domain in url_field:
+                    # Check if URL contains instance domain
+                    if url_field and instance_url in url_field:
+                        # Additional checks for local accounts
                         if not acct or acct == "":
-                            is_local = True
+                            # No acct field - check URL only
+                            is_local = instance_url in url_field
                         elif "@" not in acct:
+                            # Local account without domain (just username)
                             is_local = True
                         elif acct == username:
+                            # acct equals username (local)
                             is_local = True
                         elif acct.endswith(instance_domain):
+                            # Explicit local domain
                             is_local = True
+                        else:
+                            # Has @ but not matching instance - federated, skip
+                            is_local = False
                     
                     if is_local and username and username not in known_usernames:
                         # Add instance info to account data
