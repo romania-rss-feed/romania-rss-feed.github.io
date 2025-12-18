@@ -257,25 +257,22 @@ def main():
     # Start with existing profiles
     profiles = existing_profiles.copy()
     
-    # Update existing profiles that are in KNOWN_USERNAMES
-    print(f"\n📥 Se actualizează profilurile existente...")
-    known_usernames_to_update = [u for u in KNOWN_USERNAMES if u in existing_usernames]
+    # Update ALL existing profiles (not just KNOWN_USERNAMES)
+    # This ensures we keep updating profiles even if they disappear from directory
+    print(f"\n📥 Se actualizează profilurile existente ({len(existing_profiles)} profiluri)...")
     
-    for i, username in enumerate(known_usernames_to_update, 1):
-        print(f"[{i}/{len(known_usernames_to_update)}] {username}...", end=" ")
-        # Try primary instance first, then secondary
-        account_data = None
-        instance_used = PRIMARY_INSTANCE
+    for i, existing_profile in enumerate(existing_profiles, 1):
+        username = existing_profile.get("username", "")
+        if not username:
+            continue
+            
+        print(f"[{i}/{len(existing_profiles)}] {username}...", end=" ")
+        instance_used = existing_profile.get("instance", PRIMARY_INSTANCE)
         
-        # Check existing profile to see which instance it's on
-        existing_profile = next((p for p in profiles if p.get("username") == username), None)
-        if existing_profile and existing_profile.get("instance"):
-            instance_used = existing_profile.get("instance")
-        
-        # Try current instance first
+        # Try to fetch updated data
         account_data = fetch_account(username, instance_used)
         
-        # If not found and not on primary, try primary (priority)
+        # If not found on current instance, try primary (priority)
         if not account_data and instance_used != PRIMARY_INSTANCE:
             account_data = fetch_account(username, PRIMARY_INSTANCE)
             if account_data:
@@ -287,9 +284,20 @@ def main():
             existing_idx = next((i for i, p in enumerate(profiles) if p.get("username") == username), None)
             if existing_idx is not None:
                 profiles[existing_idx] = profile
+            else:
+                # Profile not in list yet, add it
+                profiles.append(profile)
             print(f"✅ ({instance_used})")
         else:
+            # Keep existing profile even if we can't fetch new data
+            # This ensures profiles don't disappear if they become inactive
+            existing_idx = next((i for i, p in enumerate(profiles) if p.get("username") == username), None)
+            if existing_idx is None:
+                profiles.append(existing_profile)
             print("📋 (păstrat profil existent)")
+        
+        # Small delay to avoid rate limiting
+        time.sleep(0.2)
     
     # Add new profiles from directory (they already have complete data)
     if new_profiles:
