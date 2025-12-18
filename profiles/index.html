@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ro" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Explorator Profiluri — Romania RSS Feed</title>
+  <meta name="description" content="Explorează toate profilurile Mastodon de pe social.5th.ro. Caută, filtrează și descoperă profiluri interesante.">
+  <link rel="canonical" href="https://romania-rss-feed.github.io/profiles/">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <style>
+    .explorer-header {
+      margin-bottom: 40px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+    .explorer-title {
+      font-size: 36px;
+      font-weight: 700;
+      margin: 0 0 12px;
+      color: var(--text);
+    }
+    .explorer-subtitle {
+      font-size: 18px;
+      color: var(--text-muted);
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="/" aria-label="Romania RSS Feed homepage">
+        <svg class="brand-logo" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="14" fill="var(--accent)"/>
+          <path d="M16 8 L20 16 L16 20 L12 16 Z" fill="var(--bg)"/>
+        </svg>
+        <span>Romania RSS Feed</span>
+      </a>
+      <div class="nav-links">
+        <a href="/profiles/">Explorator</a>
+        <a href="/stats/">Statistici</a>
+        <a href="/feed.xml">RSS Feed</a>
+        <a href="https://social.5th.ro/" target="_blank" rel="noopener">Mastodon</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="explorer-header">
+      <h1 class="explorer-title">Explorator Profiluri</h1>
+      <p class="explorer-subtitle">Explorează toate profilurile Mastodon de pe social.5th.ro</p>
+    </div>
+
+    <section class="search-section">
+      <div class="search-card">
+        <h2>Caută Profiluri</h2>
+        <div class="search-controls">
+          <input 
+            id="searchInput" 
+            type="search" 
+            placeholder="Caută după nume, username, descriere…" 
+            aria-label="Caută profil"
+            autocomplete="off"
+          >
+          <div class="search-filters">
+            <select id="sortSelect" class="select" aria-label="Sortează">
+              <option value="name">Nume A-Z</option>
+              <option value="posts">Cele mai multe postări</option>
+              <option value="followers">Cei mai mulți urmăritori</option>
+              <option value="recent">Cele mai recente</option>
+            </select>
+          </div>
+        </div>
+        <div class="results-info">
+          <span id="resultsCount">0</span> profiluri găsite
+        </div>
+      </div>
+    </section>
+
+    <section class="profiles-section">
+      <div class="profiles-grid" id="profilesGrid" aria-live="polite">
+        <div class="loading">Se încarcă profilurile…</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Link-uri Rapide</h3>
+          <nav>
+            <a href="/">Acasă</a>
+            <a href="/profiles/">Explorator</a>
+            <a href="/stats/">Statistici</a>
+            <a href="/feed.xml">RSS Feed</a>
+          </nav>
+        </div>
+        <div class="footer-section">
+          <h3>Despre</h3>
+          <p>Romania RSS Feed este un explorator modern pentru profilurile Mastodon de pe social.5th.ro.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Server Mastodon</h3>
+          <a href="https://social.5th.ro/" target="_blank" rel="noopener">social.5th.ro</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Romania RSS Feed. Hub pentru profiluri Mastodon din România.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>
+

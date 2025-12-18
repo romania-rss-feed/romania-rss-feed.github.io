@@ -1,0 +1,18 @@
+# Configurare GitHub Pages (opțional, pentru Jekyll dacă este activat)
+# Site-ul este static, deci acest fișier este doar pentru referință
+
+title: Romania RSS Feed
+description: Explorator modern de profiluri Mastodon de pe social.5th.ro
+url: https://romania-rss-feed.github.io
+baseurl: ""
+
+# Setări SEO
+lang: ro
+locale: ro_RO
+
+# Exclude fișiere din build
+exclude:
+  - scripts/
+  - README.md
+  - .github/
+

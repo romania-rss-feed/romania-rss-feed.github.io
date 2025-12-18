@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ro" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 - Pagină negăsită — Romania RSS Feed</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <style>
+    .error-page {
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .error-code {
+      font-size: 120px;
+      font-weight: 700;
+      color: var(--accent);
+      margin: 0;
+      line-height: 1;
+    }
+    .error-message {
+      font-size: 24px;
+      color: var(--text);
+      margin: 20px 0;
+    }
+    .error-description {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="/">
+        <svg class="brand-logo" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="14" fill="var(--accent)"/>
+          <path d="M16 8 L20 16 L16 20 L12 16 Z" fill="var(--bg)"/>
+        </svg>
+        <span>Romania RSS Feed</span>
+      </a>
+      <div class="nav-links">
+        <a href="/profiles/">Explorator</a>
+        <a href="/stats/">Statistici</a>
+        <a href="/feed.xml">RSS Feed</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="error-page">
+      <div>
+        <h1 class="error-code">404</h1>
+        <p class="error-message">Pagină negăsită</p>
+        <p class="error-description">
+          Pagina pe care o cauți nu există sau a fost mutată.
+        </p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="/" class="btn btn-primary">Acasă</a>
+          <a href="/profiles/" class="btn btn-secondary">Explorator</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-bottom">
+        <p>&copy; 2025 Romania RSS Feed. Hub pentru profiluri Mastodon din România.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+

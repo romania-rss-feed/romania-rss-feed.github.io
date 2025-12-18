@@ -1,0 +1,52 @@
+name: Update Profiles
+
+on:
+  schedule:
+    # Rulează zilnic la 02:00 UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch: # Permite rulare manuală
+  push:
+    branches:
+      - main
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install requests
+      
+      - name: Update profiles
+        run: |
+          python3 scripts/update_profiles.py
+      
+      - name: Generate RSS feeds
+        run: |
+          python3 scripts/generate_rss.py
+      
+      - name: Generate profile pages
+        run: |
+          python3 scripts/generate_profile_pages.py
+      
+      - name: Generate sitemap
+        run: |
+          python3 scripts/generate_sitemap.py
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/ profiles/ feed.xml sitemap.xml
+          git diff --staged --quiet || git commit -m "Auto-update: profiles and feeds [skip ci]"
+          git push
+

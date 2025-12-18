@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://romania-rss-feed.github.io/sitemap.xml
+

@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ro" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Romania RSS Feed — Profiluri Mastodon social.5th.ro</title>
+  <meta name="description" content="Explorator modern de profiluri Mastodon de pe social.5th.ro. Descoperă feed-uri RSS, statistici utilizatori și server, și explorează conținutul din România.">
+  <meta name="keywords" content="mastodon romania, rss feed romania, social.5th.ro, feed mastodon, profiluri mastodon, rss romania, social media romania">
+  <meta name="author" content="Romania RSS Feed">
+  <meta name="theme-color" content="#282c37">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://romania-rss-feed.github.io/">
+  <link rel="alternate" type="application/rss+xml" title="Romania RSS Feed - Feed Principal" href="https://romania-rss-feed.github.io/feed.xml">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link rel="alternate icon" href="/assets/images/favicon.ico">
+  <link rel="preconnect" href="https://social.5th.ro" crossorigin>
+  <link rel="dns-prefetch" href="https://social.5th.ro">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Romania RSS Feed — Profiluri Mastodon social.5th.ro">
+  <meta property="og:description" content="Explorator modern de profiluri Mastodon de pe social.5th.ro cu feed-uri RSS și statistici">
+  <meta property="og:url" content="https://romania-rss-feed.github.io/">
+  <meta property="og:site_name" content="Romania RSS Feed">
+  <meta property="og:locale" content="ro_RO">
+  <meta property="og:image" content="https://romania-rss-feed.github.io/assets/images/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Romania RSS Feed">
+  <meta name="twitter:description" content="Explorator de profiluri Mastodon social.5th.ro">
+  <meta name="twitter:image" content="https://romania-rss-feed.github.io/assets/images/og-image.svg">
+  <style>
+    /* Critical CSS - Mastodon Dark Theme */
+    :root {
+      --bg: #282c37;
+      --bg-alt: #1f232b;
+      --surface: #313543;
+      --surface-2: #3c4151;
+      --text: #d9e1e8;
+      --text-muted: #9baec8;
+      --text-dim: #6d7a8c;
+      --border: rgba(217, 225, 232, 0.15);
+      --accent: #6364ff;
+      --accent-hover: #7b7cff;
+      --accent-2: #00d4aa;
+      --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.4);
+      --radius: 8px;
+      --radius-lg: 12px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 32px 80px;
+    }
+    @media (max-width: 768px) {
+      .container { padding: 32px 24px 64px; }
+    }
+  </style>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Romania RSS Feed",
+    "url": "https://romania-rss-feed.github.io",
+    "description": "Explorator modern de profiluri Mastodon de pe social.5th.ro",
+    "inLanguage": "ro"
+  }</script>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="/" aria-label="Romania RSS Feed homepage">
+        <svg class="brand-logo" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="14" fill="var(--accent)"/>
+          <path d="M16 8 L20 16 L16 20 L12 16 Z" fill="var(--bg)"/>
+        </svg>
+        <span>Romania RSS Feed</span>
+      </a>
+      <div class="nav-links">
+        <a href="/profiles/">Explorator</a>
+        <a href="/stats/">Statistici</a>
+        <a href="/feed.xml">RSS Feed</a>
+        <a href="https://social.5th.ro/" target="_blank" rel="noopener">Mastodon</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <h1 class="hero-title">Romania RSS Feed</h1>
+      <p class="hero-subtitle">
+        Explorator modern de profiluri Mastodon de pe <strong>social.5th.ro</strong>. 
+        Descoperă feed-uri RSS, statistici utilizatori și server, și explorează conținutul din România.
+      </p>
+      <div class="hero-actions">
+        <a href="/profiles/" class="btn btn-primary">Explorează Profiluri</a>
+        <a href="/stats/" class="btn btn-secondary">Vezi Statistici</a>
+      </div>
+    </section>
+
+    <section class="stats-overview">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <div class="stat-number" id="totalProfiles">0</div>
+          <div class="stat-label">Profiluri</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+          </div>
+          <div class="stat-number" id="totalPosts">0</div>
+          <div class="stat-label">Postări Totale</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </div>
+          <div class="stat-number" id="totalFollowers">0</div>
+          <div class="stat-label">Urmăritori Totali</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <div class="stat-number" id="activeProfiles">0</div>
+          <div class="stat-label">Profiluri Active</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-section">
+      <div class="search-card">
+        <h2>Caută Profiluri</h2>
+        <div class="search-controls">
+          <input 
+            id="searchInput" 
+            type="search" 
+            placeholder="Caută după nume, username, descriere…" 
+            aria-label="Caută profil"
+            autocomplete="off"
+          >
+          <div class="search-filters">
+            <select id="sortSelect" class="select" aria-label="Sortează">
+              <option value="name">Nume A-Z</option>
+              <option value="posts">Cele mai multe postări</option>
+              <option value="followers">Cei mai mulți urmăritori</option>
+              <option value="recent">Cele mai recente</option>
+            </select>
+          </div>
+        </div>
+        <div class="results-info">
+          <span id="resultsCount">0</span> profiluri găsite
+        </div>
+      </div>
+    </section>
+
+    <section class="profiles-section">
+      <div class="profiles-grid" id="profilesGrid" aria-live="polite">
+        <div class="loading">Se încarcă profilurile…</div>
+      </div>
+    </section>
+
+    <section class="features-section">
+      <h2 class="section-title">De ce să folosești Romania RSS Feed?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div>
+          <h3>Feed-uri RSS</h3>
+          <p>Accesează feed-uri RSS pentru fiecare profil Mastodon pentru integrare ușoară în cititoare de știri.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          </div>
+          <h3>Statistici Detaliate</h3>
+          <p>Vezi statistici despre utilizatori, postări, urmăritori și activitate pentru fiecare profil.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35"></path>
+            </svg>
+          </div>
+          <h3>Explorare Avansată</h3>
+          <p>Caută și filtrează profiluri după diverse criterii pentru a găsi exact ce cauți.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+          </div>
+          <h3>Actualizare Automată</h3>
+          <p>Profilurile noi de pe social.5th.ro sunt detectate și adăugate automat.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Link-uri Rapide</h3>
+          <nav>
+            <a href="/">Acasă</a>
+            <a href="/profiles/">Explorator</a>
+            <a href="/stats/">Statistici</a>
+            <a href="/feed.xml">RSS Feed</a>
+          </nav>
+        </div>
+        <div class="footer-section">
+          <h3>Despre</h3>
+          <p>Romania RSS Feed este un explorator modern pentru profilurile Mastodon de pe social.5th.ro.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Server Mastodon</h3>
+          <a href="https://social.5th.ro/" target="_blank" rel="noopener">social.5th.ro</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Romania RSS Feed. Hub pentru profiluri Mastodon din România.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>
+
