@@ -233,28 +233,21 @@
         if (before.match(/<[^>]*$/)) {
           return match; // Inside tag, don't modify
         }
-        // Create link to profile page with nofollow
+        // Determine rel attribute based on instance
+        // mstdn.ro: nofollow, social.5th.ro: dofollow (noopener only)
+        const relAttr = instance === 'mstdn.ro' ? 'nofollow noopener' : 'noopener';
         const profileUrl = '/profiles/' + encodeURIComponent(username) + '/';
-        return before + '<a href="' + profileUrl + '" rel="nofollow noopener">@' + username + '@' + instance + '</a>';
+        return before + '<a href="' + profileUrl + '" rel="' + relAttr + '">@' + username + '@' + instance + '</a>';
       });
       
-      // Replace all existing links in content with nofollow
+      // Replace all existing links in content with nofollow (except internal profile links we just created)
       content = content.replace(/<a\s+([^>]*?)>/gi, (match, attrs) => {
         const hrefMatch = attrs.match(/href="([^"]*)"/);
         const href = hrefMatch ? hrefMatch[1] : '';
         
-        // Skip if it's already an internal profile link we just created
+        // Skip if it's already an internal profile link we just created (they already have correct rel)
         if (href && href.startsWith('/profiles/')) {
-          // Internal profile link - ensure it has nofollow
-          if (!attrs.includes('rel=')) {
-            return '<a ' + attrs + ' rel="nofollow noopener">';
-          } else if (!attrs.includes('nofollow')) {
-            const relMatch = attrs.match(/rel="([^"]*)"/);
-            if (relMatch) {
-              return '<a ' + attrs.replace(/rel="[^"]*"/, 'rel="' + relMatch[1] + ' nofollow noopener"') + '>';
-            }
-          }
-          return match;
+          return match; // Keep as is, already processed
         }
         
         // All other links in content get nofollow
