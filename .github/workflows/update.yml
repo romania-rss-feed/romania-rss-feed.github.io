@@ -8,19 +8,20 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'data/profiles.json'
+      - 'scripts/*.py'
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     permissions:
       contents: write
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.PAT }}
-          fetch-depth: 0
       
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -29,6 +30,7 @@ jobs:
       
       - name: Install dependencies
         run: |
+          python -m pip install --upgrade pip
           pip install requests
       
       - name: Update profiles
@@ -48,46 +50,9 @@ jobs:
           python3 scripts/generate_sitemap.py
       
       - name: Commit and push changes
-        env:
-          PAT: ${{ secrets.PAT }}
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git config --local credential.helper store
-          echo "https://x-access-token:${PAT}@github.com" > ~/.git-credentials
-          git remote set-url origin https://x-access-token:${PAT}@github.com/${GITHUB_REPOSITORY}.git
-          
-          # Ensure we're on main branch
-          git checkout main
-          
-          # Fetch latest changes
-          git fetch origin main
-          
-          # Add changes
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/ profiles/ feed.xml sitemap.xml
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-            exit 0
-          fi
-          
-          # Commit changes
-          git commit -m "Auto-update: profiles and feeds [skip ci]"
-          
-          # Rebase onto latest origin/main
-          git fetch origin main
-          if ! git rebase origin/main; then
-            echo "Rebase failed, aborting and resetting"
-            git rebase --abort || true
-            git fetch origin main
-            git reset --hard origin/main
-            git add data/ profiles/ feed.xml sitemap.xml
-            git commit -m "Auto-update: profiles and feeds [skip ci]"
-          fi
-          
-          # Try push with force-with-lease first (safer)
-          # If that fails, use force push as fallback
-          git push --force-with-lease origin main || {
-            echo "Force-with-lease failed, using force push"
-            git push --force origin main
-          }
+          git diff --cached --quiet || (git commit -m "Auto-update: profiles and feeds [skip ci]" && git push)
 
