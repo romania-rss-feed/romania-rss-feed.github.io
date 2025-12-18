@@ -38,7 +38,7 @@
         </div>
         <div class="profile-details">
           <h1 class="profile-name-large">Bianca</h1>
-          <p class="profile-username-large">@Bianca0271@mstdn.ro</p>
+          <p class="profile-username-large"><a href="https://mstdn.ro/@Bianca0271" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">@Bianca0271@mstdn.ro</a></p>
           <div class="profile-description-large"><p>Young adult in love with nature and doing healthy things for a longer and happier life. I am here to open about my life and the thinks i get to do</p></div>
         </div>
       </div>
@@ -208,16 +208,35 @@
     }
     
     function renderPost(post) {
-      const content = addNofollowToLinks(post.content || '');
-      const createdAt = formatDate(post.created_at);
+      // Add nofollow to all links in post content (but keep Mastodon post link dofollow)
       const postUrl = post.url || `https://${profileData.instance}/@${profileData.username}/${post.id}`;
+      let content = post.content || '';
+      
+      // Replace all links in content with nofollow
+      content = content.replace(/<a\s+([^>]*?)>/gi, (match, attrs) => {
+        const hrefMatch = attrs.match(/href="([^"]*)"/);
+        const href = hrefMatch ? hrefMatch[1] : '';
+        
+        // All links in content get nofollow
+        if (!attrs.includes('rel=')) {
+          return '<a ' + attrs + ' rel="nofollow noopener">';
+        } else if (!attrs.includes('nofollow')) {
+          const relMatch = attrs.match(/rel="([^"]*)"/);
+          if (relMatch) {
+            return '<a ' + attrs.replace(/rel="[^"]*"/, 'rel="' + relMatch[1] + ' nofollow noopener"') + '>';
+          }
+        }
+        return match;
+      });
+      
+      const createdAt = formatDate(post.created_at);
       
       return `
         <div class="post-item" style="padding: 20px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-lg);">
           <div style="display: flex; gap: 12px; margin-bottom: 12px;">
             <div style="flex: 1;">
               <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 8px;">
-                <a href="${postUrl}" target="_blank" rel="nofollow noopener" style="color: var(--text-muted); text-decoration: none;">
+                <a href="${postUrl}" target="_blank" rel="noopener" style="color: var(--text-muted); text-decoration: none;">
                   ${createdAt}
                 </a>
               </div>
@@ -227,7 +246,7 @@
             </div>
           </div>
           <div style="display: flex; gap: 16px; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border);">
-            <a href="${postUrl}" target="_blank" rel="nofollow noopener" style="display: inline-flex; align-items: center; gap: 6px; color: var(--text-muted); text-decoration: none; font-size: 14px;">
+            <a href="${postUrl}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 6px; color: var(--text-muted); text-decoration: none; font-size: 14px;">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                 <polyline points="15 3 21 3 21 9"></polyline>
