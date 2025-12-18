@@ -75,14 +75,15 @@ def discover_new_accounts(known_usernames: List[str]) -> List[Dict]:
                 url_field = account.get("url", "")
                 
                 # Strict filter: only local accounts
-                # Check if URL contains @social.5th.ro or acct has no @
+                # Must have URL with @social.5th.ro AND (acct without @ OR acct == username)
                 is_local = False
-                if url_field and "@social.5th.ro" in url_field:
-                    # URL confirms it's local
-                    is_local = True
+                
+                # First check: URL must contain @social.5th.ro
+                if not url_field or "@social.5th.ro" not in url_field:
+                    is_local = False
                 elif not acct or acct == "":
-                    # No acct field - assume local if URL is local
-                    is_local = "@social.5th.ro" in url_field if url_field else False
+                    # No acct field but URL is local - assume local
+                    is_local = True
                 elif "@" not in acct:
                     # Local account without domain (just username)
                     is_local = True
@@ -156,41 +157,33 @@ def main():
         profile = normalize_profile(account_data)
         new_profiles.append(profile)
     
-    # Get all usernames to fetch/update
-    all_usernames = list(set(KNOWN_USERNAMES + [p.get("username") for p in new_profiles]))
+    # Start with existing profiles
+    profiles = existing_profiles.copy()
     
-    # Fetch/update all profiles
-    print(f"\n📥 Se descarcă date pentru {len(all_usernames)} profiluri...")
-    profiles = []
+    # Update existing profiles and add new ones
+    print(f"\n📥 Se actualizează {len(existing_profiles)} profiluri existente și se adaugă {len(new_profiles)} noi...")
     
-    # First, add new profiles from directory
-    profiles.extend(new_profiles)
-    
-    # Then fetch/update existing and known profiles
-    for i, username in enumerate(all_usernames, 1):
-        # Skip if already added from directory
-        if any(p.get("username") == username for p in profiles):
-            continue
-            
-        print(f"[{i}/{len(all_usernames)}] {username}...", end=" ")
+    # Update existing profiles from KNOWN_USERNAMES
+    known_usernames_to_update = [u for u in KNOWN_USERNAMES if u in existing_usernames]
+    for i, username in enumerate(known_usernames_to_update, 1):
+        print(f"[{i}/{len(known_usernames_to_update)}] {username}...", end=" ")
         account_data = fetch_account(username)
         if account_data:
             profile = normalize_profile(account_data)
-            # Update if exists, otherwise add
+            # Update existing profile
             existing_idx = next((i for i, p in enumerate(profiles) if p.get("username") == username), None)
             if existing_idx is not None:
                 profiles[existing_idx] = profile
-            else:
-                profiles.append(profile)
             print("✅")
         else:
-            # Keep existing profile if available
-            existing = next((p for p in existing_profiles if p.get("username") == username), None)
-            if existing:
-                profiles.append(existing)
-                print("📋 (folosit profil existent)")
-            else:
-                print("❌")
+            print("📋 (păstrat profil existent)")
+    
+    # Add new profiles from directory
+    for new_profile in new_profiles:
+        username = new_profile.get("username")
+        if username and not any(p.get("username") == username for p in profiles):
+            profiles.append(new_profile)
+            print(f"  ✅ Adăugat profil nou: {username}")
     
     # Sort by username
     profiles.sort(key=lambda x: x.get("username", "").lower())
