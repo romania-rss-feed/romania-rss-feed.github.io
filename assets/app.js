@@ -208,7 +208,7 @@ function createProfileCard(profile) {
         </div>
         <div class="profile-info">
           <h3 class="profile-name">${escapeHtml(displayName)}</h3>
-          <p class="profile-username">@${escapeHtml(username)}</p>
+          <p class="profile-username">@${escapeHtml(profile.acct || `${username}@${instance}`)}</p>
         </div>
       </div>
       <p class="profile-description">${escapeHtml(stripHtml(description))}</p>

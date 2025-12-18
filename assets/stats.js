@@ -72,7 +72,7 @@ function renderTopProfiles() {
           <div class="top-profile-rank">#${index + 1}</div>
           <div>
             <div class="top-profile-name">${escapeHtml(profile.display_name || profile.username)}</div>
-            <div style="font-size: 14px; color: var(--text-muted);">@${escapeHtml(profile.username)}</div>
+            <div style="font-size: 14px; color: var(--text-muted);">@${escapeHtml(profile.acct || `${profile.username}@${profile.instance || 'social.5th.ro'}`)}</div>
           </div>
         </div>
         <div class="top-profile-stat">${formatNumber(profile.statuses_count || 0)}</div>
@@ -93,7 +93,7 @@ function renderTopProfiles() {
           <div class="top-profile-rank">#${index + 1}</div>
           <div>
             <div class="top-profile-name">${escapeHtml(profile.display_name || profile.username)}</div>
-            <div style="font-size: 14px; color: var(--text-muted);">@${escapeHtml(profile.username)}</div>
+            <div style="font-size: 14px; color: var(--text-muted);">@${escapeHtml(profile.acct || `${profile.username}@${profile.instance || 'social.5th.ro'}`)}</div>
           </div>
         </div>
         <div class="top-profile-stat">${formatNumber(profile.followers_count || 0)}</div>

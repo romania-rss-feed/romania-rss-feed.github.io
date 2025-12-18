@@ -199,11 +199,21 @@ def normalize_profile(account_data: Dict) -> Dict:
     
     # Determine instance from URL if not set
     url_field = account_data.get("url", "")
+    acct_field = account_data.get("acct", "")
+    
     if not instance:
         if f"@{SECONDARY_INSTANCE}" in url_field:
             instance = SECONDARY_INSTANCE
         else:
             instance = PRIMARY_INSTANCE
+    
+    # Build acct (username@instance) for display
+    if acct_field and "@" in acct_field:
+        # Already has instance in acct
+        acct = acct_field
+    else:
+        # Build acct from username and instance
+        acct = f"{username}@{instance}"
     
     # Build URLs based on instance
     if instance == SECONDARY_INSTANCE:
@@ -216,6 +226,7 @@ def normalize_profile(account_data: Dict) -> Dict:
     return {
         "id": str(account_data.get("id", "")),
         "username": username,
+        "acct": acct,  # Full account identifier: username@instance
         "display_name": account_data.get("display_name", ""),
         "note": account_data.get("note", ""),
         "avatar": account_data.get("avatar", ""),

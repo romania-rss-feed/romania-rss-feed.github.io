@@ -13,7 +13,7 @@ PROFILE_TEMPLATE = """<!doctype html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>{display_name} (@{username}) — Romania RSS Feed</title>
+  <title>{display_name} (@{acct}) — Romania RSS Feed</title>
   <meta name="description" content="{description_meta}">
   <link rel="canonical" href="https://romania-rss-feed.github.io/profiles/{username}/">
   <link rel="alternate" type="application/rss+xml" title="{display_name} RSS" href="{rss_url}">
@@ -47,7 +47,7 @@ PROFILE_TEMPLATE = """<!doctype html>
         </div>
         <div class="profile-details">
           <h1 class="profile-name-large">{display_name}</h1>
-          <p class="profile-username-large">@{username}</p>
+          <p class="profile-username-large">@{acct}</p>
           <div class="profile-description-large">{description}</div>
         </div>
       </div>
@@ -190,6 +190,11 @@ def main():
         description_meta = html.escape(strip_html(description)[:200])
         instance = profile.get("instance", "social.5th.ro")
         
+        # Get acct (username@instance) or build it
+        acct = profile.get("acct", "")
+        if not acct:
+            acct = f"{username}@{instance}"
+        
         avatar = profile.get("avatar", "")
         if avatar:
             avatar_html = f'<img src="{html.escape(avatar)}" alt="{display_name}" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-lg);" onerror="this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';">\n          <span style="display:none;">{display_name[0].upper() if display_name else "?"}</span>'
@@ -202,6 +207,7 @@ def main():
         html_content = PROFILE_TEMPLATE.format(
             display_name=display_name,
             username=html.escape(username),
+            acct=html.escape(acct),
             description_meta=description_meta,
             description=description,  # Keep HTML in description
             avatar_html=avatar_html,
