@@ -3,9 +3,9 @@
 const API_BASE = 'https://social.5th.ro/api/v1';
 let profilesData = [];
 let filteredProfiles = [];
-// Detect if we're on homepage (20 profiles) or profiles page (50 profiles)
+// Detect if we're on homepage (18 profiles) or profiles page (50 profiles)
 const isHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html';
-const PROFILES_PER_PAGE = isHomePage ? 20 : 50;
+const PROFILES_PER_PAGE = isHomePage ? 18 : 50;
 let displayedCount = PROFILES_PER_PAGE; // Number of profiles to show per page
 
 // Initialize app
@@ -14,7 +14,13 @@ document.addEventListener('DOMContentLoaded', async () => {
   setupSearch();
   setupLoadMore();
   updateStats();
-  // Apply default random sort on initial load
+  // Apply default filter (social.5th.ro on homepage, random on profiles page)
+  if (isHomePage) {
+    const sortSelect = document.getElementById('sortSelect');
+    if (sortSelect) {
+      sortSelect.value = 'social.5th.ro';
+    }
+  }
   applyFiltersAndSort();
 });
 
