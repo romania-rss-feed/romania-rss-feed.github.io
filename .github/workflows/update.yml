@@ -19,7 +19,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_PAT }}
+          token: ${{ secrets.PAT }}
           fetch-depth: 0
       
       - name: Set up Python
@@ -49,11 +49,11 @@ jobs:
       
       - name: Commit and push changes
         env:
-          GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+          PAT: ${{ secrets.PAT }}
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git remote set-url origin https://x-access-token:${GITHUB_PAT}@github.com/${GITHUB_REPOSITORY}.git
+          git remote set-url origin https://x-access-token:${PAT}@github.com/${GITHUB_REPOSITORY}.git
           git add data/ profiles/ feed.xml sitemap.xml
           if git diff --staged --quiet; then
             echo "No changes to commit"
