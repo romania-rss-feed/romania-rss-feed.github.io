@@ -13,7 +13,7 @@
       "stats": {
         "user_count": 50,
         "status_count": 464,
-        "domain_count": 3134
+        "domain_count": 3136
       },
       "thumbnail": "https://social.5th.ro/system/site_uploads/files/000/000/001/@1x/25c338cdf66d8208.png",
       "languages": [
@@ -327,6 +327,6 @@
   },
   "total_users": 253,
   "total_statuses": 8168,
-  "total_domains": 29291,
+  "total_domains": 29293,
   "version": "4.6.0-alpha.1"
 }
