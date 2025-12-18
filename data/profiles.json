@@ -2,6 +2,7 @@
   {
     "id": "115678699565308367",
     "username": "5th",
+    "acct": "5th@social.5th.ro",
     "display_name": "5th Social",
     "note": "<p>Admin of <a href=\"https://social.5th.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">social.5th.ro</span><span class=\"invisible\"></span></a></p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/678/699/565/308/367/original/bca3a807019e8558.png",
@@ -18,6 +19,7 @@
   {
     "id": "115689637480904413",
     "username": "9z",
+    "acct": "9z@social.5th.ro",
     "display_name": "9z Blog",
     "note": "<p><a href=\"https://9z.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">9z.ro</span><span class=\"invisible\"></span></a> este un blog-magazin online cu advertoriale SEO, comunicate de presă, știri, recomandări, lifestyle, pariuri sportive și business. Conținut clar, optimizat și ușor de citit, pentru branduri și cititori care vor informație utilă, nu doar clickbait. 📰🚀</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/689/637/480/904/413/original/325aaa44b2569c3f.png",
@@ -34,6 +36,7 @@
   {
     "id": "109524981586186042",
     "username": "a",
+    "acct": "a@mstdn.ro",
     "display_name": "adrian",
     "note": "",
     "avatar": "https://mstdn.ro/system/accounts/avatars/109/524/981/586/186/042/original/81554b2c0df083fc.jpg",
@@ -50,6 +53,7 @@
   {
     "id": "114112103058022390",
     "username": "adelinuss",
+    "acct": "adelinuss@mstdn.ro",
     "display_name": "Adelin VIRGILIU",
     "note": "",
     "avatar": "https://mstdn.ro/avatars/original/missing.png",
@@ -66,6 +70,7 @@
   {
     "id": "115679045263044571",
     "username": "advertorial",
+    "acct": "advertorial@social.5th.ro",
     "display_name": "Advertorials Romania",
     "note": "<p>Advertorial</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/679/045/263/044/571/original/06631fe76ea9204a.png",
@@ -80,24 +85,9 @@
     "instance": "social.5th.ro"
   },
   {
-    "id": "115524506442514342",
-    "username": "afaceri",
-    "display_name": "Top afaceri Romania",
-    "note": "<p><a href=\"https://iafaceri.ro/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">iafaceri.ro/</span><span class=\"invisible\"></span></a> <a href=\"https://iafaceri.ro/contact-iafaceri/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">iafaceri.ro/contact-iafaceri/</span><span class=\"invisible\"></span></a></p>",
-    "avatar": "https://mstdn.ro/avatars/original/missing.png",
-    "header": "https://mstdn.ro/headers/original/missing.png",
-    "statuses_count": 24,
-    "followers_count": 1,
-    "following_count": 13,
-    "created_at": "2025-11-10T00:00:00.000Z",
-    "last_status_at": "2025-12-17",
-    "url": "https://mstdn.ro/@afaceri",
-    "rss_url": "https://mstdn.ro/@afaceri.rss",
-    "instance": "mstdn.ro"
-  },
-  {
     "id": "115690002235483764",
     "username": "afaceri24",
+    "acct": "afaceri24@social.5th.ro",
     "display_name": "Afaceri 24/7",
     "note": "<p><a href=\"https://Afaceri24.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">Afaceri24.ro</span><span class=\"invisible\"></span></a> – hub de promovare pentru <a href=\"https://social.5th.ro/tags/afaceri\" class=\"mention hashtag\" rel=\"tag\">#<span>afaceri</span></a> locale și online. Locul unde antreprenorii își pot prezenta brandul, ofertele, serviciile și poveștile de business, prin articole, comunicate și recomandări. Un spațiu dedicat vizibilității și colaborărilor <a href=\"https://social.5th.ro/tags/B2B\" class=\"mention hashtag\" rel=\"tag\">#<span>B2B</span></a> 📊</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/690/002/235/483/764/original/b38d6f5589a7849d.png",
@@ -112,8 +102,26 @@
     "instance": "social.5th.ro"
   },
   {
+    "id": "115524506442514342",
+    "username": "afaceri",
+    "acct": "afaceri@mstdn.ro",
+    "display_name": "Top afaceri Romania",
+    "note": "<p><a href=\"https://iafaceri.ro/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">iafaceri.ro/</span><span class=\"invisible\"></span></a> <a href=\"https://iafaceri.ro/contact-iafaceri/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">iafaceri.ro/contact-iafaceri/</span><span class=\"invisible\"></span></a></p>",
+    "avatar": "https://mstdn.ro/avatars/original/missing.png",
+    "header": "https://mstdn.ro/headers/original/missing.png",
+    "statuses_count": 24,
+    "followers_count": 1,
+    "following_count": 13,
+    "created_at": "2025-11-10T00:00:00.000Z",
+    "last_status_at": "2025-12-17",
+    "url": "https://mstdn.ro/@afaceri",
+    "rss_url": "https://mstdn.ro/@afaceri.rss",
+    "instance": "mstdn.ro"
+  },
+  {
     "id": "115706058281920699",
     "username": "afaceri_top",
+    "acct": "afaceri_top@social.5th.ro",
     "display_name": "Afaceri TOP",
     "note": "<p><a href=\"https://afaceritop.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">afaceritop.ro</span><span class=\"invisible\"></span></a> – selecție de afaceri, interviuri, studii de caz, idei și resurse pentru antreprenori. Un hub unde descoperi branduri, proiecte și oameni care construiesc business-uri solide în România. 📊🏆</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/706/058/281/920/699/original/ed1cff1c2d6ae4c8.png",
@@ -130,6 +138,7 @@
   {
     "id": "115689922846154038",
     "username": "AfaceriProfi",
+    "acct": "AfaceriProfi@social.5th.ro",
     "display_name": "Promovare afaceri",
     "note": "<p>📈 <a href=\"https://AfaceriProfi.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">AfaceriProfi.ro</span><span class=\"invisible\"></span></a> – blog de <a href=\"https://social.5th.ro/tags/afaceri\" class=\"mention hashtag\" rel=\"tag\">#<span>afaceri</span></a>  <a href=\"https://social.5th.ro/tags/marketing\" class=\"mention hashtag\" rel=\"tag\">#<span>marketing</span></a> și <a href=\"https://social.5th.ro/tags/antreprenoriat\" class=\"mention hashtag\" rel=\"tag\">#<span>antreprenoriat</span></a></p><p>📈Articole, studii de caz și ghiduri practice pentru antreprenori, freelanceri și mici companii care vor mai multă vizibilitate, clienți și profit, nu doar teorie.</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/689/922/846/154/038/original/a935e0e48d9d620e.png",
@@ -146,6 +155,7 @@
   {
     "id": "115694930041664688",
     "username": "ai_advertising",
+    "acct": "ai_advertising@social.5th.ro",
     "display_name": "AI Advertising",
     "note": "<p><a href=\"https://aiadvertising.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">aiadvertising.ro</span><span class=\"invisible\"></span></a> – idei, ghiduri și studii de caz despre reclame făcute cu ajutorul AI: automatizare, creativitate, targetare, optimizare bugete și campanii smart pentru branduri de toate dimensiunile. 🤖📈</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/694/930/041/664/688/original/145238bf98a4606c.png",
@@ -162,6 +172,7 @@
   {
     "id": "109394191696730607",
     "username": "aiurea",
+    "acct": "aiurea@mstdn.ro",
     "display_name": "Adalbert",
     "note": "<p>Golitor de conținut</p>",
     "avatar": "https://mstdn.ro/system/accounts/avatars/109/394/191/696/730/607/original/dd18d206101e221c.jpg",
@@ -178,6 +189,7 @@
   {
     "id": "112570444776526165",
     "username": "AlinConstantinCimpian",
+    "acct": "AlinConstantinCimpian@mstdn.ro",
     "display_name": "Alin Constantin Cimpian",
     "note": "",
     "avatar": "https://mstdn.ro/avatars/original/missing.png",
@@ -194,6 +206,7 @@
   {
     "id": "115694581942789300",
     "username": "AntreprenorCLUB",
+    "acct": "AntreprenorCLUB@social.5th.ro",
     "display_name": "Antreprenor CLUB",
     "note": "<p><a href=\"https://AntreprenorClub.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">AntreprenorClub.ro</span><span class=\"invisible\"></span></a> – comunitate pentru antreprenori, freelanceri și oameni de business. Idei de afaceri, studii de caz, marketing, management, mindset și povești reale din mediul antreprenorial românesc. 💼🤝</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/694/581/942/789/300/original/2e91cd783119f2c4.png",
@@ -210,6 +223,7 @@
   {
     "id": "115688956430743476",
     "username": "ArtaConstructiilor",
+    "acct": "ArtaConstructiilor@social.5th.ro",
     "display_name": "Arta Constructiilor",
     "note": "<p>Arhitectură, design și inginerie privite ca artă a spațiului construit. Idei, detalii tehnice și exemple de proiecte care îmbină estetica, funcționalitatea și durabilitatea. 🏗️✨</p><p><a href=\"https://arta-constructiilor.ro/constructii/amenajari\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">arta-constructiilor.ro/constru</span><span class=\"invisible\">ctii/amenajari</span></a></p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/688/956/430/743/476/original/2f7183ed02377ba9.jpg",
@@ -226,6 +240,7 @@
   {
     "id": "115706400831656637",
     "username": "banat",
+    "acct": "banat@social.5th.ro",
     "display_name": "Banat",
     "note": "<p><a href=\"https://banat-news.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">banat-news.ro</span><span class=\"invisible\"></span></a> – știri, reportaje și povești din Banat: Timișoara și orașele din jur, sate, infrastructură, economie, cultură, comunități și afaceri locale. Noutăți dintr-o regiune mereu în mișcare. 🌾🏙️<br /><a href=\"https://social.5th.ro/tags/politic\" class=\"mention hashtag\" rel=\"tag\">#<span>politic</span></a> <a href=\"https://social.5th.ro/tags/turism\" class=\"mention hashtag\" rel=\"tag\">#<span>turism</span></a> <a href=\"https://social.5th.ro/tags/stiri\" class=\"mention hashtag\" rel=\"tag\">#<span>stiri</span></a> <a href=\"https://social.5th.ro/tags/banat\" class=\"mention hashtag\" rel=\"tag\">#<span>banat</span></a> <a href=\"https://social.5th.ro/tags/timisoara\" class=\"mention hashtag\" rel=\"tag\">#<span>timisoara</span></a></p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/706/400/831/656/637/original/caa9d2736edba319.png",
@@ -242,6 +257,7 @@
   {
     "id": "113360606889639756",
     "username": "Bianca0271",
+    "acct": "Bianca0271@mstdn.ro",
     "display_name": "Bianca",
     "note": "<p>Young adult in love with nature and doing healthy things for a longer and happier life. I am here to open about my life and the thinks i get to do</p>",
     "avatar": "https://mstdn.ro/avatars/original/missing.png",
@@ -258,6 +274,7 @@
   {
     "id": "109426469802410223",
     "username": "biziday",
+    "acct": "biziday@mstdn.ro",
     "display_name": "Biziday",
     "note": "<p>Acest cont a fost dezactivat!<br />Reason: third party content posting.</p>",
     "avatar": "https://mstdn.ro/system/accounts/avatars/109/426/469/802/410/223/original/d2a62cfb2e27e41e.png",
@@ -274,6 +291,7 @@
   {
     "id": "115690208061769219",
     "username": "BIZWoman",
+    "acct": "BIZWoman@social.5th.ro",
     "display_name": "BIZ Woman",
     "note": "<p><a href=\"https://BizWoman.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">BizWoman.ro</span><span class=\"invisible\"></span></a> – spațiu online dedicat femeilor <a href=\"https://social.5th.ro/tags/antreprenor\" class=\"mention hashtag\" rel=\"tag\">#<span>antreprenor</span></a> din <a href=\"https://social.5th.ro/tags/Rom%C3%A2nia\" class=\"mention hashtag\" rel=\"tag\">#<span>România</span></a> - Inspirație, motivație, povești de succes, articole de afaceri, marketing, carieră și stil de viață, ca să îți lansezi și dezvolți afacerea cu încredere. 💼✨</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/690/208/061/769/219/original/d0c1fe0263617693.png",
@@ -290,6 +308,7 @@
   {
     "id": "114925878763477001",
     "username": "Blind__Coyote",
+    "acct": "Blind__Coyote@mstdn.ro",
     "display_name": "Blind°°Coyote",
     "note": "<p>BlindººCoyote is a Dutch-born tonemaster/producer previously located in the U.S. and in Brussels, but now working from his studio in southeastern Spain. He started out with analogue modular synthesizers and tape loops in the late 1970´s and has evolved along with the progressions of electronic music up until today, yet taking a rather personal approach.</p>",
     "avatar": "https://mstdn.ro/system/accounts/avatars/114/925/878/763/477/001/original/8908ab41cfd04eee.png",
@@ -306,6 +325,7 @@
   {
     "id": "109341321629878844",
     "username": "BoardingPass",
+    "acct": "BoardingPass@mstdn.ro",
     "display_name": "BoardingPass",
     "note": "<p>🇷🇴 <a href=\"https://mstdn.ro/tags/Romania\" class=\"mention hashtag\" rel=\"tag\">#<span>Romania</span></a>&#39;s leading aviation news website. Sharing news on Instagram, Facebook, LinkedIn, WhatsApp Channels and Telegram. Read our <a href=\"https://mstdn.ro/tags/dinavia%C8%9Bie\" class=\"mention hashtag\" rel=\"tag\">#<span>dinaviație</span></a> newsletter on www.DinAviatie.ro.</p>",
     "avatar": "https://mstdn.ro/system/accounts/avatars/109/341/321/629/878/844/original/bbe299985dd81c18.jpeg",
@@ -322,6 +342,7 @@
   {
     "id": "115176118522460464",
     "username": "bobelino",
+    "acct": "bobelino@mstdn.ro",
     "display_name": "bobe",
     "note": "",
     "avatar": "https://mstdn.ro/system/accounts/avatars/115/176/118/522/460/464/original/e9cf45297711e000.jpg",
@@ -338,6 +359,7 @@
   {
     "id": "109325267680599758",
     "username": "bogdan",
+    "acct": "bogdan@mstdn.ro",
     "display_name": "Bogdan",
     "note": "<p>👨‍💻software engineer &amp; 🤖cybersecurity pro _<br /><a href=\"https://mstdn.ro/tags/csharp\" class=\"mention hashtag\" rel=\"tag\">#<span>csharp</span></a> <a href=\"https://mstdn.ro/tags/python\" class=\"mention hashtag\" rel=\"tag\">#<span>python</span></a> <a href=\"https://mstdn.ro/tags/golang\" class=\"mention hashtag\" rel=\"tag\">#<span>golang</span></a> | <a href=\"https://mstdn.ro/tags/kubernetes\" class=\"mention hashtag\" rel=\"tag\">#<span>kubernetes</span></a> <a href=\"https://mstdn.ro/tags/azure\" class=\"mention hashtag\" rel=\"tag\">#<span>azure</span></a></p><p>I&#39;m an INTP so I am awkward and lazy 😂</p><p>439.100MHz / 145.2875MHz - YO7RUN</p>",
     "avatar": "https://mstdn.ro/system/accounts/avatars/109/325/267/680/599/758/original/1c11b66f337826f1.png",
@@ -354,6 +376,7 @@
   {
     "id": "115706134726280369",
     "username": "brasov",
+    "acct": "brasov@social.5th.ro",
     "display_name": "Brașov",
     "note": "<p><a href=\"https://brasov-azi.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">brasov-azi.ro</span><span class=\"invisible\"></span></a> – știri, reportaje și povești despre Brașov: oraș, cartiere, oameni, evenimente, business local și turism. Tot ce merită văzut, știut și discutat azi în Brașov. 🏔️🏰</p><p><a href=\"https://social.5th.ro/tags/stiri\" class=\"mention hashtag\" rel=\"tag\">#<span>stiri</span></a> <a href=\"https://social.5th.ro/tags/turism\" class=\"mention hashtag\" rel=\"tag\">#<span>turism</span></a> <a href=\"https://social.5th.ro/tags/politica\" class=\"mention hashtag\" rel=\"tag\">#<span>politica</span></a></p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/706/134/726/280/369/original/3752aee740060cc1.png",
@@ -370,6 +393,7 @@
   {
     "id": "115706319727057741",
     "username": "bucovina",
+    "acct": "bucovina@social.5th.ro",
     "display_name": "Bucovina",
     "note": "<p><a href=\"https://bucovina-news.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">bucovina-news.ro</span><span class=\"invisible\"></span></a> – știri, reportaje, interviuri și povești din Bucovina: orașe și sate, tradiții, turism, natură, oameni și afaceri locale. Un hub de informații pentru cei care iubesc Bucovina, de acasă sau de departe.</p><p><a href=\"https://social.5th.ro/tags/politica\" class=\"mention hashtag\" rel=\"tag\">#<span>politica</span></a> <a href=\"https://social.5th.ro/tags/turism\" class=\"mention hashtag\" rel=\"tag\">#<span>turism</span></a> <a href=\"https://social.5th.ro/tags/stiri\" class=\"mention hashtag\" rel=\"tag\">#<span>stiri</span></a></p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/706/319/727/057/741/original/7c99d72d9c88c2ff.png",
@@ -386,6 +410,7 @@
   {
     "id": "115695049303152388",
     "username": "cetatean_model",
+    "acct": "cetatean_model@social.5th.ro",
     "display_name": "Cetatean Model",
     "note": "<p><a href=\"https://cetateanmodel.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">cetateanmodel.ro</span><span class=\"invisible\"></span></a> – platformă despre civism, responsabilitate, bun-simț, implicare și respect pentru comunitate. Articole despre drepturi și obligații, mediu, voluntariat, educație și exemple pozitive de „cetățeni model”. 🧭</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/695/049/303/152/388/original/83269aa99cacf193.png",
@@ -402,6 +427,7 @@
   {
     "id": "114165449348217504",
     "username": "chryscrz",
+    "acct": "chryscrz@mstdn.ro",
     "display_name": "Cristi P",
     "note": "",
     "avatar": "https://mstdn.ro/avatars/original/missing.png",
@@ -418,6 +444,7 @@
   {
     "id": "115694812204929215",
     "username": "clasici",
+    "acct": "clasici@social.5th.ro",
     "display_name": "Clasici",
     "note": "<p><a href=\"https://clasici.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">clasici.ro</span><span class=\"invisible\"></span></a> – locul unde se întâlnesc literatura clasică, autorii mari, cărțile esențiale și ideile care au modelat cultura. Citate, recomandări de lectură, rezumate și articole pentru iubitorii de carte adevărată. 📚</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/694/812/204/929/215/original/c7c95ca094091949.png",
@@ -434,6 +461,7 @@
   {
     "id": "115694625121248796",
     "username": "clinic_sanatos",
+    "acct": "clinic_sanatos@social.5th.ro",
     "display_name": "clinic sanatos",
     "note": "<p><a href=\"https://clinic-sanatos.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">clinic-sanatos.ro</span><span class=\"invisible\"></span></a> – articole de sănătate, prevenție, analize, tratamente și stil de viață echilibrat. Explicăm pe înțelesul tuturor ce spun medicii, rezultatele și recomandările, ca să poți avea grijă mai bine de tine și de familie. 🩺🌿</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/694/625/121/248/796/original/489e4dc951f3f237.png",
@@ -450,6 +478,7 @@
   {
     "id": "115706228494894065",
     "username": "cluj",
+    "acct": "cluj@social.5th.ro",
     "display_name": "Cluj",
     "note": "<p><a href=\"https://cluj-azi.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">cluj-azi.ro</span><span class=\"invisible\"></span></a> – știri, reportaje și povești din Cluj: oraș, cartiere, campusuri, tech, cultură, evenimente și business local. Pulse-ul zilnic al Clujului, într-un singur loc.</p><p><a href=\"https://social.5th.ro/tags/stiri\" class=\"mention hashtag\" rel=\"tag\">#<span>stiri</span></a> <a href=\"https://social.5th.ro/tags/politica\" class=\"mention hashtag\" rel=\"tag\">#<span>politica</span></a> <a href=\"https://social.5th.ro/tags/turism\" class=\"mention hashtag\" rel=\"tag\">#<span>turism</span></a></p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/706/228/494/894/065/original/6b7c16415f308714.png",
@@ -466,6 +495,7 @@
   {
     "id": "115706270783263771",
     "username": "constanta",
+    "acct": "constanta@social.5th.ro",
     "display_name": "Constanța",
     "note": "<p><a href=\"https://constanta-azi.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">constanta-azi.ro</span><span class=\"invisible\"></span></a> – știri, reportaje și povești de la malul mării: port, plajă, turism, evenimente, cultură, trafic, business local și viața de zi cu zi în Constanța. 🌊⚓<br /><a href=\"https://social.5th.ro/tags/stiri\" class=\"mention hashtag\" rel=\"tag\">#<span>stiri</span></a> <a href=\"https://social.5th.ro/tags/politica\" class=\"mention hashtag\" rel=\"tag\">#<span>politica</span></a> <a href=\"https://social.5th.ro/tags/turism\" class=\"mention hashtag\" rel=\"tag\">#<span>turism</span></a></p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/706/270/783/263/771/original/a3771ebd3fec483f.png",
@@ -482,6 +512,7 @@
   {
     "id": "115695216139106959",
     "username": "constructii360",
+    "acct": "constructii360@social.5th.ro",
     "display_name": "Constructii 360",
     "note": "<p><a href=\"https://constructii360.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">constructii360.ro</span><span class=\"invisible\"></span></a> – articole, studii de caz și soluții pentru construcții, renovări, materiale, utilaje, șantiere și proiecte rezidențiale/industriale. Informație „360°” pentru profesioniști și pasionați de <a href=\"https://social.5th.ro/tags/construc%C8%9Bii\" class=\"mention hashtag\" rel=\"tag\">#<span>construcții</span></a></p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/695/216/139/106/959/original/ca9ed086f8612cad.png",
@@ -498,6 +529,7 @@
   {
     "id": "115661053987824541",
     "username": "coteledunarii",
+    "acct": "coteledunarii@mstdn.ro",
     "display_name": "Cotele apelor Dunării",
     "note": "<p><a href=\"https://danubealert.com/ro/Romania\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">danubealert.com/ro/Romania</span><span class=\"invisible\"></span></a><br /><span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.social/@danubealert\" class=\"u-url mention\">@<span>danubealert</span></a></span><br /><a href=\"https://masto.bg/@danube\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">masto.bg/@danube</span><span class=\"invisible\"></span></a><br /><a href=\"https://post.hr/@Vodostaji\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">post.hr/@Vodostaji</span><span class=\"invisible\"></span></a><br /><a href=\"https://fedi.at/@Donau\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">fedi.at/@Donau</span><span class=\"invisible\"></span></a><br /><a href=\"https://balkan.fedive.rs/@VodostajDunava\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">balkan.fedive.rs/@VodostajDuna</span><span class=\"invisible\">va</span></a></p>",
     "avatar": "https://mstdn.ro/system/accounts/avatars/115/661/053/987/824/541/original/5600a255f1f59a0f.png",
@@ -514,6 +546,7 @@
   {
     "id": "114179940109586384",
     "username": "CPetrePetre1RO",
+    "acct": "CPetrePetre1RO@mstdn.ro",
     "display_name": "PetrePetre",
     "note": "",
     "avatar": "https://mstdn.ro/system/accounts/avatars/114/179/940/109/586/384/original/15d3bfa2e183cbda.jpg",
@@ -530,6 +563,7 @@
   {
     "id": "114376587198467943",
     "username": "Cristian",
+    "acct": "Cristian@mstdn.ro",
     "display_name": "Chris",
     "note": "",
     "avatar": "https://mstdn.ro/system/accounts/avatars/114/376/587/198/467/943/original/023914ea70880be5.jpg",
@@ -546,6 +580,7 @@
   {
     "id": "109382151601487859",
     "username": "critter",
+    "acct": "critter@mstdn.ro",
     "display_name": "CritteR",
     "note": "",
     "avatar": "https://mstdn.ro/system/accounts/avatars/109/382/151/601/487/859/original/f5be40b8b2c8e143.png",
@@ -562,6 +597,7 @@
   {
     "id": "115705973050632500",
     "username": "cutremur",
+    "acct": "cutremur@social.5th.ro",
     "display_name": "Cutremur",
     "note": "<p><a href=\"https://cutremurul.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">cutremurul.ro</span><span class=\"invisible\"></span></a> – informații despre seisme, hărți, magnitudine, intensitate, zone afectate și recomandări de pregătire. Nu este sistem oficial de alertare, ci o resursă de monitorizare și educație pentru public. 🌍</p><p><a href=\"https://social.5th.ro/tags/Cutremur\" class=\"mention hashtag\" rel=\"tag\">#<span>Cutremur</span></a> <a href=\"https://social.5th.ro/tags/Seisme\" class=\"mention hashtag\" rel=\"tag\">#<span>Seisme</span></a> <a href=\"https://social.5th.ro/tags/CutremurRomania\" class=\"mention hashtag\" rel=\"tag\">#<span>CutremurRomania</span></a></p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/705/973/050/632/500/original/390420be731f5a29.png",
@@ -578,6 +614,7 @@
   {
     "id": "115705999842655561",
     "username": "cutremurul_ro",
+    "acct": "cutremurul_ro@mstdn.ro",
     "display_name": "Cutremure Romania",
     "note": "<p><a href=\"https://cutremurul.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">cutremurul.ro</span><span class=\"invisible\"></span></a> - Monitorizare seisme, informații despre cutremure, intensitate, zone afectate și reguli de pregătire. Nu este sistem oficial de alertare, ci doar informare.<br /><a href=\"https://mstdn.ro/tags/cutremur\" class=\"mention hashtag\" rel=\"tag\">#<span>cutremur</span></a> <a href=\"https://mstdn.ro/tags/seisme\" class=\"mention hashtag\" rel=\"tag\">#<span>seisme</span></a> <a href=\"https://mstdn.ro/tags/siguranta\" class=\"mention hashtag\" rel=\"tag\">#<span>siguranta</span></a> <a href=\"https://mstdn.ro/tags/cutremurul\" class=\"mention hashtag\" rel=\"tag\">#<span>cutremurul</span></a></p>",
     "avatar": "https://mstdn.ro/system/accounts/avatars/115/705/999/842/655/561/original/87f7a9111de5e7a5.png",
@@ -594,6 +631,7 @@
   {
     "id": "114370260201635087",
     "username": "deltadunarii",
+    "acct": "deltadunarii@mstdn.ro",
     "display_name": "Delta Dunarii",
     "note": "<p><a href=\"https://mstdn.ro/tags/danubedelta\" class=\"mention hashtag\" rel=\"tag\">#<span>danubedelta</span></a> <a href=\"https://mstdn.ro/tags/deltadunarii\" class=\"mention hashtag\" rel=\"tag\">#<span>deltadunarii</span></a> <a href=\"https://mstdn.ro/tags/cazaredeltadunarii\" class=\"mention hashtag\" rel=\"tag\">#<span>cazaredeltadunarii</span></a> <a href=\"https://mstdn.ro/tags/pensiunideltadunarii\" class=\"mention hashtag\" rel=\"tag\">#<span>pensiunideltadunarii</span></a> <a href=\"https://mstdn.ro/tags/excursiideltadunarii\" class=\"mention hashtag\" rel=\"tag\">#<span>excursiideltadunarii</span></a></p><p><a href=\"https://pensiuni-delta.ro/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">pensiuni-delta.ro/</span><span class=\"invisible\"></span></a><br /><a href=\"https://excursie-delta.ro/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">excursie-delta.ro/</span><span class=\"invisible\"></span></a></p>",
     "avatar": "https://mstdn.ro/avatars/original/missing.png",
@@ -610,6 +648,7 @@
   {
     "id": "115706435432502033",
     "username": "dobrogea",
+    "acct": "dobrogea@social.5th.ro",
     "display_name": "Dobrogea",
     "note": "<p><a href=\"https://dobrogea-news.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">dobrogea-news.ro</span><span class=\"invisible\"></span></a> – știri, reportaje și povești din Dobrogea: orașe, sate, porturi, litoral, Delta Dunării, energie, agricultură și turism. O privire de ansamblu asupra regiunii dintre Dunăre și Marea Neagră. 🌊🌾<br /><a href=\"https://social.5th.ro/tags/turism\" class=\"mention hashtag\" rel=\"tag\">#<span>turism</span></a> <a href=\"https://social.5th.ro/tags/deltadunarii\" class=\"mention hashtag\" rel=\"tag\">#<span>deltadunarii</span></a> <a href=\"https://social.5th.ro/tags/politica\" class=\"mention hashtag\" rel=\"tag\">#<span>politica</span></a> <a href=\"https://social.5th.ro/tags/stiri\" class=\"mention hashtag\" rel=\"tag\">#<span>stiri</span></a> <a href=\"https://social.5th.ro/tags/tulcea\" class=\"mention hashtag\" rel=\"tag\">#<span>tulcea</span></a></p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/706/435/432/502/033/original/1744f8f19c0f7e64.png",
@@ -626,6 +665,7 @@
   {
     "id": "115694527570696227",
     "username": "doctor360",
+    "acct": "doctor360@social.5th.ro",
     "display_name": "Doctor 360",
     "note": "<p><a href=\"https://doctor360.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">doctor360.ro</span><span class=\"invisible\"></span></a> – hub de sănătate și stil de viață, cu informații explicate clar despre afecțiuni, prevenție, analize, tratamente și relația cu medicii. Articole „360°” pentru o imagine completă asupra sănătății tale. 🩺</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/694/527/570/696/227/original/19eedf522206e3b3.png",
@@ -642,6 +682,7 @@
   {
     "id": "115689860502613028",
     "username": "DoctoriteBlog",
+    "acct": "DoctoriteBlog@social.5th.ro",
     "display_name": "Doc Blog",
     "note": "<p>🩺📚 <a href=\"https://Doctorite.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">Doctorite.ro</span><span class=\"invisible\"></span></a> – blog de sănătate și stil de viață: sfatul medicului, „mit sau realitate”, clinici, tratamente și recomandări explicate pe înțelesul tuturor. Articole verificate, ca să iei decizii mai bune pentru sănătatea ta și a familiei.</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/689/860/502/613/028/original/31aef52135b7e154.png",
@@ -658,6 +699,7 @@
   {
     "id": "115686961745086281",
     "username": "efaq",
+    "acct": "efaq@social.5th.ro",
     "display_name": "e-faq.ro",
     "note": "<p>Răspundem pe scurt la întrebările tale lungi. <a href=\"https://e-faq.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">e-faq.ro</span><span class=\"invisible\"></span></a> adună explicații clare, ghiduri practice și răspunsuri la întrebări frecvente, pe înțelesul tuturor.</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/686/961/745/086/281/original/940b4cce1c8b63c4.jpg",
@@ -674,6 +716,7 @@
   {
     "id": "115694265351931433",
     "username": "eratehnologica",
+    "acct": "eratehnologica@social.5th.ro",
     "display_name": "era tehnologica",
     "note": "<p><a href=\"https://EraTehnologica.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">EraTehnologica.ro</span><span class=\"invisible\"></span></a> – revistă online despre tehnologie, IT, business, SEO, educație digitală și viață modernă. Ghiduri, analize, comunicate și recomandări pentru o lume în care totul se mută în online. 💡💻</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/694/265/351/931/433/original/cffce7ce671fd2bb.png",
@@ -690,6 +733,7 @@
   {
     "id": "110040716017411688",
     "username": "facultateadeenergetica",
+    "acct": "facultateadeenergetica@mstdn.ro",
     "display_name": "Facultatea de Energetica - UPB",
     "note": "<p>Energia reprezintă sângele unei economii şi în final al unei civilizaţii. În Epistola întâia către Corinteni Sfântului Apostol Pavel spunea „dacă dragoste nu am, nimic nu sunt”, parafrazând aceasta aserţiune Marin Preda îşi încheia romanul „Cel mai iubit dintre pământeni” cu cuvintele „dacă dragoste nu e nimic nu e”, credem că putem spune la rândul nostru „fără energie nimic nu e”.</p>",
     "avatar": "https://mstdn.ro/system/accounts/avatars/110/040/716/017/411/688/original/bb1c6c73c3920029.png",
@@ -706,6 +750,7 @@
   {
     "id": "115695295361474624",
     "username": "femeiAZ",
+    "acct": "femeiAZ@social.5th.ro",
     "display_name": "Femei A-Z",
     "note": "<p><a href=\"https://femeiaz.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">femeiaz.ro</span><span class=\"invisible\"></span></a> – platformă dedicată femeii de azi: carieră, familie, sănătate, relații, frumusețe, dezvoltare personală și povești reale. Conținut sincer, modern și aplicat, pentru un stil de viață echilibrat. 🌷</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/695/295/361/474/624/original/9a525ae70b2e6cf7.png",
@@ -722,6 +767,7 @@
   {
     "id": "115694771835314846",
     "username": "femeie_antreprenor",
+    "acct": "femeie_antreprenor@social.5th.ro",
     "display_name": "femeie antreprenor",
     "note": "<p><a href=\"https://femeie-antreprenor.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">femeie-antreprenor.ro</span><span class=\"invisible\"></span></a> – spațiu dedicat femeilor care construiesc afaceri: interviuri, povești reale, idei de business, marketing, mindset și resurse pentru mai multă independență financiară și încredere în propriul drum. 💼✨</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/694/771/835/314/846/original/df80e6ba584faaf1.png",
@@ -738,6 +784,7 @@
   {
     "id": "113208637638884427",
     "username": "gabigiulusan",
+    "acct": "gabigiulusan@mstdn.ro",
     "display_name": "Gabriel Necititul",
     "note": "",
     "avatar": "https://mstdn.ro/system/accounts/avatars/113/208/637/638/884/427/original/447bac5a6debfe7b.jpg",
@@ -754,6 +801,7 @@
   {
     "id": "115683088262592356",
     "username": "geidiveo",
+    "acct": "geidiveo@mstdn.ro",
     "display_name": "Geidi Veo",
     "note": "",
     "avatar": "https://mstdn.ro/system/accounts/avatars/115/683/088/262/592/356/original/9ddc42c26c149cf1.png",
@@ -770,6 +818,7 @@
   {
     "id": "109393897938692590",
     "username": "gioni",
+    "acct": "gioni@mstdn.ro",
     "display_name": "gioni",
     "note": "",
     "avatar": "https://mstdn.ro/avatars/original/missing.png",
@@ -786,6 +835,7 @@
   {
     "id": "115715211576853737",
     "username": "hangedmyselfinthebathroom",
+    "acct": "hangedmyselfinthebathroom@mstdn.ro",
     "display_name": "h",
     "note": "",
     "avatar": "https://mstdn.ro/avatars/original/missing.png",
@@ -800,24 +850,9 @@
     "instance": "mstdn.ro"
   },
   {
-    "id": "115706178819527230",
-    "username": "Iasi",
-    "display_name": "Iași",
-    "note": "<p><a href=\"https://iasi-azi.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">iasi-azi.ro</span><span class=\"invisible\"></span></a> – știri, reportaje și povești din Iași: oraș, cartiere, universități, cultură, evenimente, business local și viață urbană. Tot ce merită urmărit azi în Iași, într-un singur loc. 🏛️<br /><a href=\"https://social.5th.ro/tags/stiri\" class=\"mention hashtag\" rel=\"tag\">#<span>stiri</span></a> <a href=\"https://social.5th.ro/tags/turism\" class=\"mention hashtag\" rel=\"tag\">#<span>turism</span></a> <a href=\"https://social.5th.ro/tags/politica\" class=\"mention hashtag\" rel=\"tag\">#<span>politica</span></a></p>",
-    "avatar": "https://social.5th.ro/system/accounts/avatars/115/706/178/819/527/230/original/47f4dace5a6bfc0a.png",
-    "header": "https://social.5th.ro/headers/original/missing.png",
-    "statuses_count": 6,
-    "followers_count": 6,
-    "following_count": 7,
-    "created_at": "2025-12-12T00:00:00.000Z",
-    "last_status_at": "2025-12-17",
-    "url": "https://social.5th.ro/@Iasi",
-    "rss_url": "https://social.5th.ro/@Iasi.rss",
-    "instance": "social.5th.ro"
-  },
-  {
     "id": "115032026165585675",
     "username": "iasi",
+    "acct": "iasi@mstdn.ro",
     "display_name": "Iasi AZI",
     "note": "<p><a href=\"https://Iasi-Azi.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">Iasi-Azi.ro</span><span class=\"invisible\"></span></a> este publicația locală dedicată știrilor din Iași: actualitate, administrație, educație, sănătate, sport, evenimente și business.</p>",
     "avatar": "https://mstdn.ro/avatars/original/missing.png",
@@ -832,8 +867,26 @@
     "instance": "mstdn.ro"
   },
   {
+    "id": "115706178819527230",
+    "username": "Iasi",
+    "acct": "Iasi@social.5th.ro",
+    "display_name": "Iași",
+    "note": "<p><a href=\"https://iasi-azi.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">iasi-azi.ro</span><span class=\"invisible\"></span></a> – știri, reportaje și povești din Iași: oraș, cartiere, universități, cultură, evenimente, business local și viață urbană. Tot ce merită urmărit azi în Iași, într-un singur loc. 🏛️<br /><a href=\"https://social.5th.ro/tags/stiri\" class=\"mention hashtag\" rel=\"tag\">#<span>stiri</span></a> <a href=\"https://social.5th.ro/tags/turism\" class=\"mention hashtag\" rel=\"tag\">#<span>turism</span></a> <a href=\"https://social.5th.ro/tags/politica\" class=\"mention hashtag\" rel=\"tag\">#<span>politica</span></a></p>",
+    "avatar": "https://social.5th.ro/system/accounts/avatars/115/706/178/819/527/230/original/47f4dace5a6bfc0a.png",
+    "header": "https://social.5th.ro/headers/original/missing.png",
+    "statuses_count": 6,
+    "followers_count": 6,
+    "following_count": 7,
+    "created_at": "2025-12-12T00:00:00.000Z",
+    "last_status_at": "2025-12-17",
+    "url": "https://social.5th.ro/@Iasi",
+    "rss_url": "https://social.5th.ro/@Iasi.rss",
+    "instance": "social.5th.ro"
+  },
+  {
     "id": "115694986816406093",
     "username": "ienergie",
+    "acct": "ienergie@social.5th.ro",
     "display_name": "iEnergie",
     "note": "<p><a href=\"https://ienergie.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">ienergie.ro</span><span class=\"invisible\"></span></a> – articole, ghiduri și idei despre energie verde, panouri fotovoltaice, eficiență energetică, soluții off-grid și optimizarea consumului. Pentru cei care vor facturi mai mici și un stil de viață mai sustenabil. ⚡</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/694/986/816/406/093/original/e8a134adb2202bc7.png",
@@ -850,6 +903,7 @@
   {
     "id": "115695257732481940",
     "username": "iFemeie",
+    "acct": "iFemeie@social.5th.ro",
     "display_name": "iFemeie",
     "note": "<p><a href=\"https://ifemeie.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">ifemeie.ro</span><span class=\"invisible\"></span></a> – articole pentru femei despre sănătate, relații, carieră, antreprenoriat, stil de viață și echilibru emoțional. Un spațiu online prietenos, cu conținut sincer, util și ușor de aplicat în viața de zi cu zi. 🌸</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/695/257/732/481/940/original/f4b7704f93d4dc19.png",
@@ -866,6 +920,7 @@
   {
     "id": "115694400864972450",
     "username": "inovare_afaceri",
+    "acct": "inovare_afaceri@social.5th.ro",
     "display_name": "Inovare afaceri",
     "note": "<p><a href=\"https://Inovare-Afaceri.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">Inovare-Afaceri.ro</span><span class=\"invisible\"></span></a> – idei, studii de caz și resurse pentru antreprenori care vor să aducă inovația în business: digitalizare, automatizare, marketing modern și modele de creștere sustenabilă. 🚀📊</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/694/400/864/972/450/original/b3a9e9ed62759cbc.png",
@@ -882,6 +937,7 @@
   {
     "id": "109325828249587949",
     "username": "ixsplit",
+    "acct": "ixsplit@mstdn.ro",
     "display_name": "Alexandru",
     "note": "",
     "avatar": "https://mstdn.ro/avatars/original/missing.png",
@@ -898,6 +954,7 @@
   {
     "id": "110856221081804323",
     "username": "linuxwebzine",
+    "acct": "linuxwebzine@mstdn.ro",
     "display_name": "",
     "note": "",
     "avatar": "https://mstdn.ro/system/accounts/avatars/110/856/221/081/804/323/original/47506f22e338867a.jpg",
@@ -914,6 +971,7 @@
   {
     "id": "109785183244056679",
     "username": "lunaala",
+    "acct": "lunaala@mstdn.ro",
     "display_name": "Lunaala Moirae",
     "note": "",
     "avatar": "https://mstdn.ro/system/accounts/avatars/109/785/183/244/056/679/original/da7904955598dbb1.jpg",
@@ -930,6 +988,7 @@
   {
     "id": "109472573177051262",
     "username": "lupuldacic",
+    "acct": "lupuldacic@mstdn.ro",
     "display_name": "Lupul Dacic",
     "note": "<p>Lupul Dacic este anti-capitalist. Din când în când, programează.</p>",
     "avatar": "https://mstdn.ro/system/accounts/avatars/109/472/573/177/051/262/original/63df916d1314a5ab.png",
@@ -946,6 +1005,7 @@
   {
     "id": "112240028309667605",
     "username": "Mardare",
+    "acct": "Mardare@mstdn.ro",
     "display_name": "Mardare",
     "note": "<p><a href=\"https://mstdn.ro/tags/linux\" class=\"mention hashtag\" rel=\"tag\">#<span>linux</span></a> <a href=\"https://mstdn.ro/tags/gentoo\" class=\"mention hashtag\" rel=\"tag\">#<span>gentoo</span></a> <a href=\"https://mstdn.ro/tags/redcore\" class=\"mention hashtag\" rel=\"tag\">#<span>redcore</span></a></p>",
     "avatar": "https://mstdn.ro/avatars/original/missing.png",
@@ -962,6 +1022,7 @@
   {
     "id": "109709061149619013",
     "username": "matei",
+    "acct": "matei@mstdn.ro",
     "display_name": "Matei Mincu",
     "note": "",
     "avatar": "https://mstdn.ro/system/accounts/avatars/109/709/061/149/619/013/original/6c2b15bda214466b.jpg",
@@ -978,6 +1039,7 @@
   {
     "id": "109365313666759894",
     "username": "mihai",
+    "acct": "mihai@mstdn.ro",
     "display_name": "Mihai Trica :verified: 🦇",
     "note": "<p>IT, tech, <a href=\"https://mstdn.ro/tags/traveling\" class=\"mention hashtag\" rel=\"tag\">#<span>traveling</span></a>, movies, <a href=\"https://mstdn.ro/tags/FooFighters\" class=\"mention hashtag\" rel=\"tag\">#<span>FooFighters</span></a>, <a href=\"https://mstdn.ro/tags/SteauaBucuresti\" class=\"mention hashtag\" rel=\"tag\">#<span>SteauaBucuresti</span></a>, quadcopters, <a href=\"https://mstdn.ro/tags/volley\" class=\"mention hashtag\" rel=\"tag\">#<span>volley</span></a>, <a href=\"https://mstdn.ro/tags/tennis\" class=\"mention hashtag\" rel=\"tag\">#<span>tennis</span></a>, <a href=\"https://mstdn.ro/tags/gaming\" class=\"mention hashtag\" rel=\"tag\">#<span>gaming</span></a></p>",
     "avatar": "https://mstdn.ro/system/accounts/avatars/109/365/313/666/759/894/original/8384420447380219.jpg",
@@ -994,6 +1056,7 @@
   {
     "id": "112849192829271749",
     "username": "mu2min",
+    "acct": "mu2min@mstdn.ro",
     "display_name": "مُؤْمِن",
     "note": "<p>EU regional messenger of the Ezzedeen al-Qassam Brigades (EQB)</p>",
     "avatar": "https://mstdn.ro/system/accounts/avatars/112/849/192/829/271/749/original/faed6d719f052bfd.jpg",
@@ -1010,6 +1073,7 @@
   {
     "id": "115643094446852853",
     "username": "naewoa",
+    "acct": "naewoa@mstdn.ro",
     "display_name": "Neawoa",
     "note": "",
     "avatar": "https://mstdn.ro/system/accounts/avatars/115/643/094/446/852/853/original/2d01c2bdade492a1.png",
@@ -1026,6 +1090,7 @@
   {
     "id": "115694680126896857",
     "username": "noutati24",
+    "acct": "noutati24@social.5th.ro",
     "display_name": "Noutati 24/7",
     "note": "<p><a href=\"https://noutati24.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">noutati24.ro</span><span class=\"invisible\"></span></a> – știri, articole și analize din România și din lume, 24/7. Actualitate, economie, tehnologie, sănătate, lifestyle și povești care contează, într-un format ușor de citit și distribuit. 📰</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/694/680/126/896/857/original/d696b4ce4d35d4d4.png",
@@ -1042,6 +1107,7 @@
   {
     "id": "112246238691503551",
     "username": "octavsly",
+    "acct": "octavsly@mstdn.ro",
     "display_name": "",
     "note": "",
     "avatar": "https://mstdn.ro/system/accounts/avatars/112/246/238/691/503/551/original/41f801e10f8c104a.jpg",
@@ -1058,6 +1124,7 @@
   {
     "id": "115706361871655275",
     "username": "oltenia",
+    "acct": "oltenia@social.5th.ro",
     "display_name": "Oltenia",
     "note": "<p><a href=\"https://oltenia-news.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">oltenia-news.ro</span><span class=\"invisible\"></span></a> – știri, reportaje și povești din Oltenia: orașe și sate, economie locală, infrastructură, cultură, tradiții și oameni care schimbă regiunea. Un punct de referință pentru noutățile din Oltenia. 🌾<br /><a href=\"https://social.5th.ro/tags/politica\" class=\"mention hashtag\" rel=\"tag\">#<span>politica</span></a> <a href=\"https://social.5th.ro/tags/turism\" class=\"mention hashtag\" rel=\"tag\">#<span>turism</span></a> <a href=\"https://social.5th.ro/tags/stiri\" class=\"mention hashtag\" rel=\"tag\">#<span>stiri</span></a></p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/706/361/871/655/275/original/0e87f44cd710149b.png",
@@ -1074,6 +1141,7 @@
   {
     "id": "115689181658814150",
     "username": "Partizani",
+    "acct": "Partizani@social.5th.ro",
     "display_name": "Partizani",
     "note": "<p><a href=\"https://Partizani.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">Partizani.ro</span><span class=\"invisible\"></span></a> este un hub de informații generale și ghiduri practice: sănătate, stil de viață, pescuit, Delta Dunării, tehnologie, business și multe altele. Ajutăm cititorii să ia decizii informate, cu articole clare, actuale și ușor de înțeles.</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/689/181/658/814/150/original/2e4faa41f8889c51.jpg",
@@ -1090,6 +1158,7 @@
   {
     "id": "115694324110832316",
     "username": "pentruoameni",
+    "acct": "pentruoameni@social.5th.ro",
     "display_name": "Pentru Oameni",
     "note": "<p><a href=\"https://PentruOameni.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">PentruOameni.ro</span><span class=\"invisible\"></span></a> – locul unde comunitatea se întâlnește cu inspirația. Articole despre proiecte sociale, voluntariat, sănătate, educație, mediu, stil de viață și povești care arată că binele există și merită împărtășit. 🤝💡</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/694/324/110/832/316/original/636799a851c47816.png",
@@ -1106,6 +1175,7 @@
   {
     "id": "115673859211250707",
     "username": "Pixelu",
+    "acct": "Pixelu@mstdn.ro",
     "display_name": "MR.BangBang",
     "note": "<p>BeTheBest,SleepTheRest.</p>",
     "avatar": "https://mstdn.ro/system/accounts/avatars/115/673/859/211/250/707/original/1cbeb6ebfd258592.jpg",
@@ -1122,6 +1192,7 @@
   {
     "id": "115694465460902565",
     "username": "pr360",
+    "acct": "pr360@social.5th.ro",
     "display_name": "PR 360",
     "note": "<p><a href=\"https://pr360.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">pr360.ro</span><span class=\"invisible\"></span></a> – PR, media și comunicare 360°. Comunicate de presă, advertoriale, campanii integrate, branding și strategie de comunicare pentru branduri care vor vizibilitate și reputație solidă, nu doar apariții ocazionale. 📢</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/694/465/460/902/565/original/41551daf3883c4ec.png",
@@ -1138,6 +1209,7 @@
   {
     "id": "115694201871216833",
     "username": "prbusiness",
+    "acct": "prbusiness@social.5th.ro",
     "display_name": "PR Business",
     "note": "<p><a href=\"https://PRBusiness.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">PRBusiness.ro</span><span class=\"invisible\"></span></a> – platformă de PR, comunicate de presă și știri de business. Ajutăm brandurile, agențiile și antreprenorii să își spună povestea corect, prin articole, interviuri, lansări și campanii de promovare bine structurate. 📰📈</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/694/201/871/216/833/original/0067fad7fba3b8dc.png",
@@ -1154,6 +1226,7 @@
   {
     "id": "110012116049328066",
     "username": "profudemate",
+    "acct": "profudemate@mstdn.ro",
     "display_name": "Matei M :ivory_elephant:",
     "note": "<p>Math teacher at &quot;Elina Matei Basarab&quot; Technologic Economic High School</p><p>Înseamnă să te iubești foarte puțin dacă urăști pe cineva, dar înseamnă să urăști pe toată lumea dacă nu te iubești decât pe tine!</p>",
     "avatar": "https://mstdn.ro/system/accounts/avatars/110/012/116/049/328/066/original/c5fe338e06ca7583.jpg",
@@ -1170,6 +1243,7 @@
   {
     "id": "115695111710017251",
     "username": "recent_news",
+    "acct": "recent_news@social.5th.ro",
     "display_name": "Recent News",
     "note": "<p><a href=\"https://recent-news.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">recent-news.ro</span><span class=\"invisible\"></span></a> – știri și analize din <a href=\"https://social.5th.ro/tags/Rom%C3%A2nia\" class=\"mention hashtag\" rel=\"tag\">#<span>România</span></a> și din lume, actualizate constant. Actualitate, economie, tech, sport, lifestyle și subiecte în tendințe, într-un format rapid și ușor de parcurs. 📰</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/695/111/710/017/251/original/3fb7073f1dfca719.png",
@@ -1186,6 +1260,7 @@
   {
     "id": "109448427916373077",
     "username": "recorder_rss",
+    "acct": "recorder_rss@mstdn.ro",
     "display_name": "Recorder",
     "note": "<p>Acest cont a fost dezactivat!<br />Reason: third party content posting.</p>",
     "avatar": "https://mstdn.ro/system/accounts/avatars/109/448/427/916/373/077/original/3e4f082748c402a4.png",
@@ -1202,6 +1277,7 @@
   {
     "id": "109342556817766589",
     "username": "robo",
+    "acct": "robo@mstdn.ro",
     "display_name": "Grosaru Robert (RoBo)",
     "note": "",
     "avatar": "https://mstdn.ro/avatars/original/missing.png",
@@ -1218,6 +1294,7 @@
   {
     "id": "109444255256865525",
     "username": "romaniaregalarss",
+    "acct": "romaniaregalarss@mstdn.ro",
     "display_name": "👑Jurnalul Familiei Regale🇷🇴",
     "note": "<p>! Acest cont este un bot 🤖 (neoficial) !</p><p>Vor fi postate toate articolele de pe feed-ul oficial al jurnalului România Regală, precum și toate video-urile postate pe canalul oficial de YouTube.</p>",
     "avatar": "https://mstdn.ro/system/accounts/avatars/109/444/255/256/865/525/original/75b539cdbf0f5294.png",
@@ -1234,6 +1311,7 @@
   {
     "id": "115688846699585141",
     "username": "SolutiiConstructii",
+    "acct": "SolutiiConstructii@social.5th.ro",
     "display_name": "Solutii Constructii",
     "note": "<p>Specialiști în soluții pentru construcții și amenajări: materiale, tehnologii moderne, studii de caz și ghiduri practice. Ajutăm dezvoltatori, firme și DIY să construiască mai sigur, mai eficient și mai durabil.</p><p><a href=\"https://solutii-constructii.ro/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">solutii-constructii.ro/</span><span class=\"invisible\"></span></a></p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/688/846/699/585/141/original/7708fbde9c1d009d.jpg",
@@ -1250,6 +1328,7 @@
   {
     "id": "115705849291640316",
     "username": "stiri_democratice",
+    "acct": "stiri_democratice@social.5th.ro",
     "display_name": "Stiri Democratice",
     "note": "<p><a href=\"https://stiridemocratice.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">stiridemocratice.ro</span><span class=\"invisible\"></span></a> – știri, analize și explicații despre democrație, instituții, alegeri, drepturi civice și stat de drept. Conținut echilibrat, argumentat și orientat spre înțelegere, nu doar spre scandal. ⚖️🗳️</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/705/849/291/640/316/original/b982a40386058faa.png",
@@ -1266,6 +1345,7 @@
   {
     "id": "115694726655630530",
     "username": "stiri_live",
+    "acct": "stiri_live@social.5th.ro",
     "display_name": "Stiri LIVE",
     "note": "<p><a href=\"https://stiri-live.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">stiri-live.ro</span><span class=\"invisible\"></span></a> – <a href=\"https://social.5th.ro/tags/%C8%99tiri\" class=\"mention hashtag\" rel=\"tag\">#<span>știri</span></a> și <a href=\"https://social.5th.ro/tags/informa%C8%9Bii\" class=\"mention hashtag\" rel=\"tag\">#<span>informații</span></a> în timp real, din <a href=\"https://social.5th.ro/tags/Rom%C3%A2nia\" class=\"mention hashtag\" rel=\"tag\">#<span>România</span></a> și din lume. Actualitate, breaking news, economie, sport, tech și evenimente live, prezentate pe scurt, clar și la obiect. 🔴📺</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/694/726/655/630/530/original/6196b01865e3c0ff.png",
@@ -1282,6 +1362,7 @@
   {
     "id": "115694865782409983",
     "username": "stiri_sociale",
+    "acct": "stiri_sociale@social.5th.ro",
     "display_name": "Stiri sociale",
     "note": "<p><a href=\"https://stirisociale.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">stirisociale.ro</span><span class=\"invisible\"></span></a> – știri, povești și analize despre oameni, comunități, ONG-uri, drepturi sociale, educație, mediu și inițiative civice. Un loc în care vezi ce se întâmplă „la firul ierbii”, nu doar în titluri de breaking news. 🤝</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/694/865/782/409/983/original/fc881b11d4f6f541.png",
@@ -1298,6 +1379,7 @@
   {
     "id": "115683452788756104",
     "username": "thinkroot",
+    "acct": "thinkroot@mstdn.ro",
     "display_name": "ThinkRoot",
     "note": "<p>www.thinkroot.xyz</p>",
     "avatar": "https://mstdn.ro/system/accounts/avatars/115/683/452/788/756/104/original/8fb91e0357d5e65a.png",
@@ -1314,6 +1396,7 @@
   {
     "id": "115689258119963188",
     "username": "top",
+    "acct": "top@social.5th.ro",
     "display_name": "TOP 15",
     "note": "<p><a href=\"https://Top15.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">Top15.ro</span><span class=\"invisible\"></span></a> adună la un loc topuri, liste și recomandări din mai multe domenii: shopping online, lifestyle, turism, jocuri, zodii, business și nu numai. <a href=\"https://social.5th.ro/tags/TOP5\" class=\"mention hashtag\" rel=\"tag\">#<span>TOP5</span></a>, <a href=\"https://social.5th.ro/tags/TOP10\" class=\"mention hashtag\" rel=\"tag\">#<span>TOP10</span></a> și <a href=\"https://social.5th.ro/tags/TOP15\" class=\"mention hashtag\" rel=\"tag\">#<span>TOP15</span></a> care te ajută să alegi rapid ce ai nevoie.</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/689/258/119/963/188/original/fedfc52e1b074571.png",
@@ -1330,6 +1413,7 @@
   {
     "id": "115689341894595642",
     "username": "topantreprenor",
+    "acct": "topantreprenor@social.5th.ro",
     "display_name": "TOP Antreprenor",
     "note": "<p><a href=\"https://topantreprenor.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">topantreprenor.ro</span><span class=\"invisible\"></span></a> - interviuri, studii de caz, idei de afaceri, marketing, finanțare și povești reale din businessul românesc. Inspirație și resurse utile pentru antreprenori la început de drum și profesioniști experimentați.</p><p><a href=\"https://social.5th.ro/tags/antreprenor\" class=\"mention hashtag\" rel=\"tag\">#<span>antreprenor</span></a> <a href=\"https://social.5th.ro/tags/antreprenoriat\" class=\"mention hashtag\" rel=\"tag\">#<span>antreprenoriat</span></a> <a href=\"https://social.5th.ro/tags/afaceri\" class=\"mention hashtag\" rel=\"tag\">#<span>afaceri</span></a> <a href=\"https://social.5th.ro/tags/comunicatedepresa\" class=\"mention hashtag\" rel=\"tag\">#<span>comunicatedepresa</span></a></p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/689/341/894/595/642/original/f645c521bb6a2ff6.png",
@@ -1346,6 +1430,7 @@
   {
     "id": "115686701390756829",
     "username": "topcomunicate_ro",
+    "acct": "topcomunicate_ro@social.5th.ro",
     "display_name": "Top Comunicate Romania",
     "note": "<p>TopComunicate.ro este platforma ideală pentru promovarea afacerii tale prin comunicate de presă, advertoriale și articole SEO de calitate. Fie că ai nevoie de vizibilitate în online, creșterea reputației brandului tău sau optimizarea conținutului pentru motoarele de căutare, echipa noastră îți oferă soluții profesionale și eficiente.</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/686/701/390/756/829/original/2c36428d7737fab3.jpg",
@@ -1362,6 +1447,7 @@
   {
     "id": "115690074813022465",
     "username": "UniversulTech",
+    "acct": "UniversulTech@social.5th.ro",
     "display_name": "Universul Tech",
     "note": "<p><a href=\"https://UniversulTech.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">UniversulTech.ro</span><span class=\"invisible\"></span></a> – blog despre tehnologie, gadgeturi, AI, securitate și viață digitală. Știri pe înțelesul tuturor, ghiduri pas cu pas, review-uri și opinii pentru cei care vor să fie la curent cu tot ce mișcă în tech. 💻🚀</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/690/074/813/022/465/original/a6976c12c0ea9baa.png",
@@ -1378,6 +1464,7 @@
   {
     "id": "115734654312478116",
     "username": "veicheu",
+    "acct": "veicheu@social.5th.ro",
     "display_name": "Vei Cheu",
     "note": "",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/734/654/312/478/116/original/b57119a6a23ce43d.jpg",
@@ -1394,6 +1481,7 @@
   {
     "id": "115689533166998403",
     "username": "vhm",
+    "acct": "vhm@social.5th.ro",
     "display_name": "VHM Blog",
     "note": "<p><a href=\"https://vhm.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">vhm.ro</span><span class=\"invisible\"></span></a> – platformă de comunicate de presă online, advertoriale SEO și articole utile pentru branduri, agenții și freelanceri. Idei de promovare, studii de caz, tendințe în marketing, business, tech &amp; lifestyle.</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/689/533/166/998/403/original/03676a8122cab8f4.jpg",
@@ -1410,6 +1498,7 @@
   {
     "id": "115695170274782286",
     "username": "ziar360",
+    "acct": "ziar360@social.5th.ro",
     "display_name": "Ziar 360",
     "note": "<p><a href=\"http://ziar360.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">http://</span><span class=\"\">ziar360.ro</span><span class=\"invisible\"></span></a> – publicație online cu știri, analize și opinii despre ce se întâmplă în România și în lume. Actualitate, economie, tech, societate și reportaje care privesc realitatea „360°”, nu doar titlurile. 📰</p>",
     "avatar": "https://social.5th.ro/system/accounts/avatars/115/695/170/274/782/286/original/43f46d4401d21834.png",
@@ -1426,6 +1515,7 @@
   {
     "id": "109360202913113104",
     "username": "zuzizuzi",
+    "acct": "zuzizuzi@mstdn.ro",
     "display_name": "Mr Zuzi",
     "note": "",
     "avatar": "https://mstdn.ro/system/accounts/avatars/109/360/202/913/113/104/original/aa38f6c42a889d07.jpg",
