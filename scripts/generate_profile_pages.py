@@ -302,8 +302,8 @@ PROFILE_TEMPLATE = """<!doctype html>
         <div class="post-item" style="padding: 20px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-lg);">
           <div style="display: flex; gap: 12px; margin-bottom: 12px;">
             <div style="flex: 1;">
-              <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 8px;">
-                <a href="${{postUrl}}" target="_blank" rel="noopener" style="color: var(--text-muted); text-decoration: none;">
+              <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 8px; font-weight: 600;">
+                <a href="${{postUrl}}" target="_blank" rel="noopener" style="color: #7b9cff; text-decoration: none; font-weight: 600;">
                   ${{createdAt}}
                 </a>
               </div>
@@ -313,7 +313,7 @@ PROFILE_TEMPLATE = """<!doctype html>
             </div>
           </div>
           <div style="display: flex; gap: 16px; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border);">
-            <a href="${{postUrl}}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 6px; color: var(--text-muted); text-decoration: none; font-size: 14px;">
+            <a href="${{postUrl}}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 6px; color: #7b9cff; text-decoration: none; font-size: 14px; font-weight: 600;">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                 <polyline points="15 3 21 3 21 9"></polyline>
@@ -427,11 +427,14 @@ PROFILE_TEMPLATE = """<!doctype html>
       overflow-wrap: break-word;
     }}
     .post-content a {{
-      color: var(--accent);
+      color: #7b9cff;
       text-decoration: none;
+      font-weight: 600;
     }}
     .post-content a:hover {{
+      color: var(--accent);
       text-decoration: underline;
+      font-weight: 700;
     }}
     .post-content img {{
       max-width: 100%;
@@ -449,12 +452,15 @@ PROFILE_TEMPLATE = """<!doctype html>
     /* Style hashtags and mentions */
     .post-content .hashtag,
     .post-content .mention {{
-      color: var(--accent);
+      color: #7b9cff;
       text-decoration: none;
+      font-weight: 600;
     }}
     .post-content .hashtag:hover,
     .post-content .mention:hover {{
+      color: var(--accent);
       text-decoration: underline;
+      font-weight: 700;
     }}
     /* Fix Mastodon link formatting */
     .post-content a[translate="no"] {{
