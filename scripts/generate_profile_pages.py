@@ -147,6 +147,26 @@ def strip_html(text):
     import re
     return re.sub(r'<[^>]+>', '', text)
 
+def add_nofollow_to_links(html_text: str) -> str:
+    """Add rel='nofollow noopener' to all links in HTML"""
+    if not html_text:
+        return ""
+    # Add nofollow to all links
+    import re
+    # Pattern to match <a> tags
+    def add_rel(match):
+        tag = match.group(0)
+        # Check if rel already exists
+        if 'rel=' in tag:
+            # Add nofollow if not present
+            if 'nofollow' not in tag:
+                tag = re.sub(r'rel="([^"]*)"', r'rel="\1 nofollow noopener"', tag)
+        else:
+            # Add rel attribute
+            tag = tag.replace('<a ', '<a rel="nofollow noopener" ')
+        return tag
+    return re.sub(r'<a\s+[^>]*>', add_rel, html_text)
+
 def get_rel_attribute(username: str, instance: str) -> str:
     """Determine rel attribute based on instance
     - mstdn.ro: always nofollow
