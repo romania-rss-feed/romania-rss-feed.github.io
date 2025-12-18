@@ -149,7 +149,7 @@ def main():
     
     # Discover new accounts (returns account data directly from directory)
     print("\n🔍 Căutare profiluri noi...")
-    new_accounts_data = discover_new_accounts(list(existing_usernames) + KNOWN_USERNAMES)
+    new_accounts_data = discover_new_accounts(list(existing_usernames))
     
     # Process new accounts from directory (they already have data)
     new_profiles = []
@@ -160,11 +160,10 @@ def main():
     # Start with existing profiles
     profiles = existing_profiles.copy()
     
-    # Update existing profiles and add new ones
-    print(f"\n📥 Se actualizează {len(existing_profiles)} profiluri existente și se adaugă {len(new_profiles)} noi...")
-    
-    # Update existing profiles from KNOWN_USERNAMES
+    # Update existing profiles that are in KNOWN_USERNAMES
+    print(f"\n📥 Se actualizează profilurile existente...")
     known_usernames_to_update = [u for u in KNOWN_USERNAMES if u in existing_usernames]
+    
     for i, username in enumerate(known_usernames_to_update, 1):
         print(f"[{i}/{len(known_usernames_to_update)}] {username}...", end=" ")
         account_data = fetch_account(username)
@@ -178,12 +177,14 @@ def main():
         else:
             print("📋 (păstrat profil existent)")
     
-    # Add new profiles from directory
-    for new_profile in new_profiles:
-        username = new_profile.get("username")
-        if username and not any(p.get("username") == username for p in profiles):
-            profiles.append(new_profile)
-            print(f"  ✅ Adăugat profil nou: {username}")
+    # Add new profiles from directory (they already have complete data)
+    if new_profiles:
+        print(f"\n➕ Se adaugă {len(new_profiles)} profiluri noi din directory...")
+        for new_profile in new_profiles:
+            username = new_profile.get("username")
+            if username and not any(p.get("username") == username for p in profiles):
+                profiles.append(new_profile)
+                print(f"  ✅ {username}")
     
     # Sort by username
     profiles.sort(key=lambda x: x.get("username", "").lower())
