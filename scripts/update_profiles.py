@@ -56,8 +56,9 @@ def fetch_instance_stats() -> Dict:
         print(f"⚠️  Eroare la fetch statistici server: {e}")
         return {}
 
-def discover_new_accounts(known_usernames: List[str]) -> List[str]:
-    """Discover new accounts by searching directory - only local accounts from social.5th.ro"""
+def discover_new_accounts(known_usernames: List[str]) -> List[Dict]:
+    """Discover new accounts by searching directory - only local accounts from social.5th.ro
+    Returns list of account data dictionaries, not just usernames"""
     new_accounts = []
     try:
         # Try to get directory (may not be available on all instances)
@@ -71,14 +72,17 @@ def discover_new_accounts(known_usernames: List[str]) -> List[str]:
             for account in accounts:
                 username = account.get("username", "")
                 acct = account.get("acct", "")
+                url_field = account.get("url", "")
                 
                 # Strict filter: only local accounts
-                # Local accounts have acct without @ or acct == username
-                # Federated accounts have acct like "username@other.instance"
+                # Check if URL contains @social.5th.ro or acct has no @
                 is_local = False
-                if not acct or acct == "":
-                    # No acct field - assume local
+                if url_field and "@social.5th.ro" in url_field:
+                    # URL confirms it's local
                     is_local = True
+                elif not acct or acct == "":
+                    # No acct field - assume local if URL is local
+                    is_local = "@social.5th.ro" in url_field if url_field else False
                 elif "@" not in acct:
                     # Local account without domain (just username)
                     is_local = True
@@ -93,7 +97,8 @@ def discover_new_accounts(known_usernames: List[str]) -> List[str]:
                     is_local = False
                 
                 if is_local and username and username not in known_usernames:
-                    new_accounts.append(username)
+                    # Use account data from directory directly
+                    new_accounts.append(account)
                     print(f"  ✨ Profil nou descoperit (local): {username}")
             
             print(f"  ✅ Total profiluri noi locale: {len(new_accounts)}")
@@ -141,21 +146,42 @@ def main():
     # Create username map for quick lookup
     existing_usernames = {p.get("username", "") for p in existing_profiles}
     
-    # Discover new accounts
+    # Discover new accounts (returns account data directly from directory)
     print("\n🔍 Căutare profiluri noi...")
-    new_usernames = discover_new_accounts(list(existing_usernames) + KNOWN_USERNAMES)
-    all_usernames = list(set(KNOWN_USERNAMES + new_usernames))
+    new_accounts_data = discover_new_accounts(list(existing_usernames) + KNOWN_USERNAMES)
     
-    # Fetch all profiles
+    # Process new accounts from directory (they already have data)
+    new_profiles = []
+    for account_data in new_accounts_data:
+        profile = normalize_profile(account_data)
+        new_profiles.append(profile)
+    
+    # Get all usernames to fetch/update
+    all_usernames = list(set(KNOWN_USERNAMES + [p.get("username") for p in new_profiles]))
+    
+    # Fetch/update all profiles
     print(f"\n📥 Se descarcă date pentru {len(all_usernames)} profiluri...")
     profiles = []
     
+    # First, add new profiles from directory
+    profiles.extend(new_profiles)
+    
+    # Then fetch/update existing and known profiles
     for i, username in enumerate(all_usernames, 1):
+        # Skip if already added from directory
+        if any(p.get("username") == username for p in profiles):
+            continue
+            
         print(f"[{i}/{len(all_usernames)}] {username}...", end=" ")
         account_data = fetch_account(username)
         if account_data:
             profile = normalize_profile(account_data)
-            profiles.append(profile)
+            # Update if exists, otherwise add
+            existing_idx = next((i for i, p in enumerate(profiles) if p.get("username") == username), None)
+            if existing_idx is not None:
+                profiles[existing_idx] = profile
+            else:
+                profiles.append(profile)
             print("✅")
         else:
             # Keep existing profile if available
@@ -191,8 +217,8 @@ def main():
         print("⚠️  Nu s-au putut obține statisticile serverului")
     
     print(f"\n🎉 Actualizare completă! {len(profiles)} profiluri disponibile.")
-    if new_usernames:
-        print(f"✨ {len(new_usernames)} profiluri noi descoperite!")
+    if new_accounts_data:
+        print(f"✨ {len(new_accounts_data)} profiluri noi descoperite!")
 
 if __name__ == "__main__":
     main()
