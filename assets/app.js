@@ -100,6 +100,8 @@ function applyFiltersAndSort(searchQuery = null) {
       const instance = profile.instance || 'social.5th.ro';
       return instance === sortBy;
     });
+    // Randomize filtered profiles when filtering by instance
+    filtered = shuffleArray(filtered);
   }
   
   // Apply sorting
