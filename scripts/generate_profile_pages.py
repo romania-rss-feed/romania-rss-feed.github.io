@@ -250,6 +250,9 @@ PROFILE_TEMPLATE = """<!doctype html>
         return before + '<a href="' + profileUrl + '" rel="' + relAttr + '">@' + username + '@' + instance + '</a>';
       }});
       
+      // Clean up Mastodon HTML formatting - remove invisible spans before processing links
+      content = content.replace(/<span class="invisible">[^<]*<\/span>/gi, '');
+      
       // Replace all existing links in content with nofollow (except internal profile links we just created)
       content = content.replace(/<a\\s+([^>]*?)>/gi, (match, attrs) => {{
         const hrefMatch = attrs.match(/href="([^"]*)"/);
@@ -271,6 +274,10 @@ PROFILE_TEMPLATE = """<!doctype html>
         }}
         return match;
       }});
+      
+      // Clean up empty spans and fix ellipsis formatting
+      content = content.replace(/<span[^>]*><\/span>/gi, '');
+      content = content.replace(/<span class="ellipsis">([^<]*)<\/span>/gi, '$1');
       
       const createdAt = formatDate(post.created_at);
       
