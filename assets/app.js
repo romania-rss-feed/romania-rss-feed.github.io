@@ -3,11 +3,14 @@
 const API_BASE = 'https://social.5th.ro/api/v1';
 let profilesData = [];
 let filteredProfiles = [];
+let displayedCount = 50; // Number of profiles to show per page
+const PROFILES_PER_PAGE = 50;
 
 // Initialize app
 document.addEventListener('DOMContentLoaded', async () => {
   await loadProfiles();
   setupSearch();
+  setupLoadMore();
   updateStats();
   renderProfiles();
 });
@@ -39,6 +42,14 @@ function setupSearch() {
   }
 }
 
+// Setup load more button
+function setupLoadMore() {
+  const loadMoreBtn = document.getElementById('loadMoreBtn');
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', loadMoreProfiles);
+  }
+}
+
 // Handle search
 function handleSearch(e) {
   const query = e.target.value.toLowerCase().trim();
@@ -58,6 +69,7 @@ function handleSearch(e) {
     });
   }
   
+  displayedCount = PROFILES_PER_PAGE; // Reset to first page
   updateResultsCount();
   renderProfiles();
 }
@@ -81,6 +93,13 @@ function handleSort(e) {
     }
   });
   
+  displayedCount = PROFILES_PER_PAGE; // Reset to first page
+  renderProfiles();
+}
+
+// Load more profiles
+function loadMoreProfiles() {
+  displayedCount += PROFILES_PER_PAGE;
   renderProfiles();
 }
 
@@ -137,6 +156,7 @@ function formatNumber(num) {
 // Render profiles grid
 function renderProfiles() {
   const grid = document.getElementById('profilesGrid');
+  const loadMoreContainer = document.getElementById('loadMoreContainer');
   if (!grid) return;
   
   if (filteredProfiles.length === 0) {
@@ -149,15 +169,34 @@ function renderProfiles() {
         <p>Nu s-au găsit profiluri care să corespundă criteriilor de căutare.</p>
       </div>
     `;
+    if (loadMoreContainer) loadMoreContainer.style.display = 'none';
     return;
   }
   
-  grid.innerHTML = filteredProfiles.map(profile => createProfileCard(profile)).join('');
+  // Get profiles to display (paginated)
+  const profilesToShow = filteredProfiles.slice(0, displayedCount);
+  const hasMore = filteredProfiles.length > displayedCount;
+  
+  grid.innerHTML = profilesToShow.map(profile => createProfileCard(profile)).join('');
+  
+  // Show/hide load more button
+  if (loadMoreContainer) {
+    if (hasMore) {
+      loadMoreContainer.style.display = 'block';
+      const loadMoreBtn = document.getElementById('loadMoreBtn');
+      if (loadMoreBtn) {
+        const remaining = filteredProfiles.length - displayedCount;
+        loadMoreBtn.textContent = `Vezi mai multe profiluri (${remaining} rămase)`;
+      }
+    } else {
+      loadMoreContainer.style.display = 'none';
+    }
+  }
   
   // Add click handlers
   grid.querySelectorAll('.profile-card').forEach((card, index) => {
     card.addEventListener('click', () => {
-      const profile = filteredProfiles[index];
+      const profile = profilesToShow[index];
       window.location.href = `/profiles/${encodeURIComponent(profile.username)}/`;
     });
   });

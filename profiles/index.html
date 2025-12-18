@@ -47,8 +47,17 @@
 
   <main class="container">
     <div class="explorer-header">
-      <h1 class="explorer-title">Explorator Profiluri</h1>
-      <p class="explorer-subtitle">Explorează toate profilurile Mastodon de pe social.5th.ro</p>
+      <h1 class="explorer-title">Explorator Profiluri Mastodon România</h1>
+      <p class="explorer-subtitle">
+        Explorează și descoperă profiluri Mastodon de pe instanțele românești <strong>social.5th.ro</strong> și <strong>mstdn.ro</strong>. 
+        Caută, filtrează și descoperă profiluri interesante din comunitatea Mastodon din România.
+      </p>
+      <div style="margin-top: 24px; padding: 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);">
+        <p style="margin: 0; color: var(--text-muted); line-height: 1.7; font-size: 15px;">
+          <strong style="color: var(--text);">Mastodon România</strong> este o rețea descentralizată de social media care conectează utilizatorii români de pe diferite instanțe. 
+          Folosește exploratorul pentru a găsi profiluri, feed-uri RSS și să te conectezi cu comunitatea.
+        </p>
+      </div>
     </div>
 
     <section class="search-section">
@@ -80,6 +89,11 @@
     <section class="profiles-section">
       <div class="profiles-grid" id="profilesGrid" aria-live="polite">
         <div class="loading">Se încarcă profilurile…</div>
+      </div>
+      <div id="loadMoreContainer" style="text-align: center; margin-top: 40px; display: none;">
+        <button id="loadMoreBtn" class="btn btn-primary" style="padding: 14px 32px; font-size: 16px;">
+          Vezi mai multe profiluri
+        </button>
       </div>
     </section>
   </main>
