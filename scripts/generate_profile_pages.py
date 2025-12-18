@@ -196,9 +196,9 @@ PROFILE_TEMPLATE = """<!doctype html>
       const diffDays = Math.floor(diffMs / 86400000);
       
       if (diffMins < 1) return 'acum';
-      if (diffMins < 60) return `${{diffMins}}m`;
-      if (diffHours < 24) return `${{diffHours}}h`;
-      if (diffDays < 7) return `${{diffDays}}d`;
+      if (diffMins < 60) return diffMins + 'm';
+      if (diffHours < 24) return diffHours + 'h';
+      if (diffDays < 7) return diffDays + 'd';
       
       return date.toLocaleDateString('ro-RO', {{ year: 'numeric', month: 'short', day: 'numeric' }});
     }}
