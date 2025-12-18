@@ -342,19 +342,12 @@ def add_nofollow_to_links(html_text: str) -> str:
 def get_rel_attribute(username: str, instance: str) -> str:
     """Determine rel attribute based on instance
     - mstdn.ro: always nofollow
-    - social.5th.ro: 20% nofollow, 80% dofollow (based on username hash)"""
+    - social.5th.ro: always dofollow (noopener only)"""
     if instance == "mstdn.ro":
         return "noopener nofollow"
     
-    # For social.5th.ro: 20% nofollow, 80% dofollow
-    # Use hash of username for consistent assignment
-    import hashlib
-    hash_value = int(hashlib.md5(username.encode()).hexdigest(), 16)
-    # 20% chance of nofollow (hash % 100 < 20)
-    if hash_value % 100 < 20:
-        return "noopener nofollow"
-    else:
-        return "noopener"
+    # For social.5th.ro: always dofollow (noopener only)
+    return "noopener"
 
 def main():
     print("📄 Generare pagini profil...")

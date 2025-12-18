@@ -163,28 +163,15 @@ function renderProfiles() {
   });
 }
 
-// Get rel attribute based on instance
-function getRelAttribute(username, instance) {
-  if (!instance || instance === 'mstdn.ro') {
-    return 'noopener nofollow';
-  }
-  
-  // For social.5th.ro: 20% nofollow, 80% dofollow
-  // Use hash of username for consistent assignment
-  let hash = 0;
-  for (let i = 0; i < username.length; i++) {
-    hash = ((hash << 5) - hash) + username.charCodeAt(i);
-    hash = hash & hash; // Convert to 32bit integer
-  }
-  hash = Math.abs(hash);
-  
-  // 20% chance of nofollow (hash % 100 < 20)
-  if (hash % 100 < 20) {
-    return 'noopener nofollow';
-  } else {
+  // Get rel attribute based on instance
+  function getRelAttribute(username, instance) {
+    if (!instance || instance === 'mstdn.ro') {
+      return 'noopener nofollow';
+    }
+    
+    // For social.5th.ro: always dofollow (noopener only)
     return 'noopener';
   }
-}
 
 // Create profile card HTML
 function createProfileCard(profile) {
