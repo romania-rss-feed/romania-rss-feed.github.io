@@ -7,6 +7,7 @@ Detectează automat profilurile noi și actualizează datele existente.
 import json
 import requests
 import sys
+import time
 from pathlib import Path
 from datetime import datetime, timezone
 from typing import List, Dict, Optional
@@ -104,15 +105,40 @@ def discover_new_accounts(known_usernames: List[str]) -> List[Dict]:
     
     for instance_name, api_base in instances:
         try:
+            # Try directory API (returns active/popular accounts in directory)
+            # Note: Directory API only returns accounts that are "active" or manually added to directory
+            # It does NOT return all local accounts - this is a Mastodon API limitation
             url = f"{api_base}/directory"
             params = {"limit": 200, "order": "active", "local": "true"}
+            
+            # Add delay to avoid rate limiting
+            time.sleep(0.5)
+            
             response = requests.get(url, params=params, timeout=10)
             
+            directory_accounts = []
             if response.status_code == 200:
-                accounts = response.json()
-                print(f"  📋 {instance_name} Directory API returned {len(accounts)} accounts")
-                
-                for account in accounts:
+                directory_accounts = response.json()
+                print(f"  📋 {instance_name} Directory API returned {len(directory_accounts)} accounts")
+            elif response.status_code == 429:
+                print(f"  ⚠️  {instance_name} Rate limited, waiting...")
+                time.sleep(2)
+                # Retry once
+                response = requests.get(url, params=params, timeout=10)
+                if response.status_code == 200:
+                    directory_accounts = response.json()
+                    print(f"  📋 {instance_name} Directory API (retry) returned {len(directory_accounts)} accounts")
+            else:
+                print(f"  ⚠️  {instance_name} Directory API returned status {response.status_code}")
+            
+            # Note: We can't get ALL local accounts via public API
+            # Directory API only shows accounts that are "active" or in directory
+            # To get all accounts, we would need admin API access or authenticated requests
+            all_accounts = directory_accounts
+            print(f"  📊 {instance_name} Total accounts from directory: {len(all_accounts)}")
+            print(f"  ℹ️  Note: Directory API only shows active/popular accounts, not all {instance_name} users")
+            
+            for account in all_accounts:
                     username = account.get("username", "")
                     acct = account.get("acct", "")
                     url_field = account.get("url", "")
