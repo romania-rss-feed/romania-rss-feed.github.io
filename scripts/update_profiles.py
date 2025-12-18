@@ -57,20 +57,38 @@ def fetch_instance_stats() -> Dict:
         return {}
 
 def discover_new_accounts(known_usernames: List[str]) -> List[str]:
-    """Discover new accounts by searching directory"""
+    """Discover new accounts by searching directory - only local accounts from social.5th.ro"""
     new_accounts = []
     try:
         # Try to get directory (may not be available on all instances)
         url = f"{API_BASE}/directory"
-        params = {"limit": 100, "order": "active"}
+        params = {"limit": 100, "order": "active", "local": "true"}  # Only local accounts
         response = requests.get(url, params=params, timeout=10)
         if response.status_code == 200:
             accounts = response.json()
             for account in accounts:
                 username = account.get("username", "")
-                if username and username not in known_usernames:
+                acct = account.get("acct", "")
+                
+                # Filter: only local accounts (acct should be just username or username@social.5th.ro)
+                # Exclude federated accounts (those with @domain that's not social.5th.ro)
+                is_local = False
+                if acct:
+                    if "@" not in acct:
+                        # Local account without domain
+                        is_local = True
+                    elif acct.endswith("@social.5th.ro") or acct == f"{username}@social.5th.ro":
+                        # Local account with explicit domain
+                        is_local = True
+                elif username:
+                    # If no acct field, assume local if username exists
+                    is_local = True
+                
+                if is_local and username and username not in known_usernames:
                     new_accounts.append(username)
-                    print(f"  ✨ Profil nou descoperit: {username}")
+                    print(f"  ✨ Profil nou descoperit (local): {username}")
+        else:
+            print(f"⚠️  Directory API returned status {response.status_code}")
     except Exception as e:
         print(f"⚠️  Nu s-au putut descoperi profiluri noi: {e}")
     

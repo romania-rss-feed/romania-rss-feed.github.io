@@ -43,6 +43,8 @@ jobs:
           python3 scripts/generate_sitemap.py
       
       - name: Commit and push changes
+        permissions:
+          contents: write
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
