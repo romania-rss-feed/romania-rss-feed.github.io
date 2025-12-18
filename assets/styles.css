@@ -9,8 +9,8 @@
   --text-muted: #b8c8d8;
   --text-dim: #9baec8;
   --border: rgba(217, 225, 232, 0.2);
-  --accent: #4f50d4;
-  --accent-hover: #6364ff;
+  --accent: #8b9cff;
+  --accent-hover: #9badff;
   --accent-2: #00d4aa;
   --accent-3: #ffd23f;
   --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -205,14 +205,14 @@ a:hover {
 }
 
 .btn-primary {
-  background: #4f50d4;
-  color: #ffffff;
+  background: #8b9cff;
+  color: #000000;
   font-weight: 700;
 }
 
 .btn-primary:hover {
-  background: #6364ff;
-  color: #ffffff;
+  background: #9badff;
+  color: #000000;
   text-decoration: none;
   transform: translateY(-1px);
   box-shadow: var(--shadow-lg);
