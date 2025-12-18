@@ -104,15 +104,23 @@ function renderTopProfiles() {
 
 async function loadServerStats() {
   try {
-    const response = await fetch('/data/server-stats.json');
+    // Add cache busting to ensure fresh data
+    const cacheBuster = new Date().getTime();
+    const response = await fetch(`/data/server-stats.json?t=${cacheBuster}`);
     if (!response.ok) throw new Error('Failed to load server stats');
     const stats = await response.json();
-    renderServerStats(stats);
+    
+    // Validate that we have real data, not placeholder
+    if (stats && stats.version && stats.version !== '4.x' && stats.stats && stats.stats.user_count > 0) {
+      renderServerStats(stats);
+    } else {
+      throw new Error('Invalid or placeholder data');
+    }
   } catch (error) {
     console.error('Error loading server stats:', error);
     const serverStatsEl = document.getElementById('serverStats');
     if (serverStatsEl) {
-      serverStatsEl.innerHTML = '<p style="color: var(--text-muted);">Statisticile serverului nu sunt disponibile momentan.</p>';
+      serverStatsEl.innerHTML = '<p style="color: var(--text-muted);">Statisticile serverului nu sunt disponibile momentan. Te rugăm să reîmprospătezi pagina.</p>';
     }
   }
 }
