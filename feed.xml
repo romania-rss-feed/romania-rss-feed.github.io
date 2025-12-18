@@ -5,308 +5,637 @@
     <link>https://romania-rss-feed.github.io/</link>
     <description>Feed RSS pentru profilurile Mastodon de pe social.5th.ro</description>
     <language>ro</language>
-    <lastBuildDate>Thu, 18 Dec 2025 19:01:29 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Dec 2025 19:06:09 +0000</lastBuildDate>
     <atom:link href="https://romania-rss-feed.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5th Social (@5th)</title>
+      <link>https://romania-rss-feed.github.io/profiles/5th/</link>
+      <description>&amp;lt;p&amp;gt;Admin of &amp;lt;a href=&amp;quot;https://social.5th.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;social.5th.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;</description>
+      <guid isPermaLink="false">profile-5th</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
     <item>
       <title>9z Blog (@9z)</title>
       <link>https://romania-rss-feed.github.io/profiles/9z/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://9z.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;9z.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; este un blog-magazin online cu advertoriale SEO, comunicate de presă, știri, recomandări, lifestyle, pariuri sportive și business. Conținut clar, optimizat și ușor de citit, pentru branduri și cititori care vor informație utilă, nu doar clickbait. 📰🚀&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-9z</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>adrian (@a)</title>
+      <link>https://romania-rss-feed.github.io/profiles/a/</link>
+      <description />
+      <guid isPermaLink="false">profile-a</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Adelin VIRGILIU (@adelinuss)</title>
+      <link>https://romania-rss-feed.github.io/profiles/adelinuss/</link>
+      <description />
+      <guid isPermaLink="false">profile-adelinuss</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Advertorials Romania (@advertorial)</title>
+      <link>https://romania-rss-feed.github.io/profiles/advertorial/</link>
+      <description>&amp;lt;p&amp;gt;Advertorial&amp;lt;/p&amp;gt;</description>
+      <guid isPermaLink="false">profile-advertorial</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Top afaceri Romania (@afaceri)</title>
+      <link>https://romania-rss-feed.github.io/profiles/afaceri/</link>
+      <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://iafaceri.ro/&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;iafaceri.ro/&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://iafaceri.ro/contact-iafaceri/&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;iafaceri.ro/contact-iafaceri/&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;</description>
+      <guid isPermaLink="false">profile-afaceri</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Afaceri 24/7 (@afaceri24)</title>
       <link>https://romania-rss-feed.github.io/profiles/afaceri24/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://Afaceri24.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;Afaceri24.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – hub de promovare pentru &amp;lt;a href=&amp;quot;https://social.5th.ro/tags/afaceri&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;afaceri&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; locale și online. Locul unde antreprenorii își pot prezenta brandul, ofertele, serviciile și poveștile de business, prin articole, comunicate și recomandări. Un spațiu ded</description>
       <guid isPermaLink="false">profile-afaceri24</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Afaceri TOP (@afaceri_top)</title>
       <link>https://romania-rss-feed.github.io/profiles/afaceri_top/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://afaceritop.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;afaceritop.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – selecție de afaceri, interviuri, studii de caz, idei și resurse pentru antreprenori. Un hub unde descoperi branduri, proiecte și oameni care construiesc business-uri solide în România. 📊🏆&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-afaceri_top</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Promovare afaceri (@AfaceriProfi)</title>
       <link>https://romania-rss-feed.github.io/profiles/AfaceriProfi/</link>
       <description>&amp;lt;p&amp;gt;📈 &amp;lt;a href=&amp;quot;https://AfaceriProfi.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;AfaceriProfi.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – blog de &amp;lt;a href=&amp;quot;https://social.5th.ro/tags/afaceri&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;afaceri&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;  &amp;lt;a href=&amp;quot;https://social.5th.ro/tags/marketing&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;marketing&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; și &amp;lt;a href=&amp;quot;https://social.5th.ro/tags/antreprenoriat&amp;quot; class=&amp;quot;mention</description>
       <guid isPermaLink="false">profile-AfaceriProfi</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>AI Advertising (@ai_advertising)</title>
       <link>https://romania-rss-feed.github.io/profiles/ai_advertising/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://aiadvertising.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;aiadvertising.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – idei, ghiduri și studii de caz despre reclame făcute cu ajutorul AI: automatizare, creativitate, targetare, optimizare bugete și campanii smart pentru branduri de toate dimensiunile. 🤖📈&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-ai_advertising</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Adalbert (@aiurea)</title>
+      <link>https://romania-rss-feed.github.io/profiles/aiurea/</link>
+      <description>&amp;lt;p&amp;gt;Golitor de conținut&amp;lt;/p&amp;gt;</description>
+      <guid isPermaLink="false">profile-aiurea</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Alin Constantin Cimpian (@AlinConstantinCimpian)</title>
+      <link>https://romania-rss-feed.github.io/profiles/AlinConstantinCimpian/</link>
+      <description />
+      <guid isPermaLink="false">profile-AlinConstantinCimpian</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Antreprenor CLUB (@AntreprenorCLUB)</title>
+      <link>https://romania-rss-feed.github.io/profiles/AntreprenorCLUB/</link>
+      <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://AntreprenorClub.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;AntreprenorClub.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – comunitate pentru antreprenori, freelanceri și oameni de business. Idei de afaceri, studii de caz, marketing, management, mindset și povești reale din mediul antreprenorial românesc. 💼🤝&amp;lt;/p&amp;gt;</description>
+      <guid isPermaLink="false">profile-AntreprenorCLUB</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Arta Constructiilor (@ArtaConstructiilor)</title>
       <link>https://romania-rss-feed.github.io/profiles/ArtaConstructiilor/</link>
       <description>&amp;lt;p&amp;gt;Arhitectură, design și inginerie privite ca artă a spațiului construit. Idei, detalii tehnice și exemple de proiecte care îmbină estetica, funcționalitatea și durabilitatea. 🏗️✨&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://arta-constructiilor.ro/constructii/amenajari&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;ellipsis&amp;quot;&amp;gt;arta-constructiilor.ro/constru&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;ctii/amenajari&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-ArtaConstructiilor</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Banat (@banat)</title>
       <link>https://romania-rss-feed.github.io/profiles/banat/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://banat-news.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;banat-news.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – știri, reportaje și povești din Banat: Timișoara și orașele din jur, sate, infrastructură, economie, cultură, comunități și afaceri locale. Noutăți dintr-o regiune mereu în mișcare. 🌾🏙️&amp;lt;br /&amp;gt;&amp;lt;a href=&amp;quot;https://social.5th.ro/tags/politic&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;politic&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a</description>
       <guid isPermaLink="false">profile-banat</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Bianca (@Bianca0271)</title>
+      <link>https://romania-rss-feed.github.io/profiles/Bianca0271/</link>
+      <description>&amp;lt;p&amp;gt;Young adult in love with nature and doing healthy things for a longer and happier life. I am here to open about my life and the thinks i get to do&amp;lt;/p&amp;gt;</description>
+      <guid isPermaLink="false">profile-Bianca0271</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Biziday (@biziday)</title>
+      <link>https://romania-rss-feed.github.io/profiles/biziday/</link>
+      <description>&amp;lt;p&amp;gt;Acest cont a fost dezactivat!&amp;lt;br /&amp;gt;Reason: third party content posting.&amp;lt;/p&amp;gt;</description>
+      <guid isPermaLink="false">profile-biziday</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>BIZ Woman (@BIZWoman)</title>
       <link>https://romania-rss-feed.github.io/profiles/BIZWoman/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://BizWoman.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;BizWoman.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – spațiu online dedicat femeilor &amp;lt;a href=&amp;quot;https://social.5th.ro/tags/antreprenor&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;antreprenor&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; din &amp;lt;a href=&amp;quot;https://social.5th.ro/tags/Rom%C3%A2nia&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;România&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; - Inspirație, motivație, povești de succes, </description>
       <guid isPermaLink="false">profile-BIZWoman</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Blind°°Coyote (@Blind__Coyote)</title>
+      <link>https://romania-rss-feed.github.io/profiles/Blind__Coyote/</link>
+      <description>&amp;lt;p&amp;gt;BlindººCoyote is a Dutch-born tonemaster/producer previously located in the U.S. and in Brussels, but now working from his studio in southeastern Spain. He started out with analogue modular synthesizers and tape loops in the late 1970´s and has evolved along with the progressions of electronic music up until today, yet taking a rather personal approach.&amp;lt;/p&amp;gt;</description>
+      <guid isPermaLink="false">profile-Blind__Coyote</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>BoardingPass (@BoardingPass)</title>
+      <link>https://romania-rss-feed.github.io/profiles/BoardingPass/</link>
+      <description>&amp;lt;p&amp;gt;🇷🇴 &amp;lt;a href=&amp;quot;https://mstdn.ro/tags/Romania&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;Romania&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;amp;#39;s leading aviation news website. Sharing news on Instagram, Facebook, LinkedIn, WhatsApp Channels and Telegram. Read our &amp;lt;a href=&amp;quot;https://mstdn.ro/tags/dinavia%C8%9Bie&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;dinaviație&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; newsletter on www.DinAviatie.ro.&amp;lt;/p&amp;gt;</description>
+      <guid isPermaLink="false">profile-BoardingPass</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>bobe (@bobelino)</title>
+      <link>https://romania-rss-feed.github.io/profiles/bobelino/</link>
+      <description />
+      <guid isPermaLink="false">profile-bobelino</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Bogdan (@bogdan)</title>
+      <link>https://romania-rss-feed.github.io/profiles/bogdan/</link>
+      <description>&amp;lt;p&amp;gt;👨‍💻software engineer &amp;amp;amp; 🤖cybersecurity pro _&amp;lt;br /&amp;gt;&amp;lt;a href=&amp;quot;https://mstdn.ro/tags/csharp&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;csharp&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://mstdn.ro/tags/python&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;python&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://mstdn.ro/tags/golang&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;golang&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; | &amp;lt;a href=&amp;quot;https://mstdn.ro/tags/kubernetes&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;kubernetes&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://mstdn.ro/tags/azure&amp;quot; clas</description>
+      <guid isPermaLink="false">profile-bogdan</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Brașov (@brasov)</title>
       <link>https://romania-rss-feed.github.io/profiles/brasov/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://brasov-azi.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;brasov-azi.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – știri, reportaje și povești despre Brașov: oraș, cartiere, oameni, evenimente, business local și turism. Tot ce merită văzut, știut și discutat azi în Brașov. 🏔️🏰&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://social.5th.ro/tags/stiri&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;stiri&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://social.5th.</description>
       <guid isPermaLink="false">profile-brasov</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Bucovina (@bucovina)</title>
       <link>https://romania-rss-feed.github.io/profiles/bucovina/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://bucovina-news.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;bucovina-news.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – știri, reportaje, interviuri și povești din Bucovina: orașe și sate, tradiții, turism, natură, oameni și afaceri locale. Un hub de informații pentru cei care iubesc Bucovina, de acasă sau de departe.&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://social.5th.ro/tags/politica&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span</description>
       <guid isPermaLink="false">profile-bucovina</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Cetatean Model (@cetatean_model)</title>
       <link>https://romania-rss-feed.github.io/profiles/cetatean_model/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://cetateanmodel.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;cetateanmodel.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – platformă despre civism, responsabilitate, bun-simț, implicare și respect pentru comunitate. Articole despre drepturi și obligații, mediu, voluntariat, educație și exemple pozitive de „cetățeni model”. 🧭&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-cetatean_model</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Cristi P (@chryscrz)</title>
+      <link>https://romania-rss-feed.github.io/profiles/chryscrz/</link>
+      <description />
+      <guid isPermaLink="false">profile-chryscrz</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Clasici (@clasici)</title>
       <link>https://romania-rss-feed.github.io/profiles/clasici/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://clasici.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;clasici.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – locul unde se întâlnesc literatura clasică, autorii mari, cărțile esențiale și ideile care au modelat cultura. Citate, recomandări de lectură, rezumate și articole pentru iubitorii de carte adevărată. 📚&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-clasici</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>clinic sanatos (@clinic_sanatos)</title>
       <link>https://romania-rss-feed.github.io/profiles/clinic_sanatos/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://clinic-sanatos.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;clinic-sanatos.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – articole de sănătate, prevenție, analize, tratamente și stil de viață echilibrat. Explicăm pe înțelesul tuturor ce spun medicii, rezultatele și recomandările, ca să poți avea grijă mai bine de tine și de familie. 🩺🌿&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-clinic_sanatos</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Cluj (@cluj)</title>
       <link>https://romania-rss-feed.github.io/profiles/cluj/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://cluj-azi.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;cluj-azi.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – știri, reportaje și povești din Cluj: oraș, cartiere, campusuri, tech, cultură, evenimente și business local. Pulse-ul zilnic al Clujului, într-un singur loc.&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://social.5th.ro/tags/stiri&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;stiri&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://social.5th.ro/tags/</description>
       <guid isPermaLink="false">profile-cluj</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Constanța (@constanta)</title>
       <link>https://romania-rss-feed.github.io/profiles/constanta/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://constanta-azi.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;constanta-azi.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – știri, reportaje și povești de la malul mării: port, plajă, turism, evenimente, cultură, trafic, business local și viața de zi cu zi în Constanța. 🌊⚓&amp;lt;br /&amp;gt;&amp;lt;a href=&amp;quot;https://social.5th.ro/tags/stiri&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;stiri&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://social.5th.ro/tags/</description>
       <guid isPermaLink="false">profile-constanta</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Constructii 360 (@constructii360)</title>
       <link>https://romania-rss-feed.github.io/profiles/constructii360/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://constructii360.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;constructii360.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – articole, studii de caz și soluții pentru construcții, renovări, materiale, utilaje, șantiere și proiecte rezidențiale/industriale. Informație „360°” pentru profesioniști și pasionați de &amp;lt;a href=&amp;quot;https://social.5th.ro/tags/construc%C8%9Bii&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;construc</description>
       <guid isPermaLink="false">profile-constructii360</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Cotele apelor Dunării (@coteledunarii)</title>
+      <link>https://romania-rss-feed.github.io/profiles/coteledunarii/</link>
+      <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://danubealert.com/ro/Romania&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;danubealert.com/ro/Romania&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;span class=&amp;quot;h-card&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://mastodon.social/@danubealert&amp;quot; class=&amp;quot;u-url mention&amp;quot;&amp;gt;@&amp;lt;span&amp;gt;danubealert&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;a href=&amp;quot;https://masto.bg/@danube&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://</description>
+      <guid isPermaLink="false">profile-coteledunarii</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>PetrePetre (@CPetrePetre1RO)</title>
+      <link>https://romania-rss-feed.github.io/profiles/CPetrePetre1RO/</link>
+      <description />
+      <guid isPermaLink="false">profile-CPetrePetre1RO</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Chris (@Cristian)</title>
+      <link>https://romania-rss-feed.github.io/profiles/Cristian/</link>
+      <description />
+      <guid isPermaLink="false">profile-Cristian</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>CritteR (@critter)</title>
+      <link>https://romania-rss-feed.github.io/profiles/critter/</link>
+      <description />
+      <guid isPermaLink="false">profile-critter</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Cutremur (@cutremur)</title>
       <link>https://romania-rss-feed.github.io/profiles/cutremur/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://cutremurul.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;cutremurul.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – informații despre seisme, hărți, magnitudine, intensitate, zone afectate și recomandări de pregătire. Nu este sistem oficial de alertare, ci o resursă de monitorizare și educație pentru public. 🌍&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://social.5th.ro/tags/Cutremur&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;Cutremur&amp;lt;</description>
       <guid isPermaLink="false">profile-cutremur</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Cutremure Romania (@cutremurul_ro)</title>
+      <link>https://romania-rss-feed.github.io/profiles/cutremurul_ro/</link>
+      <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://cutremurul.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;cutremurul.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; - Monitorizare seisme, informații despre cutremure, intensitate, zone afectate și reguli de pregătire. Nu este sistem oficial de alertare, ci doar informare.&amp;lt;br /&amp;gt;&amp;lt;a href=&amp;quot;https://mstdn.ro/tags/cutremur&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;cutremur&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://mstdn.ro/tags/seis</description>
+      <guid isPermaLink="false">profile-cutremurul_ro</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Delta Dunarii (@deltadunarii)</title>
+      <link>https://romania-rss-feed.github.io/profiles/deltadunarii/</link>
+      <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://mstdn.ro/tags/danubedelta&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;danubedelta&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://mstdn.ro/tags/deltadunarii&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;deltadunarii&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://mstdn.ro/tags/cazaredeltadunarii&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;cazaredeltadunarii&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://mstdn.ro/tags/pensiunideltadunarii&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;pensiunideltadunarii&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://mstdn.ro/tags/</description>
+      <guid isPermaLink="false">profile-deltadunarii</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Dobrogea (@dobrogea)</title>
       <link>https://romania-rss-feed.github.io/profiles/dobrogea/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://dobrogea-news.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;dobrogea-news.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – știri, reportaje și povești din Dobrogea: orașe, sate, porturi, litoral, Delta Dunării, energie, agricultură și turism. O privire de ansamblu asupra regiunii dintre Dunăre și Marea Neagră. 🌊🌾&amp;lt;br /&amp;gt;&amp;lt;a href=&amp;quot;https://social.5th.ro/tags/turism&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;turism&amp;lt;/sp</description>
       <guid isPermaLink="false">profile-dobrogea</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Doctor 360 (@doctor360)</title>
       <link>https://romania-rss-feed.github.io/profiles/doctor360/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://doctor360.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;doctor360.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – hub de sănătate și stil de viață, cu informații explicate clar despre afecțiuni, prevenție, analize, tratamente și relația cu medicii. Articole „360°” pentru o imagine completă asupra sănătății tale. 🩺&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-doctor360</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Doc Blog (@DoctoriteBlog)</title>
       <link>https://romania-rss-feed.github.io/profiles/DoctoriteBlog/</link>
       <description>&amp;lt;p&amp;gt;🩺📚 &amp;lt;a href=&amp;quot;https://Doctorite.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;Doctorite.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – blog de sănătate și stil de viață: sfatul medicului, „mit sau realitate”, clinici, tratamente și recomandări explicate pe înțelesul tuturor. Articole verificate, ca să iei decizii mai bune pentru sănătatea ta și a familiei.&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-DoctoriteBlog</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>e-faq.ro (@efaq)</title>
       <link>https://romania-rss-feed.github.io/profiles/efaq/</link>
       <description>&amp;lt;p&amp;gt;Răspundem pe scurt la întrebările tale lungi. &amp;lt;a href=&amp;quot;https://e-faq.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;e-faq.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; adună explicații clare, ghiduri practice și răspunsuri la întrebări frecvente, pe înțelesul tuturor.&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-efaq</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>era tehnologica (@eratehnologica)</title>
       <link>https://romania-rss-feed.github.io/profiles/eratehnologica/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://EraTehnologica.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;EraTehnologica.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – revistă online despre tehnologie, IT, business, SEO, educație digitală și viață modernă. Ghiduri, analize, comunicate și recomandări pentru o lume în care totul se mută în online. 💡💻&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-eratehnologica</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Facultatea de Energetica - UPB (@facultateadeenergetica)</title>
+      <link>https://romania-rss-feed.github.io/profiles/facultateadeenergetica/</link>
+      <description>&amp;lt;p&amp;gt;Energia reprezintă sângele unei economii şi în final al unei civilizaţii. În Epistola întâia către Corinteni Sfântului Apostol Pavel spunea „dacă dragoste nu am, nimic nu sunt”, parafrazând aceasta aserţiune Marin Preda îşi încheia romanul „Cel mai iubit dintre pământeni” cu cuvintele „dacă dragoste nu e nimic nu e”, credem că putem spune la rândul nostru „fără energie nimic nu e”.&amp;lt;/p&amp;gt;</description>
+      <guid isPermaLink="false">profile-facultateadeenergetica</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Femei A-Z (@femeiAZ)</title>
       <link>https://romania-rss-feed.github.io/profiles/femeiAZ/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://femeiaz.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;femeiaz.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – platformă dedicată femeii de azi: carieră, familie, sănătate, relații, frumusețe, dezvoltare personală și povești reale. Conținut sincer, modern și aplicat, pentru un stil de viață echilibrat. 🌷&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-femeiAZ</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>femeie antreprenor (@femeie_antreprenor)</title>
       <link>https://romania-rss-feed.github.io/profiles/femeie_antreprenor/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://femeie-antreprenor.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;femeie-antreprenor.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – spațiu dedicat femeilor care construiesc afaceri: interviuri, povești reale, idei de business, marketing, mindset și resurse pentru mai multă independență financiară și încredere în propriul drum. 💼✨&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-femeie_antreprenor</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Gabriel Necititul (@gabigiulusan)</title>
+      <link>https://romania-rss-feed.github.io/profiles/gabigiulusan/</link>
+      <description />
+      <guid isPermaLink="false">profile-gabigiulusan</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Geidi Veo (@geidiveo)</title>
+      <link>https://romania-rss-feed.github.io/profiles/geidiveo/</link>
+      <description />
+      <guid isPermaLink="false">profile-geidiveo</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>gioni (@gioni)</title>
+      <link>https://romania-rss-feed.github.io/profiles/gioni/</link>
+      <description />
+      <guid isPermaLink="false">profile-gioni</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>h (@hangedmyselfinthebathroom)</title>
+      <link>https://romania-rss-feed.github.io/profiles/hangedmyselfinthebathroom/</link>
+      <description />
+      <guid isPermaLink="false">profile-hangedmyselfinthebathroom</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Iași (@Iasi)</title>
       <link>https://romania-rss-feed.github.io/profiles/Iasi/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://iasi-azi.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;iasi-azi.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – știri, reportaje și povești din Iași: oraș, cartiere, universități, cultură, evenimente, business local și viață urbană. Tot ce merită urmărit azi în Iași, într-un singur loc. 🏛️&amp;lt;br /&amp;gt;&amp;lt;a href=&amp;quot;https://social.5th.ro/tags/stiri&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;stiri&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://</description>
       <guid isPermaLink="false">profile-Iasi</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Iasi AZI (@iasi)</title>
+      <link>https://romania-rss-feed.github.io/profiles/iasi/</link>
+      <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://Iasi-Azi.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;Iasi-Azi.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; este publicația locală dedicată știrilor din Iași: actualitate, administrație, educație, sănătate, sport, evenimente și business.&amp;lt;/p&amp;gt;</description>
+      <guid isPermaLink="false">profile-iasi</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>iEnergie (@ienergie)</title>
       <link>https://romania-rss-feed.github.io/profiles/ienergie/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://ienergie.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;ienergie.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – articole, ghiduri și idei despre energie verde, panouri fotovoltaice, eficiență energetică, soluții off-grid și optimizarea consumului. Pentru cei care vor facturi mai mici și un stil de viață mai sustenabil. ⚡&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-ienergie</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>iFemeie (@iFemeie)</title>
       <link>https://romania-rss-feed.github.io/profiles/iFemeie/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://ifemeie.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;ifemeie.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – articole pentru femei despre sănătate, relații, carieră, antreprenoriat, stil de viață și echilibru emoțional. Un spațiu online prietenos, cu conținut sincer, util și ușor de aplicat în viața de zi cu zi. 🌸&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-iFemeie</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Inovare afaceri (@inovare_afaceri)</title>
       <link>https://romania-rss-feed.github.io/profiles/inovare_afaceri/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://Inovare-Afaceri.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;Inovare-Afaceri.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – idei, studii de caz și resurse pentru antreprenori care vor să aducă inovația în business: digitalizare, automatizare, marketing modern și modele de creștere sustenabilă. 🚀📊&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-inovare_afaceri</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Alexandru (@ixsplit)</title>
+      <link>https://romania-rss-feed.github.io/profiles/ixsplit/</link>
+      <description />
+      <guid isPermaLink="false">profile-ixsplit</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title> (@linuxwebzine)</title>
+      <link>https://romania-rss-feed.github.io/profiles/linuxwebzine/</link>
+      <description />
+      <guid isPermaLink="false">profile-linuxwebzine</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Lunaala Moirae (@lunaala)</title>
+      <link>https://romania-rss-feed.github.io/profiles/lunaala/</link>
+      <description />
+      <guid isPermaLink="false">profile-lunaala</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Lupul Dacic (@lupuldacic)</title>
+      <link>https://romania-rss-feed.github.io/profiles/lupuldacic/</link>
+      <description>&amp;lt;p&amp;gt;Lupul Dacic este anti-capitalist. Din când în când, programează.&amp;lt;/p&amp;gt;</description>
+      <guid isPermaLink="false">profile-lupuldacic</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mardare (@Mardare)</title>
+      <link>https://romania-rss-feed.github.io/profiles/Mardare/</link>
+      <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://mstdn.ro/tags/linux&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;linux&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://mstdn.ro/tags/gentoo&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;gentoo&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;https://mstdn.ro/tags/redcore&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;redcore&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;</description>
+      <guid isPermaLink="false">profile-Mardare</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Matei Mincu (@matei)</title>
+      <link>https://romania-rss-feed.github.io/profiles/matei/</link>
+      <description />
+      <guid isPermaLink="false">profile-matei</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mihai Trica :verified: 🦇 (@mihai)</title>
+      <link>https://romania-rss-feed.github.io/profiles/mihai/</link>
+      <description>&amp;lt;p&amp;gt;IT, tech, &amp;lt;a href=&amp;quot;https://mstdn.ro/tags/traveling&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;traveling&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;, movies, &amp;lt;a href=&amp;quot;https://mstdn.ro/tags/FooFighters&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;FooFighters&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;, &amp;lt;a href=&amp;quot;https://mstdn.ro/tags/SteauaBucuresti&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;SteauaBucuresti&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;, quadcopters, &amp;lt;a href=&amp;quot;https://mstdn.ro/tags/volley&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;volley&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;, &amp;lt;a href=&amp;quot;https://mstdn.ro/tags/tenni</description>
+      <guid isPermaLink="false">profile-mihai</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>مُؤْمِن (@mu2min)</title>
+      <link>https://romania-rss-feed.github.io/profiles/mu2min/</link>
+      <description>&amp;lt;p&amp;gt;EU regional messenger of the Ezzedeen al-Qassam Brigades (EQB)&amp;lt;/p&amp;gt;</description>
+      <guid isPermaLink="false">profile-mu2min</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Neawoa (@naewoa)</title>
+      <link>https://romania-rss-feed.github.io/profiles/naewoa/</link>
+      <description />
+      <guid isPermaLink="false">profile-naewoa</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Noutati 24/7 (@noutati24)</title>
       <link>https://romania-rss-feed.github.io/profiles/noutati24/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://noutati24.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;noutati24.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – știri, articole și analize din România și din lume, 24/7. Actualitate, economie, tehnologie, sănătate, lifestyle și povești care contează, într-un format ușor de citit și distribuit. 📰&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-noutati24</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title> (@octavsly)</title>
+      <link>https://romania-rss-feed.github.io/profiles/octavsly/</link>
+      <description />
+      <guid isPermaLink="false">profile-octavsly</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Oltenia (@oltenia)</title>
       <link>https://romania-rss-feed.github.io/profiles/oltenia/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://oltenia-news.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;oltenia-news.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – știri, reportaje și povești din Oltenia: orașe și sate, economie locală, infrastructură, cultură, tradiții și oameni care schimbă regiunea. Un punct de referință pentru noutățile din Oltenia. 🌾&amp;lt;br /&amp;gt;&amp;lt;a href=&amp;quot;https://social.5th.ro/tags/politica&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;politica</description>
       <guid isPermaLink="false">profile-oltenia</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Partizani (@Partizani)</title>
       <link>https://romania-rss-feed.github.io/profiles/Partizani/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://Partizani.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;Partizani.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; este un hub de informații generale și ghiduri practice: sănătate, stil de viață, pescuit, Delta Dunării, tehnologie, business și multe altele. Ajutăm cititorii să ia decizii informate, cu articole clare, actuale și ușor de înțeles.&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-Partizani</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Pentru Oameni (@pentruoameni)</title>
       <link>https://romania-rss-feed.github.io/profiles/pentruoameni/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://PentruOameni.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;PentruOameni.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – locul unde comunitatea se întâlnește cu inspirația. Articole despre proiecte sociale, voluntariat, sănătate, educație, mediu, stil de viață și povești care arată că binele există și merită împărtășit. 🤝💡&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-pentruoameni</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>MR.BangBang (@Pixelu)</title>
+      <link>https://romania-rss-feed.github.io/profiles/Pixelu/</link>
+      <description>&amp;lt;p&amp;gt;BeTheBest,SleepTheRest.&amp;lt;/p&amp;gt;</description>
+      <guid isPermaLink="false">profile-Pixelu</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>PR 360 (@pr360)</title>
       <link>https://romania-rss-feed.github.io/profiles/pr360/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://pr360.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;pr360.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – PR, media și comunicare 360°. Comunicate de presă, advertoriale, campanii integrate, branding și strategie de comunicare pentru branduri care vor vizibilitate și reputație solidă, nu doar apariții ocazionale. 📢&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-pr360</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>PR Business (@prbusiness)</title>
       <link>https://romania-rss-feed.github.io/profiles/prbusiness/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://PRBusiness.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;PRBusiness.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – platformă de PR, comunicate de presă și știri de business. Ajutăm brandurile, agențiile și antreprenorii să își spună povestea corect, prin articole, interviuri, lansări și campanii de promovare bine structurate. 📰📈&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-prbusiness</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Matei M :ivory_elephant: (@profudemate)</title>
+      <link>https://romania-rss-feed.github.io/profiles/profudemate/</link>
+      <description>&amp;lt;p&amp;gt;Math teacher at &amp;amp;quot;Elina Matei Basarab&amp;amp;quot; Technologic Economic High School&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;Înseamnă să te iubești foarte puțin dacă urăști pe cineva, dar înseamnă să urăști pe toată lumea dacă nu te iubești decât pe tine!&amp;lt;/p&amp;gt;</description>
+      <guid isPermaLink="false">profile-profudemate</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Recent News (@recent_news)</title>
       <link>https://romania-rss-feed.github.io/profiles/recent_news/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://recent-news.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;recent-news.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – știri și analize din &amp;lt;a href=&amp;quot;https://social.5th.ro/tags/Rom%C3%A2nia&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;România&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; și din lume, actualizate constant. Actualitate, economie, tech, sport, lifestyle și subiecte în tendințe, într-un format rapid și ușor de parcurs. 📰&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-recent_news</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Recorder (@recorder_rss)</title>
+      <link>https://romania-rss-feed.github.io/profiles/recorder_rss/</link>
+      <description>&amp;lt;p&amp;gt;Acest cont a fost dezactivat!&amp;lt;br /&amp;gt;Reason: third party content posting.&amp;lt;/p&amp;gt;</description>
+      <guid isPermaLink="false">profile-recorder_rss</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Grosaru Robert (RoBo) (@robo)</title>
+      <link>https://romania-rss-feed.github.io/profiles/robo/</link>
+      <description />
+      <guid isPermaLink="false">profile-robo</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>👑Jurnalul Familiei Regale🇷🇴 (@romaniaregalarss)</title>
+      <link>https://romania-rss-feed.github.io/profiles/romaniaregalarss/</link>
+      <description>&amp;lt;p&amp;gt;! Acest cont este un bot 🤖 (neoficial) !&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;Vor fi postate toate articolele de pe feed-ul oficial al jurnalului România Regală, precum și toate video-urile postate pe canalul oficial de YouTube.&amp;lt;/p&amp;gt;</description>
+      <guid isPermaLink="false">profile-romaniaregalarss</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Solutii Constructii (@SolutiiConstructii)</title>
       <link>https://romania-rss-feed.github.io/profiles/SolutiiConstructii/</link>
       <description>&amp;lt;p&amp;gt;Specialiști în soluții pentru construcții și amenajări: materiale, tehnologii moderne, studii de caz și ghiduri practice. Ajutăm dezvoltatori, firme și DIY să construiască mai sigur, mai eficient și mai durabil.&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://solutii-constructii.ro/&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;solutii-constructii.ro/&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-SolutiiConstructii</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Stiri Democratice (@stiri_democratice)</title>
       <link>https://romania-rss-feed.github.io/profiles/stiri_democratice/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://stiridemocratice.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;stiridemocratice.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – știri, analize și explicații despre democrație, instituții, alegeri, drepturi civice și stat de drept. Conținut echilibrat, argumentat și orientat spre înțelegere, nu doar spre scandal. ⚖️🗳️&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-stiri_democratice</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Stiri LIVE (@stiri_live)</title>
+      <link>https://romania-rss-feed.github.io/profiles/stiri_live/</link>
+      <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://stiri-live.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;stiri-live.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – &amp;lt;a href=&amp;quot;https://social.5th.ro/tags/%C8%99tiri&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;știri&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; și &amp;lt;a href=&amp;quot;https://social.5th.ro/tags/informa%C8%9Bii&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;informații&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; în timp real, din &amp;lt;a href=&amp;quot;https://social.5th.ro/tags/Rom%C3%A2nia&amp;quot; class</description>
+      <guid isPermaLink="false">profile-stiri_live</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Stiri sociale (@stiri_sociale)</title>
       <link>https://romania-rss-feed.github.io/profiles/stiri_sociale/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://stirisociale.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;stirisociale.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – știri, povești și analize despre oameni, comunități, ONG-uri, drepturi sociale, educație, mediu și inițiative civice. Un loc în care vezi ce se întâmplă „la firul ierbii”, nu doar în titluri de breaking news. 🤝&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-stiri_sociale</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>ThinkRoot (@thinkroot)</title>
+      <link>https://romania-rss-feed.github.io/profiles/thinkroot/</link>
+      <description>&amp;lt;p&amp;gt;www.thinkroot.xyz&amp;lt;/p&amp;gt;</description>
+      <guid isPermaLink="false">profile-thinkroot</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>TOP 15 (@top)</title>
       <link>https://romania-rss-feed.github.io/profiles/top/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://Top15.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;Top15.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; adună la un loc topuri, liste și recomandări din mai multe domenii: shopping online, lifestyle, turism, jocuri, zodii, business și nu numai. &amp;lt;a href=&amp;quot;https://social.5th.ro/tags/TOP5&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;#&amp;lt;span&amp;gt;TOP5&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;, &amp;lt;a href=&amp;quot;https://social.5th.ro/tags/TOP10&amp;quot; class=&amp;quot;mention hashtag&amp;quot; re</description>
       <guid isPermaLink="false">profile-top</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>TOP Antreprenor (@topantreprenor)</title>
       <link>https://romania-rss-feed.github.io/profiles/topantreprenor/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://topantreprenor.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;topantreprenor.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; - interviuri, studii de caz, idei de afaceri, marketing, finanțare și povești reale din businessul românesc. Inspirație și resurse utile pentru antreprenori la început de drum și profesioniști experimentați.&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://social.5th.ro/tags/antreprenor&amp;quot; class=&amp;quot;mention hashtag&amp;quot; rel=&amp;quot;</description>
       <guid isPermaLink="false">profile-topantreprenor</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Top Comunicate Romania (@topcomunicate_ro)</title>
       <link>https://romania-rss-feed.github.io/profiles/topcomunicate_ro/</link>
       <description>&amp;lt;p&amp;gt;TopComunicate.ro este platforma ideală pentru promovarea afacerii tale prin comunicate de presă, advertoriale și articole SEO de calitate. Fie că ai nevoie de vizibilitate în online, creșterea reputației brandului tău sau optimizarea conținutului pentru motoarele de căutare, echipa noastră îți oferă soluții profesionale și eficiente.&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-topcomunicate_ro</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Universul Tech (@UniversulTech)</title>
       <link>https://romania-rss-feed.github.io/profiles/UniversulTech/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://UniversulTech.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;UniversulTech.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – blog despre tehnologie, gadgeturi, AI, securitate și viață digitală. Știri pe înțelesul tuturor, ghiduri pas cu pas, review-uri și opinii pentru cei care vor să fie la curent cu tot ce mișcă în tech. 💻🚀&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-UniversulTech</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Vei Cheu (@veicheu)</title>
+      <link>https://romania-rss-feed.github.io/profiles/veicheu/</link>
+      <description />
+      <guid isPermaLink="false">profile-veicheu</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>VHM Blog (@vhm)</title>
+      <link>https://romania-rss-feed.github.io/profiles/vhm/</link>
+      <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://vhm.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;https://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;vhm.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – platformă de comunicate de presă online, advertoriale SEO și articole utile pentru branduri, agenții și freelanceri. Idei de promovare, studii de caz, tendințe în marketing, business, tech &amp;amp;amp; lifestyle.&amp;lt;/p&amp;gt;</description>
+      <guid isPermaLink="false">profile-vhm</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
     <item>
       <title>Ziar 360 (@ziar360)</title>
       <link>https://romania-rss-feed.github.io/profiles/ziar360/</link>
       <description>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;http://ziar360.ro&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;nofollow noopener&amp;quot; translate=&amp;quot;no&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;http://&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;&amp;quot;&amp;gt;ziar360.ro&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;invisible&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; – publicație online cu știri, analize și opinii despre ce se întâmplă în România și în lume. Actualitate, economie, tech, societate și reportaje care privesc realitatea „360°”, nu doar titlurile. 📰&amp;lt;/p&amp;gt;</description>
       <guid isPermaLink="false">profile-ziar360</guid>
-      <pubDate>Thu, 18 Dec 2025 19:01:29 +0000</pubDate>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mr Zuzi (@zuzizuzi)</title>
+      <link>https://romania-rss-feed.github.io/profiles/zuzizuzi/</link>
+      <description />
+      <guid isPermaLink="false">profile-zuzizuzi</guid>
+      <pubDate>Thu, 18 Dec 2025 19:06:09 +0000</pubDate>
     </item>
   </channel>
 </rss>
