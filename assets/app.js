@@ -190,7 +190,7 @@ function createProfileCard(profile) {
     <div class="profile-card">
       <div class="profile-header">
         <div class="profile-avatar">
-          ${avatar ? `<img src="${avatar}" alt="${displayName}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius);">
+          ${avatar ? `<img src="${avatar}" alt="${displayName}" width="64" height="64" loading="lazy" decoding="async" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius);">
           <span style="display:none;">${avatarInitial}</span>` : `<span>${avatarInitial}</span>`}
         </div>
         <div class="profile-info">
