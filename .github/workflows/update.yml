@@ -76,19 +76,18 @@ jobs:
           # Rebase onto latest origin/main
           git fetch origin main
           if ! git rebase origin/main; then
-            echo "Rebase failed, aborting and using force push"
+            echo "Rebase failed, aborting and resetting"
             git rebase --abort || true
+            git fetch origin main
+            git reset --hard origin/main
+            git add data/ profiles/ feed.xml sitemap.xml
+            git commit -m "Auto-update: profiles and feeds [skip ci]"
           fi
           
-          # Push with force-with-lease (will fail if remote changed during rebase)
-          # If that fails, use regular force push as last resort
-          if ! git push --force-with-lease origin main; then
+          # Try push with force-with-lease first (safer)
+          # If that fails, use force push as fallback
+          git push --force-with-lease origin main || {
             echo "Force-with-lease failed, using force push"
-            git fetch origin main
-            git rebase origin/main || {
-              echo "Final rebase failed, forcing push"
-              git push --force origin main
-            }
-            git push --force-with-lease origin main || git push --force origin main
-          fi
+            git push --force origin main
+          }
 
