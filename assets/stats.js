@@ -129,10 +129,13 @@ function renderServerStats(stats) {
   const domainCount = statsData.domain_count || 0;
   
   // Show loading state if no data
-  if (!stats || Object.keys(stats).length === 0) {
+  if (!stats || Object.keys(stats).length === 0 || (stats.version === '4.x' && statsData.user_count === 0)) {
     serverStatsEl.innerHTML = '<p style="color: var(--text-muted);">Statisticile serverului nu sunt disponibile momentan.</p>';
     return;
   }
+  
+  // Debug: log stats to console
+  console.log('Server stats loaded:', stats);
   
   serverStatsEl.innerHTML = `
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px;">
