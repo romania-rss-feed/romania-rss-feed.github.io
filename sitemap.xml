@@ -21,22 +21,10 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://romania-rss-feed.github.io/profiles/5th/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-    <lastmod>2025-12-17</lastmod>
-  </url>
-  <url>
     <loc>https://romania-rss-feed.github.io/profiles/9z/</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <lastmod>2025-12-18</lastmod>
-  </url>
-  <url>
-    <loc>https://romania-rss-feed.github.io/profiles/advertorial/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-    <lastmod>2025-12-17</lastmod>
   </url>
   <url>
     <loc>https://romania-rss-feed.github.io/profiles/afaceri24/</loc>
@@ -61,12 +49,6 @@
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <lastmod>2025-12-17</lastmod>
-  </url>
-  <url>
-    <loc>https://romania-rss-feed.github.io/profiles/AntreprenorCLUB/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-    <lastmod>2025-12-18</lastmod>
   </url>
   <url>
     <loc>https://romania-rss-feed.github.io/profiles/ArtaConstructiilor/</loc>
@@ -261,12 +243,6 @@
     <lastmod>2025-12-17</lastmod>
   </url>
   <url>
-    <loc>https://romania-rss-feed.github.io/profiles/stiri_live/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-    <lastmod>2025-12-17</lastmod>
-  </url>
-  <url>
     <loc>https://romania-rss-feed.github.io/profiles/stiri_sociale/</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -292,18 +268,6 @@
   </url>
   <url>
     <loc>https://romania-rss-feed.github.io/profiles/UniversulTech/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-    <lastmod>2025-12-17</lastmod>
-  </url>
-  <url>
-    <loc>https://romania-rss-feed.github.io/profiles/veicheu/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-    <lastmod>2025-12-18</lastmod>
-  </url>
-  <url>
-    <loc>https://romania-rss-feed.github.io/profiles/vhm/</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <lastmod>2025-12-17</lastmod>
