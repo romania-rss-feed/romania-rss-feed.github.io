@@ -54,15 +54,41 @@ def fetch_account(username: str, instance: str = PRIMARY_INSTANCE) -> Optional[D
         return None
 
 def fetch_instance_stats() -> Dict:
-    """Fetch instance statistics"""
+    """Fetch instance statistics from both instances"""
+    stats = {
+        "instances": {},
+        "total_users": 0,
+        "total_statuses": 0,
+        "total_domains": 0
+    }
+    
+    # Fetch from primary instance (social.5th.ro)
     try:
         response = requests.get(INSTANCE_API, timeout=10)
         if response.status_code == 200:
-            return response.json()
-        return {}
+            primary_stats = response.json()
+            stats["instances"][PRIMARY_INSTANCE] = primary_stats
+            stats["total_users"] += primary_stats.get("stats", {}).get("user_count", 0)
+            stats["total_statuses"] += primary_stats.get("stats", {}).get("status_count", 0)
+            stats["total_domains"] += primary_stats.get("stats", {}).get("domain_count", 0)
+            stats["version"] = primary_stats.get("version", "N/A")
     except Exception as e:
-        print(f"⚠️  Eroare la fetch statistici server: {e}")
-        return {}
+        print(f"⚠️  Eroare la fetch statistici {PRIMARY_INSTANCE}: {e}")
+    
+    # Fetch from secondary instance (mstdn.ro)
+    try:
+        secondary_api = f"{API_BASE_SECONDARY}/instance"
+        response = requests.get(secondary_api, timeout=10)
+        if response.status_code == 200:
+            secondary_stats = response.json()
+            stats["instances"][SECONDARY_INSTANCE] = secondary_stats
+            stats["total_users"] += secondary_stats.get("stats", {}).get("user_count", 0)
+            stats["total_statuses"] += secondary_stats.get("stats", {}).get("status_count", 0)
+            stats["total_domains"] += secondary_stats.get("stats", {}).get("domain_count", 0)
+    except Exception as e:
+        print(f"⚠️  Eroare la fetch statistici {SECONDARY_INSTANCE}: {e}")
+    
+    return stats
 
 def discover_new_accounts(known_usernames: List[str]) -> List[Dict]:
     """Discover new accounts by searching directory - only local accounts from social.5th.ro and mstdn.ro
@@ -253,10 +279,21 @@ def main():
         with open(server_stats_file, "w", encoding="utf-8") as f:
             json.dump(server_stats, f, indent=2, ensure_ascii=False)
         print(f"✅ Statisticile serverului au fost salvate!")
-        print(f"   - Versiune: {server_stats.get('version', 'N/A')}")
-        print(f"   - Utilizatori: {server_stats.get('stats', {}).get('user_count', 0)}")
-        print(f"   - Statusuri: {server_stats.get('stats', {}).get('status_count', 0)}")
-        print(f"   - Domenii: {server_stats.get('stats', {}).get('domain_count', 0)}")
+        if PRIMARY_INSTANCE in server_stats.get("instances", {}):
+            primary = server_stats["instances"][PRIMARY_INSTANCE]
+            print(f"   {PRIMARY_INSTANCE}:")
+            print(f"     - Versiune: {primary.get('version', 'N/A')}")
+            print(f"     - Utilizatori: {primary.get('stats', {}).get('user_count', 0)}")
+            print(f"     - Statusuri: {primary.get('stats', {}).get('status_count', 0)}")
+            print(f"     - Domenii: {primary.get('stats', {}).get('domain_count', 0)}")
+        if SECONDARY_INSTANCE in server_stats.get("instances", {}):
+            secondary = server_stats["instances"][SECONDARY_INSTANCE]
+            print(f"   {SECONDARY_INSTANCE}:")
+            print(f"     - Versiune: {secondary.get('version', 'N/A')}")
+            print(f"     - Utilizatori: {secondary.get('stats', {}).get('user_count', 0)}")
+            print(f"     - Statusuri: {secondary.get('stats', {}).get('status_count', 0)}")
+            print(f"     - Domenii: {secondary.get('stats', {}).get('domain_count', 0)}")
+        print(f"   Total: {server_stats.get('total_users', 0)} utilizatori, {server_stats.get('total_statuses', 0)} statusuri")
     else:
         print("⚠️  Nu s-au putut obține statisticile serverului")
     

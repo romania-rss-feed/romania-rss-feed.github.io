@@ -129,7 +129,73 @@ function renderServerStats(stats) {
   const serverStatsEl = document.getElementById('serverStats');
   if (!serverStatsEl) return;
   
-  // Handle both possible structures from API
+  // Handle new structure with multiple instances
+  if (stats.instances && Object.keys(stats.instances).length > 0) {
+    const instances = stats.instances;
+    let html = '<div style="display: flex; flex-direction: column; gap: 32px;">';
+    
+    // Render each instance
+    for (const [instanceName, instanceStats] of Object.entries(instances)) {
+      const version = instanceStats.version || 'N/A';
+      const statsData = instanceStats.stats || {};
+      const userCount = statsData.user_count || 0;
+      const statusCount = statsData.status_count || 0;
+      const domainCount = statsData.domain_count || 0;
+      
+      html += `
+        <div style="padding: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);">
+          <h3 style="font-size: 18px; font-weight: 700; margin: 0 0 20px; color: var(--text);">${escapeHtml(instanceName)}</h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px;">
+            <div>
+              <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 8px;">Versiune Mastodon</div>
+              <div style="font-size: 24px; font-weight: 700; color: var(--text);">${escapeHtml(version)}</div>
+            </div>
+            <div>
+              <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 8px;">Utilizatori</div>
+              <div style="font-size: 24px; font-weight: 700; color: var(--text);">${formatNumber(userCount)}</div>
+            </div>
+            <div>
+              <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 8px;">Statusuri</div>
+              <div style="font-size: 24px; font-weight: 700; color: var(--text);">${formatNumber(statusCount)}</div>
+            </div>
+            <div>
+              <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 8px;">Domenii Conectate</div>
+              <div style="font-size: 24px; font-weight: 700; color: var(--text);">${formatNumber(domainCount)}</div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+    
+    // Show totals if available
+    if (stats.total_users !== undefined) {
+      html += `
+        <div style="padding: 24px; background: var(--accent); border-radius: var(--radius-lg);">
+          <h3 style="font-size: 18px; font-weight: 700; margin: 0 0 20px; color: var(--bg);">Total General</h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px;">
+            <div>
+              <div style="font-size: 14px; color: rgba(255,255,255,0.8); margin-bottom: 8px;">Utilizatori Totali</div>
+              <div style="font-size: 24px; font-weight: 700; color: var(--bg);">${formatNumber(stats.total_users || 0)}</div>
+            </div>
+            <div>
+              <div style="font-size: 14px; color: rgba(255,255,255,0.8); margin-bottom: 8px;">Statusuri Totale</div>
+              <div style="font-size: 24px; font-weight: 700; color: var(--bg);">${formatNumber(stats.total_statuses || 0)}</div>
+            </div>
+            <div>
+              <div style="font-size: 14px; color: rgba(255,255,255,0.8); margin-bottom: 8px;">Domenii Totale</div>
+              <div style="font-size: 24px; font-weight: 700; color: var(--bg);">${formatNumber(stats.total_domains || 0)}</div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+    
+    html += '</div>';
+    serverStatsEl.innerHTML = html;
+    return;
+  }
+  
+  // Fallback: Handle old structure (single instance)
   const version = stats.version || 'N/A';
   const statsData = stats.stats || {};
   const userCount = statsData.user_count || 0;
@@ -141,9 +207,6 @@ function renderServerStats(stats) {
     serverStatsEl.innerHTML = '<p style="color: var(--text-muted);">Statisticile serverului nu sunt disponibile momentan.</p>';
     return;
   }
-  
-  // Debug: log stats to console
-  console.log('Server stats loaded:', stats);
   
   serverStatsEl.innerHTML = `
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px;">
