@@ -110,12 +110,25 @@ async function loadServerStats() {
     if (!response.ok) throw new Error('Failed to load server stats');
     const stats = await response.json();
     
-    // Validate that we have real data, not placeholder
-    if (stats && stats.version && stats.version !== '4.x' && stats.stats && stats.stats.user_count > 0) {
-      renderServerStats(stats);
-    } else {
-      throw new Error('Invalid or placeholder data');
+    // Validate that we have real data
+    if (stats && stats.instances && Object.keys(stats.instances).length > 0) {
+      // Check if at least one instance has valid stats
+      const hasValidStats = Object.values(stats.instances).some(instance => 
+        instance.stats && instance.stats.user_count > 0
+      );
+      if (hasValidStats) {
+        renderServerStats(stats);
+        return;
+      }
     }
+    
+    // Fallback: check old structure
+    if (stats && stats.stats && stats.stats.user_count > 0 && stats.version && stats.version !== '4.x') {
+      renderServerStats(stats);
+      return;
+    }
+    
+    throw new Error('Invalid or placeholder data');
   } catch (error) {
     console.error('Error loading server stats:', error);
     const serverStatsEl = document.getElementById('serverStats');
@@ -132,10 +145,11 @@ function renderServerStats(stats) {
   // Handle new structure with multiple instances
   if (stats.instances && Object.keys(stats.instances).length > 0) {
     const instances = stats.instances;
-    let html = '<div style="display: flex; flex-direction: column; gap: 32px;">';
+    let html = '<div style="display: flex; flex-direction: column; gap: 24px;">';
     
-    // Render each instance
-    for (const [instanceName, instanceStats] of Object.entries(instances)) {
+    // Render social.5th.ro first
+    if (instances['social.5th.ro']) {
+      const instanceStats = instances['social.5th.ro'];
       const version = instanceStats.version || 'N/A';
       const statsData = instanceStats.stats || {};
       const userCount = statsData.user_count || 0;
@@ -144,7 +158,10 @@ function renderServerStats(stats) {
       
       html += `
         <div style="padding: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);">
-          <h3 style="font-size: 18px; font-weight: 700; margin: 0 0 20px; color: var(--text);">${escapeHtml(instanceName)}</h3>
+          <h3 style="font-size: 20px; font-weight: 700; margin: 0 0 20px; color: var(--text); display: flex; align-items: center; gap: 12px;">
+            <span>📊</span>
+            <span>social.5th.ro</span>
+          </h3>
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px;">
             <div>
               <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 8px;">Versiune Mastodon</div>
@@ -163,6 +180,57 @@ function renderServerStats(stats) {
               <div style="font-size: 24px; font-weight: 700; color: var(--text);">${formatNumber(domainCount)}</div>
             </div>
           </div>
+          ${instanceStats.title ? `
+          <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border);">
+            <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 4px;">Descriere</div>
+            <div style="font-size: 15px; color: var(--text);">${escapeHtml(instanceStats.title)}</div>
+            ${instanceStats.short_description ? `<div style="font-size: 13px; color: var(--text-muted); margin-top: 8px;">${escapeHtml(instanceStats.short_description)}</div>` : ''}
+          </div>
+          ` : ''}
+        </div>
+      `;
+    }
+    
+    // Render mstdn.ro second
+    if (instances['mstdn.ro']) {
+      const instanceStats = instances['mstdn.ro'];
+      const version = instanceStats.version || 'N/A';
+      const statsData = instanceStats.stats || {};
+      const userCount = statsData.user_count || 0;
+      const statusCount = statsData.status_count || 0;
+      const domainCount = statsData.domain_count || 0;
+      
+      html += `
+        <div style="padding: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);">
+          <h3 style="font-size: 20px; font-weight: 700; margin: 0 0 20px; color: var(--text); display: flex; align-items: center; gap: 12px;">
+            <span>📊</span>
+            <span>mstdn.ro</span>
+          </h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px;">
+            <div>
+              <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 8px;">Versiune Mastodon</div>
+              <div style="font-size: 24px; font-weight: 700; color: var(--text);">${escapeHtml(version)}</div>
+            </div>
+            <div>
+              <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 8px;">Utilizatori</div>
+              <div style="font-size: 24px; font-weight: 700; color: var(--text);">${formatNumber(userCount)}</div>
+            </div>
+            <div>
+              <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 8px;">Statusuri</div>
+              <div style="font-size: 24px; font-weight: 700; color: var(--text);">${formatNumber(statusCount)}</div>
+            </div>
+            <div>
+              <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 8px;">Domenii Conectate</div>
+              <div style="font-size: 24px; font-weight: 700; color: var(--text);">${formatNumber(domainCount)}</div>
+            </div>
+          </div>
+          ${instanceStats.title ? `
+          <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border);">
+            <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 4px;">Descriere</div>
+            <div style="font-size: 15px; color: var(--text);">${escapeHtml(instanceStats.title)}</div>
+            ${instanceStats.short_description ? `<div style="font-size: 13px; color: var(--text-muted); margin-top: 8px;">${escapeHtml(instanceStats.short_description)}</div>` : ''}
+          </div>
+          ` : ''}
         </div>
       `;
     }
@@ -170,20 +238,23 @@ function renderServerStats(stats) {
     // Show totals if available
     if (stats.total_users !== undefined) {
       html += `
-        <div style="padding: 24px; background: var(--accent); border-radius: var(--radius-lg);">
-          <h3 style="font-size: 18px; font-weight: 700; margin: 0 0 20px; color: var(--bg);">Total General</h3>
+        <div style="padding: 24px; background: linear-gradient(135deg, var(--accent) 0%, #6364ff 100%); border-radius: var(--radius-lg); color: var(--bg);">
+          <h3 style="font-size: 20px; font-weight: 700; margin: 0 0 20px; color: var(--bg); display: flex; align-items: center; gap: 12px;">
+            <span>📈</span>
+            <span>Total General</span>
+          </h3>
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px;">
             <div>
-              <div style="font-size: 14px; color: rgba(255,255,255,0.8); margin-bottom: 8px;">Utilizatori Totali</div>
-              <div style="font-size: 24px; font-weight: 700; color: var(--bg);">${formatNumber(stats.total_users || 0)}</div>
+              <div style="font-size: 14px; color: rgba(255,255,255,0.9); margin-bottom: 8px;">Utilizatori Totali</div>
+              <div style="font-size: 28px; font-weight: 700; color: var(--bg);">${formatNumber(stats.total_users || 0)}</div>
             </div>
             <div>
-              <div style="font-size: 14px; color: rgba(255,255,255,0.8); margin-bottom: 8px;">Statusuri Totale</div>
-              <div style="font-size: 24px; font-weight: 700; color: var(--bg);">${formatNumber(stats.total_statuses || 0)}</div>
+              <div style="font-size: 14px; color: rgba(255,255,255,0.9); margin-bottom: 8px;">Statusuri Totale</div>
+              <div style="font-size: 28px; font-weight: 700; color: var(--bg);">${formatNumber(stats.total_statuses || 0)}</div>
             </div>
             <div>
-              <div style="font-size: 14px; color: rgba(255,255,255,0.8); margin-bottom: 8px;">Domenii Totale</div>
-              <div style="font-size: 24px; font-weight: 700; color: var(--bg);">${formatNumber(stats.total_domains || 0)}</div>
+              <div style="font-size: 14px; color: rgba(255,255,255,0.9); margin-bottom: 8px;">Domenii Totale</div>
+              <div style="font-size: 28px; font-weight: 700; color: var(--bg);">${formatNumber(stats.total_domains || 0)}</div>
             </div>
           </div>
         </div>
