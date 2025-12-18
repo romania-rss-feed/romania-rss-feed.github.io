@@ -83,8 +83,180 @@
           </a>
         </div>
       </div>
+
+      <div id="postsSection" style="margin: 40px 0; padding: 32px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);">
+        <h2 style="font-size: 24px; font-weight: 700; margin: 0 0 24px; color: var(--text);">Postări Recente</h2>
+        <div id="postsContainer" style="display: flex; flex-direction: column; gap: 24px;">
+          <div style="text-align: center; padding: 40px; color: var(--text-muted);">
+            <div class="loading-spinner" style="display: inline-block; width: 32px; height: 32px; border: 3px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 1s linear infinite;"></div>
+            <p style="margin-top: 16px;">Se încarcă postările...</p>
+          </div>
+        </div>
+        <button id="loadMoreBtn" style="display: none; margin-top: 24px; padding: 12px 24px; background: var(--accent); color: var(--bg); border: none; border-radius: var(--radius); font-size: 16px; font-weight: 600; cursor: pointer; width: 100%;" onclick="loadMorePosts()">
+          Arată mai multe
+        </button>
+      </div>
     </div>
   </main>
+
+  <script>
+    const profileData = {
+      "username": "CPetrePetre1RO",
+      "instance": "mstdn.ro",
+      "acct": "CPetrePetre1RO@mstdn.ro"
+    };
+    
+    let postsOffset = 0;
+    const postsPerPage = 10;
+    
+    async function loadPosts(offset = 0, limit = 10) {
+      try {
+        const apiBase = `https://${profileData.instance}/api/v1`;
+        const lookupUrl = `${apiBase}/accounts/lookup`;
+        const lookupResponse = await fetch(`${lookupUrl}?acct=${encodeURIComponent(profileData.username)}`);
+        
+        if (!lookupResponse.ok) {
+          throw new Error('Account not found');
+        }
+        
+        const account = await lookupResponse.json();
+        const accountId = account.id;
+        const statusesUrl = `${apiBase}/accounts/${accountId}/statuses`;
+        const statusesResponse = await fetch(`${statusesUrl}?limit=${limit}&offset=${offset}&exclude_replies=true&exclude_reblogs=true`);
+        
+        if (!statusesResponse.ok) {
+          throw new Error('Failed to load statuses');
+        }
+        
+        return await statusesResponse.json();
+      } catch (error) {
+        console.error('Error loading posts:', error);
+        return [];
+      }
+    }
+    
+    function formatDate(dateString) {
+      if (!dateString) return '';
+      const date = new Date(dateString);
+      const now = new Date();
+      const diffMs = now - date;
+      const diffMins = Math.floor(diffMs / 60000);
+      const diffHours = Math.floor(diffMs / 3600000);
+      const diffDays = Math.floor(diffMs / 86400000);
+      
+      if (diffMins < 1) return 'acum';
+      if (diffMins < 60) return `${diffMins}m`;
+      if (diffHours < 24) return `${diffHours}h`;
+      if (diffDays < 7) return `${diffDays}d`;
+      
+      return date.toLocaleDateString('ro-RO', { year: 'numeric', month: 'short', day: 'numeric' });
+    }
+    
+    function addNofollowToLinks(html) {
+      return html.replace(/<a\s+([^>]*?)>/gi, (match, attrs) => {
+        if (!attrs.includes('rel=')) {
+          return `<a ${attrs} rel="nofollow noopener">`;
+        } else if (!attrs.includes('nofollow')) {
+          return `<a ${attrs.replace(/rel="([^"]*)"/, 'rel="$1 nofollow noopener")}>`;
+        }
+        return match;
+      });
+    }
+    
+    function renderPost(post) {
+      const content = addNofollowToLinks(post.content || '');
+      const createdAt = formatDate(post.created_at);
+      const postUrl = post.url || `https://${profileData.instance}/@${profileData.username}/${post.id}`;
+      
+      return `
+        <div class="post-item" style="padding: 20px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-lg);">
+          <div style="display: flex; gap: 12px; margin-bottom: 12px;">
+            <div style="flex: 1;">
+              <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 8px;">
+                <a href="${postUrl}" target="_blank" rel="nofollow noopener" style="color: var(--text-muted); text-decoration: none;">
+                  ${createdAt}
+                </a>
+              </div>
+              <div style="color: var(--text); line-height: 1.6;" class="post-content">
+                ${content}
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 16px; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border);">
+            <a href="${postUrl}" target="_blank" rel="nofollow noopener" style="display: inline-flex; align-items: center; gap: 6px; color: var(--text-muted); text-decoration: none; font-size: 14px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              Vezi pe Mastodon
+            </a>
+          </div>
+        </div>
+      `;
+    }
+    
+    async function loadMorePosts() {
+      const btn = document.getElementById('loadMoreBtn');
+      btn.style.display = 'none';
+      btn.textContent = 'Se încarcă...';
+      
+      postsOffset += postsPerPage;
+      const newPosts = await loadPosts(postsOffset, postsPerPage);
+      
+      if (newPosts.length > 0) {
+        const container = document.getElementById('postsContainer');
+        newPosts.forEach(post => {
+          container.insertAdjacentHTML('beforeend', renderPost(post));
+        });
+        
+        if (newPosts.length === postsPerPage) {
+          btn.style.display = 'block';
+          btn.textContent = 'Arată mai multe';
+        } else {
+          btn.style.display = 'none';
+        }
+      } else {
+        btn.style.display = 'none';
+      }
+    }
+    
+    document.addEventListener('DOMContentLoaded', async () => {
+      const container = document.getElementById('postsContainer');
+      const posts = await loadPosts(0, postsPerPage);
+      
+      if (posts.length === 0) {
+        container.innerHTML = '<p style="text-align: center; color: var(--text-muted); padding: 40px;">Nu există postări disponibile.</p>';
+        document.getElementById('loadMoreBtn').style.display = 'none';
+        return;
+      }
+      
+      container.innerHTML = posts.map(renderPost).join('');
+      
+      if (posts.length === postsPerPage) {
+        document.getElementById('loadMoreBtn').style.display = 'block';
+      }
+    });
+  </script>
+  
+  <style>
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    .post-content a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .post-content a:hover {
+      text-decoration: underline;
+    }
+    .post-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--radius);
+      margin: 8px 0;
+    }
+  </style>
 
   <footer class="footer">
     <div class="footer-inner">
