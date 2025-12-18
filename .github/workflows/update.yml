@@ -71,6 +71,19 @@ jobs:
           # Commit changes
           git commit -m "Auto-update: profiles and feeds [skip ci]"
           
-          # Push changes (should always work since we reset to origin/main)
+          # Fetch latest again and rebase before push
+          git fetch origin main
+          if git rebase origin/main; then
+            echo "Rebase successful"
+          else
+            echo "Rebase failed, resetting and retrying"
+            git rebase --abort || true
+            git fetch origin main
+            git reset --hard origin/main
+            git add data/ profiles/ feed.xml sitemap.xml
+            git commit -m "Auto-update: profiles and feeds [skip ci]"
+          fi
+          
+          # Push changes
           git push origin main
 
