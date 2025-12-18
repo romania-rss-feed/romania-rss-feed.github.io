@@ -9,8 +9,8 @@
   --text-muted: #b8c8d8;
   --text-dim: #9baec8;
   --border: rgba(217, 225, 232, 0.2);
-  --accent: #6364ff;
-  --accent-hover: #7b7cff;
+  --accent: #4f50d4;
+  --accent-hover: #6364ff;
   --accent-2: #00d4aa;
   --accent-3: #ffd23f;
   --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -205,13 +205,13 @@ a:hover {
 }
 
 .btn-primary {
-  background: var(--accent);
+  background: #4f50d4;
   color: #ffffff;
   font-weight: 700;
 }
 
 .btn-primary:hover {
-  background: var(--accent-hover);
+  background: #6364ff;
   color: #ffffff;
   text-decoration: none;
   transform: translateY(-1px);
