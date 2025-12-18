@@ -304,6 +304,41 @@ PROFILE_TEMPLATE = """<!doctype html>
       }}
     }}
     
+    async function loadRelatedProfiles() {{
+      try {{
+        const response = await fetch('/data/profiles.json');
+        if (!response.ok) throw new Error('Failed to load profiles');
+        const allProfiles = await response.json();
+        
+        // Filter out current profile
+        const currentUsername = profileData.username;
+        const otherProfiles = allProfiles.filter(p => p.username !== currentUsername);
+        
+        // Shuffle and get 4-6 random profiles
+        const shuffled = otherProfiles.sort(() => Math.random() - 0.5);
+        const randomCount = Math.floor(Math.random() * 3) + 4; // 4-6 profiles
+        const selectedProfiles = shuffled.slice(0, randomCount);
+        
+        return selectedProfiles;
+      }} catch (error) {{
+        console.error('Error loading related profiles:', error);
+        return [];
+      }}
+    }}
+    
+    function renderRelatedProfile(profile) {{
+      const displayName = profile.display_name || profile.username || 'Fără nume';
+      const username = profile.username || '';
+      const acct = profile.acct || username + '@' + (profile.instance || 'social.5th.ro');
+      const avatar = profile.avatar || '';
+      const avatarInitial = displayName.charAt(0).toUpperCase();
+      const followers = profile.followers_count || 0;
+      const posts = profile.statuses_count || 0;
+      const profileUrl = '/profiles/' + encodeURIComponent(username) + '/';
+      
+      return '<a href="' + profileUrl + '" style="text-decoration: none; color: inherit;"><div class="related-profile-card" style="padding: 20px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-lg); transition: transform 0.2s, box-shadow 0.2s; cursor: pointer;" onmouseover="this.style.transform=\\'translateY(-4px)\\'; this.style.boxShadow=\\'0 4px 12px rgba(0,0,0,0.1)\\';" onmouseout="this.style.transform=\\'\\'; this.style.boxShadow=\\'\\';"><div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px;"><div style="width: 64px; height: 64px; border-radius: var(--radius-lg); background: var(--surface); display: flex; align-items: center; justify-content: center; overflow: hidden; border: 2px solid var(--border);">' + (avatar ? '<img src="' + avatar + '" alt="' + displayName + '" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display=\\'none\\'; this.nextElementSibling.style.display=\\'flex\\';"><span style="display:none;font-size:24px;font-weight:600;">' + avatarInitial + '</span>' : '<span style="font-size:24px;font-weight:600;">' + avatarInitial + '</span>') + '</div><div style="flex: 1;"><h3 style="font-size: 16px; font-weight: 600; margin: 0 0 4px; color: var(--text);">' + (displayName.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;')) + '</h3><p style="font-size: 14px; color: var(--text-muted); margin: 0 0 8px;">@' + (acct.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;')) + '</p><div style="display: flex; gap: 12px; justify-content: center; font-size: 12px; color: var(--text-muted);"><span>' + (followers >= 1000 ? (followers / 1000).toFixed(1) + 'k' : followers.toString()) + ' urmăritori</span><span>•</span><span>' + (posts >= 1000 ? (posts / 1000).toFixed(1) + 'k' : posts.toString()) + ' postări</span></div></div></div></div></a>';
+    }}
+    
     document.addEventListener('DOMContentLoaded', async () => {{
       const container = document.getElementById('postsContainer');
       
@@ -315,14 +350,24 @@ PROFILE_TEMPLATE = """<!doctype html>
       if (posts.length === 0) {{
         container.innerHTML = '<p style="text-align: center; color: var(--text-muted); padding: 40px;">Nu există postări disponibile.</p>';
         document.getElementById('loadMoreBtn').style.display = 'none';
-        return;
+      }} else {{
+        container.innerHTML = posts.map(renderPost).join('');
+        
+        // Show "load more" button if there are more posts available
+        if (allPosts.length > postsPerPage) {{
+          document.getElementById('loadMoreBtn').style.display = 'block';
+        }}
       }}
       
-      container.innerHTML = posts.map(renderPost).join('');
-      
-      // Show "load more" button if there are more posts available
-      if (allPosts.length > postsPerPage) {{
-        document.getElementById('loadMoreBtn').style.display = 'block';
+      // Load related profiles
+      const relatedContainer = document.getElementById('relatedProfilesContainer');
+      if (relatedContainer) {{
+        const relatedProfiles = await loadRelatedProfiles();
+        if (relatedProfiles.length > 0) {{
+          relatedContainer.innerHTML = relatedProfiles.map(renderRelatedProfile).join('');
+        }} else {{
+          relatedContainer.innerHTML = '<p style="text-align: center; color: var(--text-muted); padding: 20px;">Nu există alte profile disponibile.</p>';
+        }}
       }}
     }});
   </script>
