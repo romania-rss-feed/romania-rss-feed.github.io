@@ -347,13 +347,29 @@ def main():
     
     print(f"\n📊 Rezumat actualizare: {updated_count} actualizate, {kept_count} păstrate")
     
+    # Remove duplicates before saving (safety check)
+    seen_usernames = set()
+    unique_profiles = []
+    duplicates_removed = 0
+    
+    for profile in profiles:
+        username = profile.get("username", "")
+        if username and username not in seen_usernames:
+            unique_profiles.append(profile)
+            seen_usernames.add(username)
+        elif username:
+            duplicates_removed += 1
+    
+    if duplicates_removed > 0:
+        print(f"  ⚠️  Eliminate {duplicates_removed} duplicate")
+    
     # Sort by username
-    profiles.sort(key=lambda x: x.get("username", "").lower())
+    unique_profiles.sort(key=lambda x: x.get("username", "").lower())
     
     # Save profiles
-    print(f"\n💾 Se salvează {len(profiles)} profiluri...")
+    print(f"\n💾 Se salvează {len(unique_profiles)} profiluri unice...")
     with open(profiles_file, "w", encoding="utf-8") as f:
-        json.dump(profiles, f, indent=2, ensure_ascii=False)
+        json.dump(unique_profiles, f, indent=2, ensure_ascii=False)
     print("✅ Profilurile au fost salvate!")
     
     # Fetch and save server stats
