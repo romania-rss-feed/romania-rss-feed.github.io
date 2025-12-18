@@ -74,7 +74,7 @@ PROFILE_TEMPLATE = """<!doctype html>
       <div style="margin: 40px 0; padding: 32px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);">
         <h2 style="font-size: 24px; font-weight: 700; margin: 0 0 24px; color: var(--text);">Link-uri</h2>
         <div style="display: flex; flex-direction: column; gap: 16px;">
-          <a href="{url}" target="_blank" rel="noopener" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px;">
+          <a href="{url}" target="_blank" rel="{rel_attr}" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px;">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
               <polyline points="15 3 21 3 21 9"></polyline>
@@ -82,7 +82,7 @@ PROFILE_TEMPLATE = """<!doctype html>
             </svg>
             Vezi pe Mastodon
           </a>
-          <a href="{rss_url}" target="_blank" rel="noopener" class="rss-link" style="font-size: 16px;">
+          <a href="{rss_url}" target="_blank" rel="{rel_attr}" class="rss-link" style="font-size: 16px;">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M4 11a9 9 0 0 1 9 9"></path>
               <path d="M4 4a16 16 0 0 1 16 16"></path>
@@ -146,6 +146,23 @@ def strip_html(text):
     import re
     return re.sub(r'<[^>]+>', '', text)
 
+def get_rel_attribute(username: str, instance: str) -> str:
+    """Determine rel attribute based on instance
+    - mstdn.ro: always nofollow
+    - social.5th.ro: 20% nofollow, 80% dofollow (based on username hash)"""
+    if instance == "mstdn.ro":
+        return "noopener nofollow"
+    
+    # For social.5th.ro: 20% nofollow, 80% dofollow
+    # Use hash of username for consistent assignment
+    import hashlib
+    hash_value = int(hashlib.md5(username.encode()).hexdigest(), 16)
+    # 20% chance of nofollow (hash % 100 < 20)
+    if hash_value % 100 < 20:
+        return "noopener nofollow"
+    else:
+        return "noopener"
+
 def main():
     print("📄 Generare pagini profil...")
     
@@ -171,12 +188,16 @@ def main():
         display_name = html.escape(profile.get("display_name", username))
         description = profile.get("note", "")
         description_meta = html.escape(strip_html(description)[:200])
+        instance = profile.get("instance", "social.5th.ro")
         
         avatar = profile.get("avatar", "")
         if avatar:
             avatar_html = f'<img src="{html.escape(avatar)}" alt="{display_name}" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-lg);" onerror="this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';">\n          <span style="display:none;">{display_name[0].upper() if display_name else "?"}</span>'
         else:
             avatar_html = f'<span>{display_name[0].upper() if display_name else "?"}</span>'
+        
+        # Determine rel attribute
+        rel_attr = get_rel_attribute(username, instance)
         
         html_content = PROFILE_TEMPLATE.format(
             display_name=display_name,
@@ -189,7 +210,8 @@ def main():
             following_count=format_number(profile.get("following_count", 0)),
             created_date=format_date(profile.get("created_at", "")),
             url=html.escape(profile.get("url", f"https://social.5th.ro/@{username}")),
-            rss_url=html.escape(profile.get("rss_url", f"https://social.5th.ro/@{username}.rss"))
+            rss_url=html.escape(profile.get("rss_url", f"https://social.5th.ro/@{username}.rss")),
+            rel_attr=rel_attr
         )
         
         index_file = profile_dir / "index.html"

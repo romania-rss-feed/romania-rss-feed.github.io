@@ -11,9 +11,15 @@ from pathlib import Path
 from datetime import datetime, timezone
 from typing import List, Dict, Optional
 
-API_BASE = "https://social.5th.ro/api/v1"
-INSTANCE_API = f"{API_BASE}/instance"
-ACCOUNTS_ENDPOINT = f"{API_BASE}/accounts"
+# Primary instance (priority)
+PRIMARY_INSTANCE = "social.5th.ro"
+SECONDARY_INSTANCE = "mstdn.ro"
+
+API_BASE_PRIMARY = f"https://{PRIMARY_INSTANCE}/api/v1"
+API_BASE_SECONDARY = f"https://{SECONDARY_INSTANCE}/api/v1"
+
+INSTANCE_API = f"{API_BASE_PRIMARY}/instance"
+ACCOUNTS_ENDPOINT = f"{API_BASE_PRIMARY}/accounts"
 
 # Lista de username-uri cunoscute
 KNOWN_USERNAMES = [
@@ -27,22 +33,24 @@ KNOWN_USERNAMES = [
     "ienergie", "iFemeie", "9z", "UniversulTech", "BIZWoman"
 ]
 
-def fetch_account(username: str) -> Optional[Dict]:
+def fetch_account(username: str, instance: str = PRIMARY_INSTANCE) -> Optional[Dict]:
     """Fetch account data from Mastodon API"""
     try:
-        url = f"{ACCOUNTS_ENDPOINT}/lookup"
+        api_base = API_BASE_PRIMARY if instance == PRIMARY_INSTANCE else API_BASE_SECONDARY
+        url = f"{api_base}/accounts/lookup"
         params = {"acct": username}
         response = requests.get(url, params=params, timeout=10)
         if response.status_code == 200:
-            return response.json()
+            account_data = response.json()
+            account_data["_instance"] = instance  # Mark instance
+            return account_data
         elif response.status_code == 404:
-            print(f"  ⚠️  Profil {username} nu a fost găsit")
-            return None
+            return None  # Don't print here, caller will handle
         else:
-            print(f"  ❌ Eroare pentru {username}: {response.status_code}")
+            print(f"  ❌ Eroare pentru {username} pe {instance}: {response.status_code}")
             return None
     except Exception as e:
-        print(f"  ❌ Eroare la fetch pentru {username}: {e}")
+        print(f"  ❌ Eroare la fetch pentru {username} pe {instance}: {e}")
         return None
 
 def fetch_instance_stats() -> Dict:
@@ -57,64 +65,88 @@ def fetch_instance_stats() -> Dict:
         return {}
 
 def discover_new_accounts(known_usernames: List[str]) -> List[Dict]:
-    """Discover new accounts by searching directory - only local accounts from social.5th.ro
-    Returns list of account data dictionaries, not just usernames"""
+    """Discover new accounts by searching directory - only local accounts from social.5th.ro and mstdn.ro
+    Returns list of account data dictionaries with instance info. Priority: social.5th.ro first"""
     new_accounts = []
-    try:
-        # Try to get directory (may not be available on all instances)
-        url = f"{API_BASE}/directory"
-        params = {"limit": 200, "order": "active", "local": "true"}  # Only local accounts
-        response = requests.get(url, params=params, timeout=10)
-        if response.status_code == 200:
-            accounts = response.json()
-            print(f"  📋 Directory API returned {len(accounts)} accounts")
-            
-            for account in accounts:
-                username = account.get("username", "")
-                acct = account.get("acct", "")
-                url_field = account.get("url", "")
-                
-                # Strict filter: only local accounts
-                # Must have URL with @social.5th.ro AND (acct without @ OR acct == username)
-                is_local = False
-                
-                # First check: URL must contain @social.5th.ro
-                if not url_field or "@social.5th.ro" not in url_field:
-                    is_local = False
-                elif not acct or acct == "":
-                    # No acct field but URL is local - assume local
-                    is_local = True
-                elif "@" not in acct:
-                    # Local account without domain (just username)
-                    is_local = True
-                elif acct == username:
-                    # acct equals username (local)
-                    is_local = True
-                elif acct.endswith("@social.5th.ro"):
-                    # Explicit local domain
-                    is_local = True
-                else:
-                    # Has @ but not @social.5th.ro - federated, skip
-                    is_local = False
-                
-                if is_local and username and username not in known_usernames:
-                    # Use account data from directory directly
-                    new_accounts.append(account)
-                    print(f"  ✨ Profil nou descoperit (local): {username}")
-            
-            print(f"  ✅ Total profiluri noi locale: {len(new_accounts)}")
-        else:
-            print(f"⚠️  Directory API returned status {response.status_code}")
-    except Exception as e:
-        print(f"⚠️  Nu s-au putut descoperi profiluri noi: {e}")
+    found_usernames = set()  # Track usernames to avoid duplicates (priority to primary)
     
+    # Try primary instance first (social.5th.ro)
+    instances = [
+        (PRIMARY_INSTANCE, API_BASE_PRIMARY),
+        (SECONDARY_INSTANCE, API_BASE_SECONDARY)
+    ]
+    
+    for instance_name, api_base in instances:
+        try:
+            url = f"{api_base}/directory"
+            params = {"limit": 200, "order": "active", "local": "true"}
+            response = requests.get(url, params=params, timeout=10)
+            
+            if response.status_code == 200:
+                accounts = response.json()
+                print(f"  📋 {instance_name} Directory API returned {len(accounts)} accounts")
+                
+                for account in accounts:
+                    username = account.get("username", "")
+                    acct = account.get("acct", "")
+                    url_field = account.get("url", "")
+                    
+                    # Skip if already found on primary instance
+                    if username in found_usernames:
+                        continue
+                    
+                    # Check if account is local to this instance
+                    is_local = False
+                    instance_domain = f"@{instance_name}"
+                    
+                    if url_field and instance_domain in url_field:
+                        if not acct or acct == "":
+                            is_local = True
+                        elif "@" not in acct:
+                            is_local = True
+                        elif acct == username:
+                            is_local = True
+                        elif acct.endswith(instance_domain):
+                            is_local = True
+                    
+                    if is_local and username and username not in known_usernames:
+                        # Add instance info to account data
+                        account["_instance"] = instance_name
+                        new_accounts.append(account)
+                        found_usernames.add(username)
+                        print(f"  ✨ Profil nou descoperit ({instance_name}): {username}")
+            else:
+                print(f"⚠️  {instance_name} Directory API returned status {response.status_code}")
+        except Exception as e:
+            print(f"⚠️  Eroare la {instance_name}: {e}")
+    
+    print(f"  ✅ Total profiluri noi locale: {len(new_accounts)}")
     return new_accounts
 
 def normalize_profile(account_data: Dict) -> Dict:
     """Normalize profile data to our format"""
+    username = account_data.get("username", "")
+    instance = account_data.get("_instance", PRIMARY_INSTANCE)  # Default to primary
+    
+    # Determine instance from URL if not set
+    url_field = account_data.get("url", "")
+    if not instance:
+        if f"@{SECONDARY_INSTANCE}" in url_field:
+            instance = SECONDARY_INSTANCE
+        else:
+            instance = PRIMARY_INSTANCE
+    
+    # Build URLs based on instance
+    if instance == SECONDARY_INSTANCE:
+        profile_url = f"https://{SECONDARY_INSTANCE}/@{username}"
+        rss_url = f"https://{SECONDARY_INSTANCE}/@{username}.rss"
+    else:
+        profile_url = f"https://{PRIMARY_INSTANCE}/@{username}"
+        rss_url = f"https://{PRIMARY_INSTANCE}/@{username}.rss"
+    
     return {
         "id": str(account_data.get("id", "")),
-        "username": account_data.get("username", ""),
+        "username": username,
         "display_name": account_data.get("display_name", ""),
         "note": account_data.get("note", ""),
         "avatar": account_data.get("avatar", ""),
@@ -124,8 +156,9 @@ def normalize_profile(account_data: Dict) -> Dict:
         "following_count": account_data.get("following_count", 0),
         "created_at": account_data.get("created_at", ""),
         "last_status_at": account_data.get("last_status_at"),
-        "url": account_data.get("url", ""),
-        "rss_url": f"https://social.5th.ro/@{account_data.get('username', '')}.rss"
+        "url": url_field or profile_url,
+        "rss_url": rss_url,
+        "instance": instance  # Store instance for rel attribute logic
     }
 
 def main():
@@ -166,14 +199,31 @@ def main():
     
     for i, username in enumerate(known_usernames_to_update, 1):
         print(f"[{i}/{len(known_usernames_to_update)}] {username}...", end=" ")
-        account_data = fetch_account(username)
+        # Try primary instance first, then secondary
+        account_data = None
+        instance_used = PRIMARY_INSTANCE
+        
+        # Check existing profile to see which instance it's on
+        existing_profile = next((p for p in profiles if p.get("username") == username), None)
+        if existing_profile and existing_profile.get("instance"):
+            instance_used = existing_profile.get("instance")
+        
+        # Try current instance first
+        account_data = fetch_account(username, instance_used)
+        
+        # If not found and not on primary, try primary (priority)
+        if not account_data and instance_used != PRIMARY_INSTANCE:
+            account_data = fetch_account(username, PRIMARY_INSTANCE)
+            if account_data:
+                instance_used = PRIMARY_INSTANCE
+        
         if account_data:
             profile = normalize_profile(account_data)
             # Update existing profile
             existing_idx = next((i for i, p in enumerate(profiles) if p.get("username") == username), None)
             if existing_idx is not None:
                 profiles[existing_idx] = profile
-            print("✅")
+            print(f"✅ ({instance_used})")
         else:
             print("📋 (păstrat profil existent)")
     
