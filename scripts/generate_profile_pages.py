@@ -228,16 +228,46 @@ PROFILE_TEMPLATE = """<!doctype html>
     }}
     
     function renderPost(post) {{
-      // Add nofollow to all links in post content (but keep Mastodon post link dofollow)
+      // Add nofollow to all links in post content and add profile links for mentions
       const postUrl = post.url || `https://${{profileData.instance}}/@${{profileData.username}}/${{post.id}}`;
       let content = post.content || '';
       
-      // Replace all links in content with nofollow
+      // First, convert @username@instance mentions to profile links
+      // Handle Mastodon mention format: <span class="h-card" translate="no"><a href="..." class="u-url mention">@<span>username</span></a></span>
+      // Also handle plain text mentions: @username@instance
+      
+      // Replace plain @username@instance patterns (not already in links)
+      // Use a more careful regex that doesn't match inside HTML tags
+      content = content.replace(/(^|[^>\"'])(@([a-zA-Z0-9_]+)@([a-zA-Z0-9.-]+))/g, (match, before, fullMatch, username, instance) => {{
+        // Check if we're inside an HTML tag
+        if (before.match(/<[^>]*$/)) {{
+          return match; // Inside tag, don't modify
+        }}
+        // Create link to profile page with nofollow
+        const profileUrl = '/profiles/' + encodeURIComponent(username) + '/';
+        return before + '<a href="' + profileUrl + '" rel="nofollow noopener">@' + username + '@' + instance + '</a>';
+      }});
+      
+      // Replace all existing links in content with nofollow
       content = content.replace(/<a\\s+([^>]*?)>/gi, (match, attrs) => {{
         const hrefMatch = attrs.match(/href="([^"]*)"/);
         const href = hrefMatch ? hrefMatch[1] : '';
         
-        // All links in content get nofollow
+        // Skip if it's already an internal profile link we just created
+        if (href && href.startsWith('/profiles/')) {{
+          // Internal profile link - ensure it has nofollow
+          if (!attrs.includes('rel=')) {{
+            return '<a ' + attrs + ' rel="nofollow noopener">';
+          }} else if (!attrs.includes('nofollow')) {{
+            const relMatch = attrs.match(/rel="([^"]*)"/);
+            if (relMatch) {{
+              return '<a ' + attrs.replace(/rel="[^"]*"/, 'rel="' + relMatch[1] + ' nofollow noopener"') + '>';
+            }}
+          }}
+          return match;
+        }}
+        
+        // All other links in content get nofollow
         if (!attrs.includes('rel=')) {{
           return '<a ' + attrs + ' rel="nofollow noopener">';
         }} else if (!attrs.includes('nofollow')) {{
