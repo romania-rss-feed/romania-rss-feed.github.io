@@ -216,9 +216,11 @@ def main():
     # Create username map for quick lookup
     existing_usernames = {p.get("username", "") for p in existing_profiles}
     
-    # Discover new accounts (returns account data directly from directory)
+    # For discovery, we want to find profiles NOT in KNOWN_USERNAMES
+    # This allows discovering new profiles on social.5th.ro beyond the initial list
+    # and all local profiles on mstdn.ro
     print("\n🔍 Căutare profiluri noi...")
-    new_accounts_data = discover_new_accounts(list(existing_usernames))
+    new_accounts_data = discover_new_accounts(KNOWN_USERNAMES)
     
     # Process new accounts from directory (they already have data)
     new_profiles = []
