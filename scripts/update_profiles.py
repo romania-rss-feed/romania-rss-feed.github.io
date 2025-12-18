@@ -359,23 +359,32 @@ def main():
     print(f"\n📊 Rezumat actualizare: {updated_count} actualizate, {kept_count} păstrate")
     
     # Remove duplicates before saving (safety check)
-    seen_usernames = set()
+    # Use acct (username@instance) for uniqueness check
+    seen_accts = set()
     unique_profiles = []
     duplicates_removed = 0
     
     for profile in profiles:
+        acct = profile.get("acct", "")
         username = profile.get("username", "")
-        if username and username not in seen_usernames:
+        instance = profile.get("instance", PRIMARY_INSTANCE)
+        
+        # Build acct if not present
+        if not acct and username:
+            acct = f"{username}@{instance}"
+            profile["acct"] = acct
+        
+        if acct and acct not in seen_accts:
             unique_profiles.append(profile)
-            seen_usernames.add(username)
-        elif username:
+            seen_accts.add(acct)
+        elif acct:
             duplicates_removed += 1
     
     if duplicates_removed > 0:
         print(f"  ⚠️  Eliminate {duplicates_removed} duplicate")
     
-    # Sort by username
-    unique_profiles.sort(key=lambda x: x.get("username", "").lower())
+    # Sort by acct (username@instance)
+    unique_profiles.sort(key=lambda x: x.get("acct", x.get("username", "")).lower())
     
     # Save profiles
     print(f"\n💾 Se salvează {len(unique_profiles)} profiluri unice...")
