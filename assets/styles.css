@@ -114,6 +114,13 @@ a:hover {
   color: var(--text);
 }
 
+.brand span {
+  background: linear-gradient(90deg, #002B7F 0%, #002B7F 33%, #FCD116 33%, #FCD116 66%, #CE1126 66%, #CE1126 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .brand:hover {
   text-decoration: none;
   color: var(--accent);
@@ -176,7 +183,7 @@ a:hover {
   margin: 0 0 20px;
   line-height: 1.2;
   color: var(--text);
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  background: linear-gradient(90deg, #002B7F 0%, #002B7F 33%, #FCD116 33%, #FCD116 66%, #CE1126 66%, #CE1126 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
