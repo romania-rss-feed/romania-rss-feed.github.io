@@ -24,7 +24,7 @@ async function loadProfiles() {
     filteredProfiles = [...profilesData];
   } catch (error) {
     console.error('Error loading profiles:', error);
-    showError('Nu s-au putut încărca profilurile. Te rugăm să reîmprospătezi pagina.');
+    showError('Nu s-au putut încărca profilele. Te rugăm să reîmprospătezi pagina.');
   }
 }
 
@@ -166,7 +166,7 @@ function renderProfiles() {
           <circle cx="11" cy="11" r="8"></circle>
           <path d="m21 21-4.35-4.35"></path>
         </svg>
-        <p>Nu s-au găsit profiluri care să corespundă criteriilor de căutare.</p>
+        <p>Nu s-au găsit profile care să corespundă criteriilor de căutare.</p>
       </div>
     `;
     if (loadMoreContainer) loadMoreContainer.style.display = 'none';
@@ -186,7 +186,7 @@ function renderProfiles() {
       const loadMoreBtn = document.getElementById('loadMoreBtn');
       if (loadMoreBtn) {
         const remaining = filteredProfiles.length - displayedCount;
-        loadMoreBtn.textContent = `Vezi mai multe profiluri (${remaining} rămase)`;
+        loadMoreBtn.textContent = `Vezi mai multe profile (${remaining} rămase)`;
       }
     } else {
       loadMoreContainer.style.display = 'none';

@@ -497,7 +497,7 @@ PROFILE_TEMPLATE = """<!doctype html>
         </div>
         <div class="footer-section">
           <h3>Despre</h3>
-          <p>Romania RSS Feed este un explorator modern pentru profilurile Mastodon de pe social.5th.ro.</p>
+          <p>Romania RSS Feed este un explorator modern pentru profilele Mastodon de pe social.5th.ro.</p>
         </div>
         <div class="footer-section">
           <h3>Server Mastodon</h3>
@@ -505,7 +505,7 @@ PROFILE_TEMPLATE = """<!doctype html>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 Romania RSS Feed. Hub pentru profiluri Mastodon din România.</p>
+        <p>&copy; 2025 Romania RSS Feed. Hub pentru profile Mastodon din România.</p>
       </div>
     </div>
   </footer>

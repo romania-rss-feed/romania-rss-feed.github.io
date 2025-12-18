@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generator RSS feed pentru toate profilurile
+Generator RSS feed pentru toate profilele
 """
 
 import json
@@ -16,9 +16,9 @@ def generate_rss_feed(profiles: list) -> str:
     
     channel = ET.SubElement(rss, "channel")
     
-    ET.SubElement(channel, "title").text = "Romania RSS Feed - Profiluri Mastodon"
+    ET.SubElement(channel, "title").text = "Romania RSS Feed - Profile Mastodon"
     ET.SubElement(channel, "link").text = "https://romania-rss-feed.github.io/"
-    ET.SubElement(channel, "description").text = "Feed RSS pentru profilurile Mastodon de pe social.5th.ro"
+    ET.SubElement(channel, "description").text = "Feed RSS pentru profilele Mastodon de pe social.5th.ro"
     ET.SubElement(channel, "language").text = "ro"
     ET.SubElement(channel, "lastBuildDate").text = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S %z")
     
@@ -91,7 +91,7 @@ def main():
     feed_file = Path(__file__).parent.parent / "feed.xml"
     with open(feed_file, "w", encoding="utf-8") as f:
         f.write(rss_content)
-    print(f"✅ Feed RSS principal generat cu {len(profiles)} profiluri!")
+    print(f"✅ Feed RSS principal generat cu {len(profiles)} profile!")
     
     # Generate individual RSS feeds for each profile
     profiles_dir = Path(__file__).parent.parent / "profiles"

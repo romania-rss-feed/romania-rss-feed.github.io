@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Romania RSS Feed - Profiluri Mastodon</title>
+    <title>Romania RSS Feed - Profile Mastodon</title>
     <link>https://romania-rss-feed.github.io/</link>
-    <description>Feed RSS pentru profilurile Mastodon de pe social.5th.ro</description>
+    <description>Feed RSS pentru profilele Mastodon de pe social.5th.ro</description>
     <language>ro</language>
     <lastBuildDate>Thu, 18 Dec 2025 21:14:41 +0000</lastBuildDate>
     <atom:link href="https://romania-rss-feed.github.io/feed.xml" rel="self" type="application/rss+xml" />
