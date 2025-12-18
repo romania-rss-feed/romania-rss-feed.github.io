@@ -62,31 +62,41 @@ def discover_new_accounts(known_usernames: List[str]) -> List[str]:
     try:
         # Try to get directory (may not be available on all instances)
         url = f"{API_BASE}/directory"
-        params = {"limit": 100, "order": "active", "local": "true"}  # Only local accounts
+        params = {"limit": 200, "order": "active", "local": "true"}  # Only local accounts
         response = requests.get(url, params=params, timeout=10)
         if response.status_code == 200:
             accounts = response.json()
+            print(f"  📋 Directory API returned {len(accounts)} accounts")
+            
             for account in accounts:
                 username = account.get("username", "")
                 acct = account.get("acct", "")
                 
-                # Filter: only local accounts (acct should be just username or username@social.5th.ro)
-                # Exclude federated accounts (those with @domain that's not social.5th.ro)
+                # Strict filter: only local accounts
+                # Local accounts have acct without @ or acct == username
+                # Federated accounts have acct like "username@other.instance"
                 is_local = False
-                if acct:
-                    if "@" not in acct:
-                        # Local account without domain
-                        is_local = True
-                    elif acct.endswith("@social.5th.ro") or acct == f"{username}@social.5th.ro":
-                        # Local account with explicit domain
-                        is_local = True
-                elif username:
-                    # If no acct field, assume local if username exists
+                if not acct or acct == "":
+                    # No acct field - assume local
                     is_local = True
+                elif "@" not in acct:
+                    # Local account without domain (just username)
+                    is_local = True
+                elif acct == username:
+                    # acct equals username (local)
+                    is_local = True
+                elif acct.endswith("@social.5th.ro"):
+                    # Explicit local domain
+                    is_local = True
+                else:
+                    # Has @ but not @social.5th.ro - federated, skip
+                    is_local = False
                 
                 if is_local and username and username not in known_usernames:
                     new_accounts.append(username)
                     print(f"  ✨ Profil nou descoperit (local): {username}")
+            
+            print(f"  ✅ Total profiluri noi locale: {len(new_accounts)}")
         else:
             print(f"⚠️  Directory API returned status {response.status_code}")
     except Exception as e:

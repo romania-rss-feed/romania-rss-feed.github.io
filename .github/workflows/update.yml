@@ -45,10 +45,17 @@ jobs:
       - name: Commit and push changes
         permissions:
           contents: write
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           git add data/ profiles/ feed.xml sitemap.xml
-          git diff --staged --quiet || git commit -m "Auto-update: profiles and feeds [skip ci]"
-          git push
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-update: profiles and feeds [skip ci]"
+            git push origin HEAD:main
+          fi
 
