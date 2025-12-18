@@ -57,10 +57,14 @@ jobs:
           echo "https://x-access-token:${PAT}@github.com" > ~/.git-credentials
           git remote set-url origin https://x-access-token:${PAT}@github.com/${GITHUB_REPOSITORY}.git
           
-          # Always start from latest main
-          git fetch origin main
-          git checkout main
-          git reset --hard origin/main
+          # Ensure we're on main branch
+          git checkout main || git checkout -b main
+          
+          # Pull latest changes with rebase before adding files
+          git pull --rebase origin main || {
+            echo "Initial pull failed, continuing anyway"
+            git rebase --abort || true
+          }
           
           # Add changes
           git add data/ profiles/ feed.xml sitemap.xml
@@ -69,30 +73,19 @@ jobs:
             exit 0
           fi
           
-          # Pull latest changes with rebase before committing
-          git pull --rebase origin main || {
-            echo "Rebase failed, trying merge strategy"
-            git rebase --abort || true
-            git pull origin main --no-rebase || true
-          }
-          
           # Commit changes
           git commit -m "Auto-update: profiles and feeds [skip ci]"
           
-          # Fetch latest and rebase one more time before push
-          git fetch origin main
-          if ! git rebase origin/main; then
-            echo "Rebase failed before push, aborting and retrying"
+          # Pull latest changes again with rebase before push
+          git pull --rebase origin main || {
+            echo "Rebase before push failed, aborting and retrying"
             git rebase --abort || true
             git fetch origin main
             git reset --hard origin/main
             git add data/ profiles/ feed.xml sitemap.xml
             git commit -m "Auto-update: profiles and feeds [skip ci]"
-          fi
-          
-          # Push with force-with-lease (safer than force, fails if remote changed)
-          git push --force-with-lease origin main || {
-            echo "Force-with-lease failed, trying regular push"
-            git push origin main
           }
+          
+          # Push with force-with-lease (safer than force)
+          git push --force-with-lease origin main
 
