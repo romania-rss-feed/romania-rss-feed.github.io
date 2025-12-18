@@ -296,13 +296,15 @@ def main():
     else:
         print("\n➕ Nu s-au găsit profiluri noi de adăugat")
     
-    # Update ONLY existing profiles (not the newly discovered ones)
-    # New profiles already have complete data from directory
-    print(f"\n📥 Se actualizează profilurile existente ({len(existing_profiles)} profiluri)...")
+    # Update ALL profiles in the list (both existing and newly discovered)
+    # This ensures all profiles are kept up-to-date, even if they disappear from directory
+    print(f"\n📥 Se actualizează toate profilurile ({len(existing_profiles)} profiluri existente + {len(profiles) - len(existing_profiles)} noi)...")
     
     updated_count = 0
     kept_count = 0
     
+    # Update all profiles that were in existing_profiles (original list)
+    # New profiles added from directory will be updated in next run
     for i, existing_profile in enumerate(existing_profiles, 1):
         username = existing_profile.get("username", "")
         if not username:
