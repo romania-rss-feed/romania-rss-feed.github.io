@@ -103,36 +103,77 @@
     const profileData = {
       "username": "eratehnologica",
       "instance": "social.5th.ro",
-      "acct": "eratehnologica@social.5th.ro"
+      "acct": "eratehnologica@social.5th.ro",
+      "rss_url": "https://social.5th.ro/@eratehnologica.rss"
     };
     
     let postsOffset = 0;
     const postsPerPage = 10;
+    let allPosts = []; // Cache all loaded posts
     
-    async function loadPosts(offset = 0, limit = 10) {
+    // Delay function for rate limiting
+    function delay(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+    
+    async function loadPostsFromRSS(offset = 0, limit = 10) {
       try {
-        const apiBase = `https://${profileData.instance}/api/v1`;
-        const lookupUrl = `${apiBase}/accounts/lookup`;
-        const lookupResponse = await fetch(`${lookupUrl}?acct=${encodeURIComponent(profileData.username)}`);
-        
-        if (!lookupResponse.ok) {
-          throw new Error('Account not found');
+        // If we already have posts cached, return slice
+        if (allPosts.length > 0) {
+          return allPosts.slice(offset, offset + limit);
         }
         
-        const account = await lookupResponse.json();
-        const accountId = account.id;
-        const statusesUrl = `${apiBase}/accounts/${accountId}/statuses`;
-        const statusesResponse = await fetch(`${statusesUrl}?limit=${limit}&offset=${offset}&exclude_replies=true&exclude_reblogs=true`);
+        // Add delay before fetching RSS (rate limiting)
+        await delay(offset * 200); // 200ms delay per offset
         
-        if (!statusesResponse.ok) {
-          throw new Error('Failed to load statuses');
+        const rssUrl = profileData.rss_url;
+        const response = await fetch(rssUrl);
+        
+        if (!response.ok) {
+          throw new Error('Failed to load RSS feed');
         }
         
-        return await statusesResponse.json();
+        const xmlText = await response.text();
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+        
+        // Parse RSS items
+        const items = xmlDoc.querySelectorAll('item');
+        const posts = [];
+        
+        items.forEach((item, index) => {
+          const title = item.querySelector('title')?.textContent || '';
+          const description = item.querySelector('description')?.textContent || '';
+          const link = item.querySelector('link')?.textContent || '';
+          const pubDate = item.querySelector('pubDate')?.textContent || '';
+          const guid = item.querySelector('guid')?.textContent || link;
+          
+          // Skip replies and reblogs (they usually have specific patterns)
+          if (title.includes('@') && title.startsWith('@')) {
+            return; // Skip replies
+          }
+          
+          posts.push({
+            id: guid,
+            content: description || title,
+            created_at: pubDate,
+            url: link
+          });
+        });
+        
+        // Cache all posts
+        allPosts = posts;
+        
+        // Return requested slice
+        return posts.slice(offset, offset + limit);
       } catch (error) {
-        console.error('Error loading posts:', error);
+        console.error('Error loading posts from RSS:', error);
         return [];
       }
+    }
+    
+    async function loadPosts(offset = 0, limit = 10) {
+      return await loadPostsFromRSS(offset, limit);
     }
     
     function formatDate(dateString) {
@@ -226,6 +267,10 @@
     
     document.addEventListener('DOMContentLoaded', async () => {
       const container = document.getElementById('postsContainer');
+      
+      // Add initial delay (rate limiting)
+      await delay(100);
+      
       const posts = await loadPosts(0, postsPerPage);
       
       if (posts.length === 0) {
@@ -236,7 +281,8 @@
       
       container.innerHTML = posts.map(renderPost).join('');
       
-      if (posts.length === postsPerPage) {
+      // Show "load more" button if there are more posts available
+      if (allPosts.length > postsPerPage) {
         document.getElementById('loadMoreBtn').style.display = 'block';
       }
     });
