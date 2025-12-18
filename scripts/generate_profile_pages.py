@@ -314,10 +314,9 @@ PROFILE_TEMPLATE = """<!doctype html>
         const currentUsername = profileData.username;
         const otherProfiles = allProfiles.filter(p => p.username !== currentUsername);
         
-        // Shuffle and get 4-6 random profiles
+        // Shuffle and get 6 random profiles
         const shuffled = otherProfiles.sort(() => Math.random() - 0.5);
-        const randomCount = Math.floor(Math.random() * 3) + 4; // 4-6 profiles
-        const selectedProfiles = shuffled.slice(0, randomCount);
+        const selectedProfiles = shuffled.slice(0, 6); // Always 6 profiles
         
         return selectedProfiles;
       }} catch (error) {{
