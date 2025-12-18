@@ -56,11 +56,13 @@ jobs:
           git config --local credential.helper store
           echo "https://x-access-token:${PAT}@github.com" > ~/.git-credentials
           git remote set-url origin https://github.com/${GITHUB_REPOSITORY}.git
+          git pull --rebase origin main || true
           git add data/ profiles/ feed.xml sitemap.xml
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
             git commit -m "Auto-update: profiles and feeds [skip ci]"
+            git pull --rebase origin main || true
             git push https://x-access-token:${PAT}@github.com/${GITHUB_REPOSITORY}.git HEAD:main
           fi
 
