@@ -155,9 +155,12 @@
     function addNofollowToLinks(html) {
       return html.replace(/<a\s+([^>]*?)>/gi, (match, attrs) => {
         if (!attrs.includes('rel=')) {
-          return `<a ${attrs} rel="nofollow noopener">`;
+          return '<a ' + attrs + ' rel="nofollow noopener">';
         } else if (!attrs.includes('nofollow')) {
-          return `<a ${attrs.replace(/rel="([^"]*)"/, 'rel="$1 nofollow noopener")}>`;
+          const relMatch = attrs.match(/rel="([^"]*)"/);
+          if (relMatch) {
+            return '<a ' + attrs.replace(/rel="[^"]*"/, 'rel="' + relMatch[1] + ' nofollow noopener"') + '>';
+          }
         }
         return match;
       });
