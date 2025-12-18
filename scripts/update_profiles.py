@@ -256,17 +256,40 @@ def main():
     
     # Start with existing profiles
     profiles = existing_profiles.copy()
+    existing_usernames = {p.get("username", "") for p in existing_profiles}
+    
+    # First, add new profiles from directory BEFORE updating existing ones
+    # This ensures new profiles are included even if update fails
+    if new_profiles:
+        print(f"\n➕ Se adaugă {len(new_profiles)} profiluri noi din directory...")
+        added_count = 0
+        skipped_count = 0
+        for new_profile in new_profiles:
+            username = new_profile.get("username", "")
+            instance = new_profile.get("instance", PRIMARY_INSTANCE)
+            if username and username not in existing_usernames:
+                profiles.append(new_profile)
+                existing_usernames.add(username)
+                added_count += 1
+                if added_count <= 10:  # Show first 10
+                    print(f"  ✅ {username} ({instance})")
+        print(f"  📊 Adăugate {added_count} profiluri noi din {len(new_profiles)} descoperite")
+        if skipped_count > 0:
+            print(f"  ⚠️  Omise {skipped_count} profiluri (deja existente)")
     
     # Update ALL existing profiles (not just KNOWN_USERNAMES)
     # This ensures we keep updating profiles even if they disappear from directory
     print(f"\n📥 Se actualizează profilurile existente ({len(existing_profiles)} profiluri)...")
+    
+    updated_count = 0
+    kept_count = 0
     
     for i, existing_profile in enumerate(existing_profiles, 1):
         username = existing_profile.get("username", "")
         if not username:
             continue
             
-        print(f"[{i}/{len(existing_profiles)}] {username}...", end=" ")
+        print(f"[{i}/{len(existing_profiles)}] {username}...", end=" ", flush=True)
         instance_used = existing_profile.get("instance", PRIMARY_INSTANCE)
         
         # Try to fetch updated data
@@ -287,6 +310,7 @@ def main():
             else:
                 # Profile not in list yet, add it
                 profiles.append(profile)
+            updated_count += 1
             print(f"✅ ({instance_used})")
         else:
             # Keep existing profile even if we can't fetch new data
@@ -294,19 +318,13 @@ def main():
             existing_idx = next((i for i, p in enumerate(profiles) if p.get("username") == username), None)
             if existing_idx is None:
                 profiles.append(existing_profile)
+            kept_count += 1
             print("📋 (păstrat profil existent)")
         
         # Small delay to avoid rate limiting
         time.sleep(0.2)
     
-    # Add new profiles from directory (they already have complete data)
-    if new_profiles:
-        print(f"\n➕ Se adaugă {len(new_profiles)} profiluri noi din directory...")
-        for new_profile in new_profiles:
-            username = new_profile.get("username")
-            if username and not any(p.get("username") == username for p in profiles):
-                profiles.append(new_profile)
-                print(f"  ✅ {username}")
+    print(f"\n📊 Rezumat actualizare: {updated_count} actualizate, {kept_count} păstrate")
     
     # Sort by username
     profiles.sort(key=lambda x: x.get("username", "").lower())
