@@ -150,10 +150,17 @@ def main():
     # Fetch and save server stats
     print("\n📊 Se descarcă statisticile serverului...")
     server_stats = fetch_instance_stats()
-    server_stats_file = Path(__file__).parent.parent / "data" / "server-stats.json"
-    with open(server_stats_file, "w", encoding="utf-8") as f:
-        json.dump(server_stats, f, indent=2, ensure_ascii=False)
-    print("✅ Statisticile serverului au fost salvate!")
+    if server_stats:
+        server_stats_file = Path(__file__).parent.parent / "data" / "server-stats.json"
+        with open(server_stats_file, "w", encoding="utf-8") as f:
+            json.dump(server_stats, f, indent=2, ensure_ascii=False)
+        print(f"✅ Statisticile serverului au fost salvate!")
+        print(f"   - Versiune: {server_stats.get('version', 'N/A')}")
+        print(f"   - Utilizatori: {server_stats.get('stats', {}).get('user_count', 0)}")
+        print(f"   - Statusuri: {server_stats.get('stats', {}).get('status_count', 0)}")
+        print(f"   - Domenii: {server_stats.get('stats', {}).get('domain_count', 0)}")
+    else:
+        print("⚠️  Nu s-au putut obține statisticile serverului")
     
     print(f"\n🎉 Actualizare completă! {len(profiles)} profiluri disponibile.")
     if new_usernames:

@@ -121,25 +121,45 @@ function renderServerStats(stats) {
   const serverStatsEl = document.getElementById('serverStats');
   if (!serverStatsEl) return;
   
+  // Handle both possible structures from API
+  const version = stats.version || 'N/A';
+  const statsData = stats.stats || {};
+  const userCount = statsData.user_count || 0;
+  const statusCount = statsData.status_count || 0;
+  const domainCount = statsData.domain_count || 0;
+  
+  // Show loading state if no data
+  if (!stats || Object.keys(stats).length === 0) {
+    serverStatsEl.innerHTML = '<p style="color: var(--text-muted);">Statisticile serverului nu sunt disponibile momentan.</p>';
+    return;
+  }
+  
   serverStatsEl.innerHTML = `
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px;">
       <div>
         <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 8px;">Versiune Mastodon</div>
-        <div style="font-size: 24px; font-weight: 700; color: var(--text);">${escapeHtml(stats.version || 'N/A')}</div>
+        <div style="font-size: 24px; font-weight: 700; color: var(--text);">${escapeHtml(version)}</div>
       </div>
       <div>
         <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 8px;">Utilizatori Totali</div>
-        <div style="font-size: 24px; font-weight: 700; color: var(--text);">${formatNumber(stats.stats?.user_count || 0)}</div>
+        <div style="font-size: 24px; font-weight: 700; color: var(--text);">${formatNumber(userCount)}</div>
       </div>
       <div>
         <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 8px;">Statusuri Totale</div>
-        <div style="font-size: 24px; font-weight: 700; color: var(--text);">${formatNumber(stats.stats?.status_count || 0)}</div>
+        <div style="font-size: 24px; font-weight: 700; color: var(--text);">${formatNumber(statusCount)}</div>
       </div>
       <div>
         <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 8px;">Domenii Conectate</div>
-        <div style="font-size: 24px; font-weight: 700; color: var(--text);">${formatNumber(stats.stats?.domain_count || 0)}</div>
+        <div style="font-size: 24px; font-weight: 700; color: var(--text);">${formatNumber(domainCount)}</div>
       </div>
     </div>
+    ${stats.title ? `
+    <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border);">
+      <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 8px;">Titlu Server</div>
+      <div style="font-size: 18px; font-weight: 600; color: var(--text);">${escapeHtml(stats.title)}</div>
+      ${stats.short_description ? `<div style="font-size: 14px; color: var(--text-muted); margin-top: 8px;">${escapeHtml(stats.short_description)}</div>` : ''}
+    </div>
+    ` : ''}
   `;
 }
 
@@ -148,4 +168,5 @@ function escapeHtml(text) {
   div.textContent = text;
   return div.innerHTML;
 }
+
 
