@@ -12,8 +12,8 @@
       },
       "stats": {
         "user_count": 50,
-        "status_count": 465,
-        "domain_count": 3157
+        "status_count": 477,
+        "domain_count": 3557
       },
       "thumbnail": "https://social.5th.ro/system/site_uploads/files/000/000/001/@1x/25c338cdf66d8208.png",
       "languages": [
@@ -86,7 +86,7 @@
         "indexable": true,
         "group": false,
         "created_at": "2025-12-07T00:00:00.000Z",
-        "note": "<p>Admin of <a href=\"https://social.5th.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">social.5th.ro</span><span class=\"invisible\"></span></a></p>",
+        "note": "<p>Admin of <a href=\"https://social.5th.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">social.5th.ro</span><span class=\"invisible\"></span></a> and  <a href=\"https://plugin.5th.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">plugin.5th.ro</span><span class=\"invisible\"></span></a> - first All-in-One <a href=\"https://social.5th.ro/tags/Mastodon\" class=\"mention hashtag\" rel=\"tag\">#<span>Mastodon</span></a> <a href=\"https://social.5th.ro/tags/WordPress\" class=\"mention hashtag\" rel=\"tag\">#<span>WordPress</span></a> <a href=\"https://social.5th.ro/tags/Plugin\" class=\"mention hashtag\" rel=\"tag\">#<span>Plugin</span></a> (auto post, auto boost, rewrite with AI, short codes, analytics, and many more)!</p>",
         "url": "https://social.5th.ro/@5th",
         "uri": "https://social.5th.ro/ap/users/115678699565308367",
         "avatar": "https://social.5th.ro/system/accounts/avatars/115/678/699/565/308/367/original/bca3a807019e8558.png",
@@ -94,7 +94,7 @@
         "header": "https://social.5th.ro/system/accounts/headers/115/678/699/565/308/367/original/689ffe822e0a486d.png",
         "header_static": "https://social.5th.ro/system/accounts/headers/115/678/699/565/308/367/original/689ffe822e0a486d.png",
         "followers_count": 103,
-        "following_count": 66,
+        "following_count": 67,
         "statuses_count": 6,
         "last_status_at": "2025-12-17",
         "hide_collections": false,
@@ -170,8 +170,8 @@
       },
       "stats": {
         "user_count": 203,
-        "status_count": 7705,
-        "domain_count": 26158
+        "status_count": 7746,
+        "domain_count": 26165
       },
       "thumbnail": "https://mstdn.ro/system/site_uploads/files/000/000/002/@1x/4ee4634b0f3c8e13.png",
       "max_toot_chars": 10000,
@@ -326,7 +326,7 @@
     }
   },
   "total_users": 253,
-  "total_statuses": 8170,
-  "total_domains": 29315,
+  "total_statuses": 8223,
+  "total_domains": 29722,
   "version": "4.6.0-alpha.1"
 }
