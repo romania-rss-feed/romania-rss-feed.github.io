@@ -206,7 +206,7 @@
     <loc>https://romania-rss-feed.github.io/profiles/coteledunarii/</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <lastmod>2026-01-10</lastmod>
+    <lastmod>2026-01-11</lastmod>
   </url>
   <url>
     <loc>https://romania-rss-feed.github.io/profiles/CPetrePetre1RO/</loc>
@@ -329,7 +329,7 @@
     <loc>https://romania-rss-feed.github.io/profiles/icoefa/</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <lastmod>2026-01-10</lastmod>
+    <lastmod>2026-01-11</lastmod>
   </url>
   <url>
     <loc>https://romania-rss-feed.github.io/profiles/ienergie/</loc>
@@ -359,7 +359,7 @@
     <loc>https://romania-rss-feed.github.io/profiles/linuxwebzine/</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <lastmod>2026-01-10</lastmod>
+    <lastmod>2026-01-11</lastmod>
   </url>
   <url>
     <loc>https://romania-rss-feed.github.io/profiles/lunaala/</loc>
@@ -487,6 +487,11 @@
     <lastmod>2022-12-08</lastmod>
   </url>
   <url>
+    <loc>https://romania-rss-feed.github.io/profiles/RoCog/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://romania-rss-feed.github.io/profiles/romaniaregalarss/</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -496,13 +501,13 @@
     <loc>https://romania-rss-feed.github.io/profiles/Seutuo/</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <lastmod>2026-01-10</lastmod>
+    <lastmod>2026-01-11</lastmod>
   </url>
   <url>
     <loc>https://romania-rss-feed.github.io/profiles/simaecu/</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <lastmod>2026-01-10</lastmod>
+    <lastmod>2026-01-11</lastmod>
   </url>
   <url>
     <loc>https://romania-rss-feed.github.io/profiles/SolutiiConstructii/</loc>
