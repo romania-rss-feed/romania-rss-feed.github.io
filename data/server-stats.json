@@ -1,5 +1,163 @@
 {
   "instances": {
+    "social.5th.ro": {
+      "uri": "social.5th.ro",
+      "title": "social.5th.ro – Mastodon România [EN/RO]",
+      "short_description": "[EN] A Romanian Mastodon instance, free-speech friendly, open registrations and bots welcome.",
+      "description": "",
+      "email": "social.admin@5th.ro",
+      "version": "4.6.0-alpha.1",
+      "urls": {
+        "streaming_api": "wss://social.5th.ro"
+      },
+      "stats": {
+        "user_count": 63,
+        "status_count": 813,
+        "domain_count": 4915
+      },
+      "thumbnail": "https://social.5th.ro/system/site_uploads/files/000/000/001/@1x/25c338cdf66d8208.png",
+      "languages": [
+        "en"
+      ],
+      "registrations": true,
+      "approval_required": false,
+      "invites_enabled": true,
+      "configuration": {
+        "accounts": {
+          "max_featured_tags": 10
+        },
+        "statuses": {
+          "max_characters": 500,
+          "max_media_attachments": 4,
+          "characters_reserved_per_url": 23
+        },
+        "media_attachments": {
+          "supported_mime_types": [
+            "image/jpeg",
+            "image/png",
+            "image/gif",
+            "image/heic",
+            "image/heif",
+            "image/webp",
+            "image/avif",
+            "video/webm",
+            "video/mp4",
+            "video/quicktime",
+            "video/ogg",
+            "audio/wave",
+            "audio/wav",
+            "audio/x-wav",
+            "audio/x-pn-wave",
+            "audio/vnd.wave",
+            "audio/ogg",
+            "audio/vorbis",
+            "audio/mpeg",
+            "audio/mp3",
+            "audio/webm",
+            "audio/flac",
+            "audio/aac",
+            "audio/m4a",
+            "audio/x-m4a",
+            "audio/mp4",
+            "audio/3gpp",
+            "video/x-ms-asf"
+          ],
+          "image_size_limit": 16777216,
+          "image_matrix_limit": 33177600,
+          "video_size_limit": 103809024,
+          "video_frame_rate_limit": 120,
+          "video_matrix_limit": 8294400
+        },
+        "polls": {
+          "max_options": 4,
+          "max_characters_per_option": 50,
+          "min_expiration": 300,
+          "max_expiration": 2629746
+        }
+      },
+      "contact_account": {
+        "id": "115678699565308367",
+        "username": "5th",
+        "acct": "5th",
+        "display_name": "5th Social",
+        "locked": false,
+        "bot": false,
+        "discoverable": true,
+        "indexable": true,
+        "group": false,
+        "created_at": "2025-12-07T00:00:00.000Z",
+        "note": "<p>Admin of <a href=\"https://social.5th.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">social.5th.ro</span><span class=\"invisible\"></span></a> and  <a href=\"https://plugin.5th.ro\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">plugin.5th.ro</span><span class=\"invisible\"></span></a> - first All-in-One <a href=\"https://social.5th.ro/tags/Mastodon\" class=\"mention hashtag\" rel=\"tag\">#<span>Mastodon</span></a> <a href=\"https://social.5th.ro/tags/WordPress\" class=\"mention hashtag\" rel=\"tag\">#<span>WordPress</span></a> <a href=\"https://social.5th.ro/tags/Plugin\" class=\"mention hashtag\" rel=\"tag\">#<span>Plugin</span></a> (auto post, auto boost, rewrite with AI, short codes, analytics, and many more)!</p>",
+        "url": "https://social.5th.ro/@5th",
+        "uri": "https://social.5th.ro/ap/users/115678699565308367",
+        "avatar": "https://social.5th.ro/system/accounts/avatars/115/678/699/565/308/367/original/bca3a807019e8558.png",
+        "avatar_static": "https://social.5th.ro/system/accounts/avatars/115/678/699/565/308/367/original/bca3a807019e8558.png",
+        "header": "https://social.5th.ro/system/accounts/headers/115/678/699/565/308/367/original/689ffe822e0a486d.png",
+        "header_static": "https://social.5th.ro/system/accounts/headers/115/678/699/565/308/367/original/689ffe822e0a486d.png",
+        "followers_count": 91,
+        "following_count": 68,
+        "statuses_count": 6,
+        "last_status_at": "2025-12-17",
+        "hide_collections": false,
+        "noindex": false,
+        "emojis": [],
+        "roles": [
+          {
+            "id": "3",
+            "name": "Owner",
+            "color": ""
+          }
+        ],
+        "fields": [
+          {
+            "name": "5th Network",
+            "value": "<a href=\"https://5th.ro\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">5th.ro</span><span class=\"invisible\"></span></a>",
+            "verified_at": null
+          },
+          {
+            "name": "Mastodon All-In-One WordPress Plugin",
+            "value": "<a href=\"https://plugin.5th.ro\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">plugin.5th.ro</span><span class=\"invisible\"></span></a>",
+            "verified_at": "2025-12-11T20:22:21.123+00:00"
+          },
+          {
+            "name": "Social",
+            "value": "<a href=\"https://social.5th.ro/about\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">social.5th.ro/about</span><span class=\"invisible\"></span></a>",
+            "verified_at": null
+          }
+        ]
+      },
+      "rules": [
+        {
+          "id": "1",
+          "text": "Nu posta conținut ilegal conform legislației din România și UE (ex. abuz asupra minorilor, instigare directă la violență, terorism, doxing agresiv).",
+          "hint": "Do not post content that is illegal under Romanian/EU law (e.g. child abuse material, direct incitement to violence, terrorism, extreme doxing).",
+          "translations": {}
+        },
+        {
+          "id": "2",
+          "text": "Boții sunt bineveniți, dar trebuie marcați ca bot și nu au voie să facă spam sau să inunde timeline-urile.",
+          "hint": "Bots are welcome, but must be marked as bot accounts and must not spam or flood timelines.",
+          "translations": {}
+        },
+        {
+          "id": "3",
+          "text": "Este interzis spamul comercial agresiv, scam-ul evident și phishing-ul.",
+          "hint": "Aggressive commercial spam, obvious scams and phishing are not allowed.",
+          "translations": {}
+        },
+        {
+          "id": "4",
+          "text": "Hărțuirea organizată, amenințările directe și atacurile repetate, țintite, nu sunt permise.",
+          "hint": "Coordinated harassment, direct threats and repeated targeted abuse are not allowed.",
+          "translations": {}
+        },
+        {
+          "id": "5",
+          "text": "Conținutul NSFW este permis doar dacă este marcat ca sensibil (NSFW / sensitive media).",
+          "hint": "NSFW content is allowed only if marked as sensitive (NSFW / sensitive media).",
+          "translations": {}
+        }
+      ]
+    },
     "mstdn.ro": {
       "uri": "mstdn.ro",
       "title": "mstdn.ro - Mastodon Romania",
@@ -12,8 +170,8 @@
       },
       "stats": {
         "user_count": 208,
-        "status_count": 8945,
-        "domain_count": 26413
+        "status_count": 9012,
+        "domain_count": 26424
       },
       "thumbnail": "https://mstdn.ro/system/site_uploads/files/000/000/002/@1x/4ee4634b0f3c8e13.png",
       "max_toot_chars": 10000,
@@ -167,7 +325,8 @@
       ]
     }
   },
-  "total_users": 208,
-  "total_statuses": 8945,
-  "total_domains": 26413
+  "total_users": 271,
+  "total_statuses": 9825,
+  "total_domains": 31339,
+  "version": "4.6.0-alpha.1"
 }
