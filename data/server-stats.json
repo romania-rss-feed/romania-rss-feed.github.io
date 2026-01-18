@@ -12,8 +12,8 @@
       },
       "stats": {
         "user_count": 64,
-        "status_count": 837,
-        "domain_count": 4949
+        "status_count": 848,
+        "domain_count": 4990
       },
       "thumbnail": "https://social.5th.ro/system/site_uploads/files/000/000/001/@1x/25c338cdf66d8208.png",
       "languages": [
@@ -93,10 +93,10 @@
         "avatar_static": "https://social.5th.ro/system/accounts/avatars/115/678/699/565/308/367/original/bca3a807019e8558.png",
         "header": "https://social.5th.ro/system/accounts/headers/115/678/699/565/308/367/original/689ffe822e0a486d.png",
         "header_static": "https://social.5th.ro/system/accounts/headers/115/678/699/565/308/367/original/689ffe822e0a486d.png",
-        "followers_count": 91,
+        "followers_count": 89,
         "following_count": 68,
-        "statuses_count": 6,
-        "last_status_at": "2025-12-17",
+        "statuses_count": 7,
+        "last_status_at": "2026-01-17",
         "hide_collections": false,
         "noindex": false,
         "emojis": [],
@@ -170,8 +170,8 @@
       },
       "stats": {
         "user_count": 208,
-        "status_count": 9066,
-        "domain_count": 26434
+        "status_count": 9118,
+        "domain_count": 26440
       },
       "thumbnail": "https://mstdn.ro/system/site_uploads/files/000/000/002/@1x/4ee4634b0f3c8e13.png",
       "max_toot_chars": 10000,
@@ -263,7 +263,7 @@
         "avatar_static": "https://mstdn.ro/system/accounts/avatars/110/672/659/648/408/297/original/4192aeb9134a5301.png",
         "header": "https://mstdn.ro/system/accounts/headers/110/672/659/648/408/297/original/bf8b22bed4242a82.png",
         "header_static": "https://mstdn.ro/system/accounts/headers/110/672/659/648/408/297/original/bf8b22bed4242a82.png",
-        "followers_count": 6,
+        "followers_count": 7,
         "following_count": 6,
         "statuses_count": 0,
         "last_status_at": null,
@@ -326,7 +326,7 @@
     }
   },
   "total_users": 272,
-  "total_statuses": 9903,
-  "total_domains": 31383,
+  "total_statuses": 9966,
+  "total_domains": 31430,
   "version": "4.6.0-alpha.1"
 }
