@@ -12,8 +12,8 @@
       },
       "stats": {
         "user_count": 83,
-        "status_count": 1470,
-        "domain_count": 5508
+        "status_count": 1536,
+        "domain_count": 5526
       },
       "thumbnail": "https://social.5th.ro/system/site_uploads/files/000/000/001/@1x/25c338cdf66d8208.png",
       "languages": [
@@ -170,8 +170,8 @@
       },
       "stats": {
         "user_count": 215,
-        "status_count": 10011,
-        "domain_count": 26623
+        "status_count": 10071,
+        "domain_count": 26632
       },
       "thumbnail": "https://mstdn.ro/system/site_uploads/files/000/000/002/@1x/4ee4634b0f3c8e13.png",
       "max_toot_chars": 10000,
@@ -326,7 +326,7 @@
     }
   },
   "total_users": 298,
-  "total_statuses": 11481,
-  "total_domains": 32131,
+  "total_statuses": 11607,
+  "total_domains": 32158,
   "version": "4.6.0-alpha.1"
 }
