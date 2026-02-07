@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bork (@Bork@mstdn.ro) - Romania RSS Feed</title>
+    <link>https://romania-rss-feed.github.io/profiles/Bork/</link>
+    <description>&amp;lt;p&amp;gt;Fed up with the doomscroll, I wound up here&amp;lt;/p&amp;gt;</description>
+    <language>ro</language>
+    <lastBuildDate>Sat, 07 Feb 2026 04:03:22 +0000</lastBuildDate>
+    <atom:link href="https://mstdn.ro/@Bork.rss" rel="alternate" type="application/rss+xml" />
+    <atom:link href="https://romania-rss-feed.github.io/profiles/Bork/feed.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
