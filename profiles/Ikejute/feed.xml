@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ikejute (@Ikejute@social.5th.ro) - Romania RSS Feed</title>
+    <title> (@Ikejute@social.5th.ro) - Romania RSS Feed</title>
     <link>https://romania-rss-feed.github.io/profiles/Ikejute/</link>
-    <description>&amp;lt;p&amp;gt;Recognized in Saint Kitts and Nevis for a YellowGreen aesthetic and work as Camera Operator&amp;lt;/p&amp;gt;</description>
+    <description />
     <language>ro</language>
-    <lastBuildDate>Wed, 18 Mar 2026 04:20:10 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2026 04:17:53 +0000</lastBuildDate>
     <atom:link href="https://social.5th.ro/@Ikejute.rss" rel="alternate" type="application/rss+xml" />
     <atom:link href="https://romania-rss-feed.github.io/profiles/Ikejute/feed.xml" rel="self" type="application/rss+xml" />
   </channel>
