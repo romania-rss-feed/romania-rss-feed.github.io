@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Aleenhunt 💁‍♂️ (@aleenhunt@mstdn.ro) - Romania RSS Feed</title>
+    <title> (@aleenhunt@mstdn.ro) - Romania RSS Feed</title>
     <link>https://romania-rss-feed.github.io/profiles/aleenhunt/</link>
     <description />
     <language>ro</language>
-    <lastBuildDate>Thu, 19 Mar 2026 04:17:53 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Mar 2026 04:10:07 +0000</lastBuildDate>
     <atom:link href="https://mstdn.ro/@aleenhunt.rss" rel="alternate" type="application/rss+xml" />
     <atom:link href="https://romania-rss-feed.github.io/profiles/aleenhunt/feed.xml" rel="self" type="application/rss+xml" />
   </channel>

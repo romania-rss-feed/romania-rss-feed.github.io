@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Damon Jacobson (@Damon_Jacobson@mstdn.ro) - Romania RSS Feed</title>
+    <title> (@Damon_Jacobson@mstdn.ro) - Romania RSS Feed</title>
     <link>https://romania-rss-feed.github.io/profiles/Damon_Jacobson/</link>
-    <description>&amp;lt;p&amp;gt;Proceed with caution 🌨️.&amp;lt;/p&amp;gt;</description>
+    <description />
     <language>ro</language>
-    <lastBuildDate>Thu, 19 Mar 2026 04:17:53 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Mar 2026 04:10:07 +0000</lastBuildDate>
     <atom:link href="https://mstdn.ro/@Damon_Jacobson.rss" rel="alternate" type="application/rss+xml" />
     <atom:link href="https://romania-rss-feed.github.io/profiles/Damon_Jacobson/feed.xml" rel="self" type="application/rss+xml" />
   </channel>
