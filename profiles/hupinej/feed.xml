@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hupinej (@hupinej@social.5th.ro) - Romania RSS Feed</title>
+    <link>https://romania-rss-feed.github.io/profiles/hupinej/</link>
+    <description>&amp;lt;p&amp;gt;Occupational Therapist by trade, Stamp Collecting by choice&amp;lt;/p&amp;gt;</description>
+    <language>ro</language>
+    <lastBuildDate>Sat, 21 Mar 2026 04:01:20 +0000</lastBuildDate>
+    <atom:link href="https://social.5th.ro/@hupinej.rss" rel="alternate" type="application/rss+xml" />
+    <atom:link href="https://romania-rss-feed.github.io/profiles/hupinej/feed.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
