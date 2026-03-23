@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Carson Ball (@CarsonBall@social.5th.ro) - Romania RSS Feed</title>
+    <title> (@CarsonBall@social.5th.ro) - Romania RSS Feed</title>
     <link>https://romania-rss-feed.github.io/profiles/CarsonBall/</link>
     <description />
     <language>ro</language>
-    <lastBuildDate>Sun, 22 Mar 2026 04:14:37 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 04:24:45 +0000</lastBuildDate>
     <atom:link href="https://social.5th.ro/@CarsonBall.rss" rel="alternate" type="application/rss+xml" />
     <atom:link href="https://romania-rss-feed.github.io/profiles/CarsonBall/feed.xml" rel="self" type="application/rss+xml" />
   </channel>
