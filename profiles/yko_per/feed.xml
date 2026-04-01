@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>yko_per (@yko_per@mstdn.ro) - Romania RSS Feed</title>
+    <title> (@yko_per@mstdn.ro) - Romania RSS Feed</title>
     <link>https://romania-rss-feed.github.io/profiles/yko_per/</link>
-    <description>&amp;lt;p&amp;gt;Bags on carousel 6 🏟️.&amp;lt;/p&amp;gt;</description>
+    <description />
     <language>ro</language>
-    <lastBuildDate>Tue, 31 Mar 2026 04:32:59 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2026 04:44:53 +0000</lastBuildDate>
     <atom:link href="https://mstdn.ro/@yko_per.rss" rel="alternate" type="application/rss+xml" />
     <atom:link href="https://romania-rss-feed.github.io/profiles/yko_per/feed.xml" rel="self" type="application/rss+xml" />
   </channel>
