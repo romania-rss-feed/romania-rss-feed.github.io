@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Justinatran (@justinatran@social.5th.ro) - Romania RSS Feed</title>
+    <title> (@justinatran@social.5th.ro) - Romania RSS Feed</title>
     <link>https://romania-rss-feed.github.io/profiles/justinatran/</link>
-    <description>&amp;lt;p&amp;gt;Tastefully cleanse. Director’s cut: more blog. Under neon SeaGreen, pure pour-over. 8-bit with a hint of wayfarers. House direct trade with a great finish.&amp;lt;/p&amp;gt;</description>
+    <description />
     <language>ro</language>
-    <lastBuildDate>Sun, 12 Apr 2026 04:44:45 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2026 04:55:34 +0000</lastBuildDate>
     <atom:link href="https://social.5th.ro/@justinatran.rss" rel="alternate" type="application/rss+xml" />
     <atom:link href="https://romania-rss-feed.github.io/profiles/justinatran/feed.xml" rel="self" type="application/rss+xml" />
   </channel>
