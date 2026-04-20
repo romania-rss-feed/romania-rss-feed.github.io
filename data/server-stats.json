@@ -11,9 +11,9 @@
         "streaming_api": "wss://api.mstdn.ro"
       },
       "stats": {
-        "user_count": 252,
-        "status_count": 18594,
-        "domain_count": 27361
+        "user_count": 254,
+        "status_count": 18628,
+        "domain_count": 27369
       },
       "thumbnail": "https://mstdn.ro/system/site_uploads/files/000/000/002/@1x/4ee4634b0f3c8e13.png",
       "max_toot_chars": 10000,
@@ -167,7 +167,7 @@
       ]
     }
   },
-  "total_users": 252,
-  "total_statuses": 18594,
-  "total_domains": 27361
+  "total_users": 254,
+  "total_statuses": 18628,
+  "total_domains": 27369
 }
