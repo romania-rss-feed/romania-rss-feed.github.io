@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ecaga 🌡️ (@ecaga@social.5th.ro) - Romania RSS Feed</title>
+    <title> (@ecaga@social.5th.ro) - Romania RSS Feed</title>
     <link>https://romania-rss-feed.github.io/profiles/ecaga/</link>
-    <description>&amp;lt;p&amp;gt;Soft mixtape glow in Atlanta. Ironically kogi, sincerely Buddhist. Godard × tilde, minimal edition. Heavy on viral, light on master.&amp;lt;/p&amp;gt;</description>
+    <description />
     <language>ro</language>
-    <lastBuildDate>Mon, 04 May 2026 05:30:50 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2026 04:58:20 +0000</lastBuildDate>
     <atom:link href="https://social.5th.ro/@ecaga.rss" rel="alternate" type="application/rss+xml" />
     <atom:link href="https://romania-rss-feed.github.io/profiles/ecaga/feed.xml" rel="self" type="application/rss+xml" />
   </channel>
