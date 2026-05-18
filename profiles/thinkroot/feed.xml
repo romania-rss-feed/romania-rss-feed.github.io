@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ThinkRoot (@thinkroot@mstdn.ro) - Romania RSS Feed</title>
+    <title> (@thinkroot@mstdn.ro) - Romania RSS Feed</title>
     <link>https://romania-rss-feed.github.io/profiles/thinkroot/</link>
-    <description>&amp;lt;p&amp;gt;www.thinkroot.xyz&amp;lt;/p&amp;gt;</description>
+    <description />
     <language>ro</language>
-    <lastBuildDate>Sun, 17 May 2026 05:44:58 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 06:08:42 +0000</lastBuildDate>
     <atom:link href="https://mstdn.ro/@thinkroot.rss" rel="alternate" type="application/rss+xml" />
     <atom:link href="https://romania-rss-feed.github.io/profiles/thinkroot/feed.xml" rel="self" type="application/rss+xml" />
   </channel>
