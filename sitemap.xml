@@ -36,7 +36,7 @@
     <loc>https://romania-rss-feed.github.io/profiles/9z/</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-23</lastmod>
   </url>
   <url>
     <loc>https://romania-rss-feed.github.io/profiles/a/</loc>
@@ -696,12 +696,6 @@
     <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://romania-rss-feed.github.io/profiles/iasi/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-    <lastmod>2026-06-30</lastmod>
-  </url>
-  <url>
     <loc>https://romania-rss-feed.github.io/profiles/Iasi/</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -997,7 +991,7 @@
     <loc>https://romania-rss-feed.github.io/profiles/noutati24/</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-07-24</lastmod>
   </url>
   <url>
     <loc>https://romania-rss-feed.github.io/profiles/ObiectivBrasov/</loc>
