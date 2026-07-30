@@ -11,9 +11,9 @@
         "streaming_api": "wss://social.5th.ro"
       },
       "stats": {
-        "user_count": 232,
-        "status_count": 2797,
-        "domain_count": 7535
+        "user_count": 233,
+        "status_count": 2799,
+        "domain_count": 7542
       },
       "thumbnail": "https://social.5th.ro/system/site_uploads/files/000/000/001/@1x/25c338cdf66d8208.png",
       "languages": [
@@ -164,14 +164,14 @@
       "short_description": "A Mastodon server for Romanians, run by Romanians in Romania.",
       "description": "",
       "email": "team@mstdn.ro",
-      "version": "4.4.0-beta.2+glitch",
+      "version": "4.6.4+glitch",
       "urls": {
         "streaming_api": "wss://api.mstdn.ro"
       },
       "stats": {
         "user_count": 244,
-        "status_count": 20146,
-        "domain_count": 28906
+        "status_count": 20153,
+        "domain_count": 28913
       },
       "thumbnail": "https://mstdn.ro/system/site_uploads/files/000/000/002/@1x/4ee4634b0f3c8e13.png",
       "max_toot_chars": 10000,
@@ -184,7 +184,7 @@
       "languages": [
         "ro"
       ],
-      "registrations": false,
+      "registrations": true,
       "approval_required": false,
       "invites_enabled": true,
       "configuration": {
@@ -261,14 +261,24 @@
         "uri": "https://mstdn.ro/users/mstdn",
         "avatar": "https://mstdn.ro/system/accounts/avatars/110/672/659/648/408/297/original/4192aeb9134a5301.png",
         "avatar_static": "https://mstdn.ro/system/accounts/avatars/110/672/659/648/408/297/original/4192aeb9134a5301.png",
+        "avatar_description": "",
         "header": "https://mstdn.ro/system/accounts/headers/110/672/659/648/408/297/original/bf8b22bed4242a82.png",
         "header_static": "https://mstdn.ro/system/accounts/headers/110/672/659/648/408/297/original/bf8b22bed4242a82.png",
+        "header_description": "",
         "followers_count": 7,
         "following_count": 6,
         "statuses_count": 0,
         "last_status_at": null,
         "hide_collections": false,
+        "show_media": true,
+        "show_media_replies": true,
+        "show_featured": true,
         "noindex": false,
+        "feature_approval": {
+          "automatic": [],
+          "manual": [],
+          "current_user": "denied"
+        },
         "emojis": [],
         "roles": [
           {
@@ -325,8 +335,8 @@
       ]
     }
   },
-  "total_users": 476,
-  "total_statuses": 22943,
-  "total_domains": 36441,
+  "total_users": 477,
+  "total_statuses": 22952,
+  "total_domains": 36455,
   "version": "4.6.0-alpha.1"
 }
