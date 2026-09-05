@@ -11,9 +11,9 @@
         "streaming_api": "wss://social.5th.ro"
       },
       "stats": {
-        "user_count": 342,
-        "status_count": 3126,
-        "domain_count": 8095
+        "user_count": 348,
+        "status_count": 3129,
+        "domain_count": 8103
       },
       "thumbnail": "https://social.5th.ro/system/site_uploads/files/000/000/001/@1x/25c338cdf66d8208.png",
       "languages": [
@@ -95,8 +95,8 @@
         "header_static": "https://social.5th.ro/system/accounts/headers/115/678/699/565/308/367/original/689ffe822e0a486d.png",
         "followers_count": 86,
         "following_count": 69,
-        "statuses_count": 13,
-        "last_status_at": "2026-05-10",
+        "statuses_count": 14,
+        "last_status_at": "2026-09-04",
         "hide_collections": false,
         "noindex": false,
         "emojis": [],
@@ -170,8 +170,8 @@
       },
       "stats": {
         "user_count": 244,
-        "status_count": 21690,
-        "domain_count": 29282
+        "status_count": 21730,
+        "domain_count": 29288
       },
       "thumbnail": "https://mstdn.ro/system/site_uploads/files/000/000/002/@1x/4ee4634b0f3c8e13.png",
       "max_toot_chars": 10000,
@@ -335,8 +335,8 @@
       ]
     }
   },
-  "total_users": 586,
-  "total_statuses": 24816,
-  "total_domains": 37377,
+  "total_users": 592,
+  "total_statuses": 24859,
+  "total_domains": 37391,
   "version": "4.6.0-alpha.1"
 }
