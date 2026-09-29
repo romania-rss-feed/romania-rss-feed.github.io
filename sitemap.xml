@@ -392,7 +392,7 @@
     <loc>https://romania-rss-feed.github.io/profiles/constructii360/</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-29</lastmod>
   </url>
   <url>
     <loc>https://romania-rss-feed.github.io/profiles/cordielang/</loc>
@@ -404,7 +404,7 @@
     <loc>https://romania-rss-feed.github.io/profiles/coteledunarii/</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-09-29</lastmod>
   </url>
   <url>
     <loc>https://romania-rss-feed.github.io/profiles/CPetrePetre1RO/</loc>
@@ -571,7 +571,7 @@
     <loc>https://romania-rss-feed.github.io/profiles/eratehnologica/</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-09-29</lastmod>
   </url>
   <url>
     <loc>https://romania-rss-feed.github.io/profiles/EstelleBennett/</loc>
@@ -1189,7 +1189,7 @@
     <loc>https://romania-rss-feed.github.io/profiles/recent_news/</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-28</lastmod>
   </url>
   <url>
     <loc>https://romania-rss-feed.github.io/profiles/recorder_rss/</loc>
@@ -1338,7 +1338,7 @@
     <loc>https://romania-rss-feed.github.io/profiles/topcomunicate_ro/</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-28</lastmod>
   </url>
   <url>
     <loc>https://romania-rss-feed.github.io/profiles/Tovel/</loc>
@@ -1368,7 +1368,7 @@
     <loc>https://romania-rss-feed.github.io/profiles/UniversulTech/</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-29</lastmod>
   </url>
   <url>
     <loc>https://romania-rss-feed.github.io/profiles/Upoze/</loc>
@@ -1512,6 +1512,6 @@
     <loc>https://romania-rss-feed.github.io/profiles/zuzizuzi/</loc>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
   </url>
 </urlset>
