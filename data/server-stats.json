@@ -11,9 +11,9 @@
         "streaming_api": "wss://social.5th.ro"
       },
       "stats": {
-        "user_count": 396,
-        "status_count": 3327,
-        "domain_count": 8561
+        "user_count": 400,
+        "status_count": 3336,
+        "domain_count": 8572
       },
       "thumbnail": "https://social.5th.ro/system/site_uploads/files/000/000/001/@1x/25c338cdf66d8208.png",
       "languages": [
@@ -170,8 +170,8 @@
       },
       "stats": {
         "user_count": 244,
-        "status_count": 22530,
-        "domain_count": 29624
+        "status_count": 22578,
+        "domain_count": 29638
       },
       "thumbnail": "https://mstdn.ro/system/site_uploads/files/000/000/002/@1x/4ee4634b0f3c8e13.png",
       "max_toot_chars": 10000,
@@ -335,8 +335,8 @@
       ]
     }
   },
-  "total_users": 640,
-  "total_statuses": 25857,
-  "total_domains": 38185,
+  "total_users": 644,
+  "total_statuses": 25914,
+  "total_domains": 38210,
   "version": "4.6.0-alpha.1"
 }
