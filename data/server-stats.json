@@ -6,14 +6,14 @@
       "short_description": "[EN] A Romanian Mastodon instance, free-speech friendly, open registrations and bots welcome.",
       "description": "",
       "email": "social.admin@5th.ro",
-      "version": "4.6.0-alpha.1",
+      "version": "4.7.3",
       "urls": {
         "streaming_api": "wss://social.5th.ro"
       },
       "stats": {
-        "user_count": 468,
-        "status_count": 3369,
-        "domain_count": 8654
+        "user_count": 111,
+        "status_count": 3371,
+        "domain_count": 8690
       },
       "thumbnail": "https://social.5th.ro/system/site_uploads/files/000/000/001/@1x/25c338cdf66d8208.png",
       "languages": [
@@ -91,14 +91,26 @@
         "uri": "https://social.5th.ro/ap/users/115678699565308367",
         "avatar": "https://social.5th.ro/system/accounts/avatars/115/678/699/565/308/367/original/bca3a807019e8558.png",
         "avatar_static": "https://social.5th.ro/system/accounts/avatars/115/678/699/565/308/367/original/bca3a807019e8558.png",
+        "avatar_description": "",
         "header": "https://social.5th.ro/system/accounts/headers/115/678/699/565/308/367/original/689ffe822e0a486d.png",
         "header_static": "https://social.5th.ro/system/accounts/headers/115/678/699/565/308/367/original/689ffe822e0a486d.png",
+        "header_description": "",
         "followers_count": 84,
         "following_count": 69,
         "statuses_count": 14,
         "last_status_at": "2026-09-04",
         "hide_collections": false,
+        "show_media": true,
+        "show_media_replies": true,
+        "show_featured": true,
         "noindex": false,
+        "feature_approval": {
+          "automatic": [
+            "public"
+          ],
+          "manual": [],
+          "current_user": "denied"
+        },
         "emojis": [],
         "roles": [
           {
@@ -170,8 +182,8 @@
       },
       "stats": {
         "user_count": 244,
-        "status_count": 22884,
-        "domain_count": 29679
+        "status_count": 22928,
+        "domain_count": 29687
       },
       "thumbnail": "https://mstdn.ro/system/site_uploads/files/000/000/002/@1x/4ee4634b0f3c8e13.png",
       "max_toot_chars": 10000,
@@ -335,8 +347,8 @@
       ]
     }
   },
-  "total_users": 712,
-  "total_statuses": 26253,
-  "total_domains": 38333,
-  "version": "4.6.0-alpha.1"
+  "total_users": 355,
+  "total_statuses": 26299,
+  "total_domains": 38377,
+  "version": "4.7.3"
 }
