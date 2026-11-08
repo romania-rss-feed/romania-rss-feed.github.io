@@ -182,8 +182,8 @@
       },
       "stats": {
         "user_count": 244,
-        "status_count": 23693,
-        "domain_count": 29813
+        "status_count": 23716,
+        "domain_count": 29820
       },
       "thumbnail": "https://mstdn.ro/system/site_uploads/files/000/000/002/@1x/4ee4634b0f3c8e13.png",
       "max_toot_chars": 10000,
@@ -348,7 +348,7 @@
     }
   },
   "total_users": 368,
-  "total_statuses": 27159,
-  "total_domains": 39714,
+  "total_statuses": 27182,
+  "total_domains": 39721,
   "version": "4.7.4"
 }
