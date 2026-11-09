@@ -12,7 +12,7 @@
       },
       "stats": {
         "user_count": 124,
-        "status_count": 3466,
+        "status_count": 3467,
         "domain_count": 9901
       },
       "thumbnail": "https://social.5th.ro/system/site_uploads/files/000/000/001/@1x/25c338cdf66d8208.png",
@@ -176,14 +176,14 @@
       "short_description": "A Mastodon server for Romanians, run by Romanians in Romania.",
       "description": "",
       "email": "team@mstdn.ro",
-      "version": "4.6.11+glitch",
+      "version": "4.7.5+glitch",
       "urls": {
         "streaming_api": "wss://api.mstdn.ro"
       },
       "stats": {
         "user_count": 244,
-        "status_count": 23716,
-        "domain_count": 29820
+        "status_count": 23756,
+        "domain_count": 29824
       },
       "thumbnail": "https://mstdn.ro/system/site_uploads/files/000/000/002/@1x/4ee4634b0f3c8e13.png",
       "max_toot_chars": 10000,
@@ -348,7 +348,7 @@
     }
   },
   "total_users": 368,
-  "total_statuses": 27182,
-  "total_domains": 39721,
+  "total_statuses": 27223,
+  "total_domains": 39725,
   "version": "4.7.4"
 }
